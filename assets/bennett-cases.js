@@ -40,9 +40,9 @@ window.BENNETT_CASES = {
     chapter: 10,
     page: 6,
     label: "町と田舎の相互作用",
-    status: "miss",
+    status: "caveat",
     excerpt: "The town invaded the country … the difference between town and country grew less and less",
-    note: "Bennettには重要な関係概念だが、town / countryは凍結strong lexiconに入らず、重なる10窓のmixedは0。現在の物体語中心の軸の盲点。"
+    note: "Nature–Built軸では重なる10窓のmixedは0だったが、独立に構築したCountry–Town軸とliteral共起層では回収。第10章にliteral town–country窓が10あり、相互影響から差異縮小までの連鎖を含む。"
   },
   "NFN-06": {
     id: "NFN-06",

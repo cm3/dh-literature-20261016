@@ -1,0 +1,3 @@
+source,path,character_count,word_token_count,digit_inside_word_count,digit_inside_word_examples,known_ocr_pattern_count,replacement_character_count
+"Internet Archive 1888 OCR, corrected",work/utopian-text-corpus/corpus/looking_backward_1888.txt,430896,76711,30,0U|26th|2COO|30th|Prei3|S3|alt3|an3|commodit3|da3|emplo3|fort3|full3|l37|m3|nowacla3|nowada3|paral3|qualit3|ro3,109,0
+Project Gutenberg 624 alternative,work/utopian-text-corpus/corpus_alternatives/looking_backward_pg624.txt,436287,77613,5,26th|30th,0,0

@@ -1,6 +1,6 @@
 ---
 title: "Bennett (2026) のMorris読解を計量的に検証する"
-description: "4つの後期ヴィクトリア朝ユートピアをNature–Built軸で比較し、Bennett (2026) のNews from Nowhere読解を検証する10分発表"
+description: "4つの後期ヴィクトリア朝ユートピアをNature–BuiltとCountry–Townの二軸で比較し、Bennett (2026) のNews from Nowhere読解を検証する10分発表"
 lang: ja
 ---
 
@@ -12,7 +12,7 @@ lang: ja
 # Bennett (2026) のMorris読解を計量的に検証する
 
 ::: lead
-「再野生化されたThames」と自然―建造環境の局所的な共存
+「再野生化されたThames」を自然―建造環境／田園―都市の二軸で読む
 :::
 
 ::: {.title-axis aria-label="Nature to Built axis"}
@@ -23,7 +23,7 @@ lang: ja
 
 ::: byline
 *News from Nowhere* を、同時代のユートピア文学3作品と比較する<br>
-Stage 2 quantitative analysis + close reading
+Stage 2 quantitative analysis + two-axis extension + close reading
 :::
 ::::
 
@@ -105,7 +105,7 @@ Londonは森・草地・果樹・川によって再編される。
 :::
 
 ::: note
-同一ジャンルの均質な標本ではなく、後期ヴィクトリア朝ユートピアの「自然―産業」スペクトラムをつくる小規模な比較コーパスである。
+同一ジャンルの均質な標本ではなく、後期ヴィクトリア朝ユートピアの「自然―産業」スペクトラムをつくる小規模な比較コーパス。BellamyはTicknor 1888初版OCRを主入力、Project Gutenberg 624を感度分析に使うと、Nature–Built mixed率は **8.72% → 9.00%**。順位は変わらないため、底本不明のPG版では置換しない。
 :::
 ::::
 
@@ -518,7 +518,7 @@ Hudsonでは「自然が都市を取り戻す」より、自然の形・音・�
 12 — Diagnostic cases
 :::
 
-## 橋は拾えた。町と田舎の関係は落ちた。
+## Nature–Builtだけでは、町と田舎の関係が落ちた
 
 ::: {.two-col .contrast-grid}
 ::: {.panel .caught}
@@ -544,21 +544,70 @@ Stage 2 rank 12：<br>
 :::
 
 ::: quote
-**次の改善**　場所語・関係表現の辞書、または文脈埋め込みを加え、語義監査済みの結果と比較する。
+**次の検証**　同じGloVe空間にCountry–Town軸を別に作り、この未検出例を回収できるか試す。
+:::
+::::
+
+:::: {.section .screen .two-axis-slide}
+::: kicker
+13 — Two-axis extension
+:::
+
+## town ↔ country は第2軸で回収できた
+
+::: lead
+Nature–Builtは物理環境、Country–Townは居住・社会地理を表す。Morrisは通常の対応だけでなく、交差する二領域を反復する。
+:::
+
+::::: {.two-col .two-axis-layout}
+```{=html}
+<div class="quadrant-map" role="img" aria-label="Country–Town and Nature–Built two-axis map">
+  <div class="quadrant-label q-country">Country →</div>
+  <div class="quadrant-label q-town">← Town</div>
+  <div class="quadrant-label q-nature">Nature ↑</div>
+  <div class="quadrant-label q-built">↓ Built</div>
+  <div class="quadrant q-country-nature"><b>Country × Nature</b><span>meadow · river · wood</span></div>
+  <div class="quadrant q-town-nature"><b>Town × Nature</b><span>Kensington · Aldgate · Oxford</span></div>
+  <div class="quadrant q-country-built"><b>Country × Built</b><span>countryfied houses · locks · machinery</span></div>
+  <div class="quadrant q-town-built"><b>Town × Built</b><span>street · market · factory</span></div>
+</div>
+```
+
+::: {.panel .axis-result-card}
+**NFN-05を回収**
+
+<div class="axis-metrics">
+  <span><b>−0.120</b><small><i>town</i> polarity</small></span>
+  <span><b>＋0.043</b><small><i>country</i> polarity</small></span>
+  <span><b>15窓</b><small>literal town–country</small></span>
+</div>
+
+第10章の10窓が、侵入 → surroundingsへの順応 → 相互影響 → 差異縮小、というBennettの連鎖を含む。
+
+::: case-tags
+- Ch. 10: 10窓
+- Ch. 23: 2窓
+- Ch. 27: 3窓
+:::
+:::
+:::::
+
+::: {.note .warn}
+二軸のpolarity相関は **Pearson 0.555**。別々に構築したが直交はせず、`night / day / company` などの誤分類もある。比率は探索用、文学的証拠は原文確認済みの交差場面に限定する。
 :::
 ::::
 
 :::: {.section .screen .center .closing-slide}
 ::: kicker
-13 — Answer to Bennett
+14 — Answer to Bennett
 :::
 
 ## 計量分析はBennettを「限定つきで」支持する
 
 ::: {.closing-points}
-<div><b>1</b><span><strong>支持：</strong>論文の13場面中9件で、自然と建造環境の実質的な局所共存を確認した。</span></div>
+<div><b>1</b><span><strong>支持：</strong>論文の13場面中9件でNature–Builtの実質的共存を確認し、さらに1件をCountry–Townで回収した。</span></div>
 <div><b>2</b><span><strong>限定：</strong>Morrisは比較コーパスで最多ではなく、rewildingの特徴は作品全体量より場面の機能にある。</span></div>
-<div><b>3</b><span><strong>課題：</strong>town–countryのような関係概念と、static embeddingの多義語を別の方法で扱う必要がある。</span></div>
+<div><b>3</b><span><strong>二軸化：</strong>都市を自然化する場面と、田園の建造物を環境へ馴染ませる場面を同じ枠組みで記述できる。</span></div>
 :::
 
 ::: {.verdict .final-verdict}
@@ -587,8 +636,12 @@ Appendix — Sources & reproducibility
 - `data/permutation_summary.csv`: null-model results
 - `data/nfn_chapter_summary.csv`: Morrisの全32章とBennett事例の対応
 - `data/bennett_2026_nfn_alignment.csv`: 13-case external alignment
+- `data/two_axis_work_summary.csv`: 二軸の作品別結果
+- `data/morris_literal_town_country.csv`: Morrisのliteral town–country窓
+- `data/bellamy_gutenberg_comparison.csv`: Bellamyの入力本文感度分析
+- `data/bellamy_source_quality.csv`: IA OCRとPG624の機械可読性診断
 
 ::: note
-Main window: 50 tokens、25語ずつ移動（50%重複）。Global and paragraph-preserving permutations: 1,000 each. The primary frozen axis was not retuned after observing Stage 2 results.
+Main window: 50 tokens、25語ずつ移動（50%重複）。Global and paragraph-preserving permutations: 1,000 each. Nature–BuiltとCountry–Townはいずれも作品比較前に固定。BellamyのPG624再計算でも主順位は不変。
 :::
 ::::

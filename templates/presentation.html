@@ -7,7 +7,7 @@ $if(description)$
     <meta name="description" content="$description$" />
 $endif$
     <title>$if(title)$$title$$else$Presentation$endif$</title>
-    <script src="assets/bennett-cases.js"></script>
+    <script src="assets/bennett-cases.js?v=16"></script>
     <script>
       window.addEventListener("DOMContentLoaded", () => {
         const slides = Array.from(document.querySelectorAll("main > section, main > .screen, main > .flow"));
@@ -115,7 +115,7 @@ $endif$
         });
       });
     </script>
-    <link rel="stylesheet" href="assets/presentation.css" />
+    <link rel="stylesheet" href="assets/presentation.css?v=16" />
   </head>
   <body>
     <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
