@@ -144,7 +144,7 @@ GloVe embeddingから軸を作り、strong語彙をStage 1で固定。
 ::: panel
 **② 50語の局所窓**
 
-step 25、章境界を保持。両極のstrong語があればmixed。
+25語ずつ移動（50%重複）。章境界を保持し、両極のstrong語があればmixed。
 :::
 
 ::: panel
@@ -208,9 +208,125 @@ Bennettの読解は、作品全体の単純な「混合量」ではなく、特�
 :::
 ::::
 
+:::: {.section .screen .chapter-summary-slide}
+::: kicker
+6 — News from Nowhere: chapter-level test
+:::
+
+## 章別mixingはThames航行部で上がる
+
+::: lead
+全32章を物語段階に分けると、Bennettが重視する川の旅にmixingが集中する。
+:::
+
+::: {.phase-grid}
+::: panel
+**Londonでの遭遇**<br>
+第1–10章
+
+<b>17.5%</b><small>184 / 1,050 windows</small>
+:::
+
+::: panel
+**制度説明・革命史**<br>
+第11–18章
+
+<b>5.3%</b><small>45 / 854 windows</small>
+:::
+
+::: {.panel .focus-phase}
+**Thames航行・帰還**<br>
+第19–32章
+
+<b>22.4%</b><small>256 / 1,142 windows</small>
+:::
+:::
+
+::: {.two-col .chapter-findings}
+::: panel
+**Bennettが例を採る11章（窓を合算）**
+
+mixed率 **21.4%**（204 / 953窓）。その他21章の **13.4%** より7.9ポイント高い。
+:::
+
+::: panel
+**ピーク**
+
+- **50.6%**　第30章 *The Journey’s End*
+- **35.0%**　第20章
+- **34.1%**　第21章
+:::
+:::
+
+::: {.note .warn}
+各区分の比率は窓を合算した値。隣接窓は50%重複し、短い章ほど率が不安定になる。ここでは有意差検定ではなく、物語構造に沿った記述的な偏りとして読む。
+:::
+::::
+
+:::: {.section .flow .chapter-audit-slide}
+::: kicker
+7 — News from Nowhere: all 32 chapters
+:::
+
+## 全章監査：高いのは「川」だけではなく、川と家・街・労働が接する章
+
+::: lead
+棒は各章のmixed-window率。●はBennettが具体例を採った章を示す。行を縦にたどると、説明中心の第11–18章で谷になり、旅の再開後に上昇する。
+:::
+
+```{=html}
+<div class="chapter-audit" role="region" aria-label="News from Nowhere chapter-level mixed-window rates">
+<table>
+  <thead><tr><th>章</th><th>章題</th><th>mixed率</th><th>分布</th><th>Bennett事例</th></tr></thead>
+  <tbody>
+    <tr class="phase-row"><th colspan="5">I　Londonでの遭遇（第1–10章）</th></tr>
+    <tr><td>1</td><td>Discussion and Bed</td><td>16.7%</td><td><span class="rate-bar"><i style="width:33%"></i></span></td><td><span class="case-chip good">● NFN-02</span></td></tr>
+    <tr><td>2</td><td>A Morning Bath</td><td>29.8%</td><td><span class="rate-bar"><i style="width:59%"></i></span></td><td><span class="case-chip mixed">● NFN-03/04</span></td></tr>
+    <tr><td>3</td><td>The Guest House and Breakfast Therein</td><td>17.6%</td><td><span class="rate-bar"><i style="width:35%"></i></span></td><td></td></tr>
+    <tr><td>4</td><td>A Market by the Way</td><td>22.2%</td><td><span class="rate-bar"><i style="width:44%"></i></span></td><td><span class="case-chip good">● NFN-06</span></td></tr>
+    <tr><td>5</td><td>Children on the Road</td><td>9.8%</td><td><span class="rate-bar"><i style="width:19%"></i></span></td><td><span class="case-chip good">● NFN-07/08</span></td></tr>
+    <tr><td>6</td><td>A Little Shopping</td><td>10.0%</td><td><span class="rate-bar"><i style="width:20%"></i></span></td><td></td></tr>
+    <tr><td>7</td><td>Trafalgar Square</td><td>25.0%</td><td><span class="rate-bar"><i style="width:49%"></i></span></td><td></td></tr>
+    <tr><td>8</td><td>An Old Friend</td><td>21.6%</td><td><span class="rate-bar"><i style="width:43%"></i></span></td><td></td></tr>
+    <tr><td>9</td><td>Concerning Love</td><td>8.5%</td><td><span class="rate-bar"><i style="width:17%"></i></span></td><td></td></tr>
+    <tr><td>10</td><td>Questions and Answers</td><td>20.0%</td><td><span class="rate-bar"><i style="width:40%"></i></span></td><td><span class="case-chip miss">● NFN-05</span></td></tr>
+    <tr class="phase-row"><th colspan="5">II　制度説明・革命史（第11–18章）</th></tr>
+    <tr><td>11</td><td>Concerning Government</td><td>0.0%</td><td><span class="rate-bar"><i style="width:0%"></i></span></td><td></td></tr>
+    <tr><td>12</td><td>Concerning the Arrangement of Life</td><td>4.0%</td><td><span class="rate-bar"><i style="width:8%"></i></span></td><td></td></tr>
+    <tr><td>13</td><td>Concerning Politics</td><td>0.0%</td><td><span class="rate-bar"><i style="width:0%"></i></span></td><td><small>3窓のみ</small></td></tr>
+    <tr><td>14</td><td>How Matters Are Managed</td><td>6.5%</td><td><span class="rate-bar"><i style="width:13%"></i></span></td><td></td></tr>
+    <tr><td>15</td><td>On the Lack of Incentive to Labour…</td><td>2.6%</td><td><span class="rate-bar"><i style="width:5%"></i></span></td><td></td></tr>
+    <tr><td>16</td><td>Dinner in the Hall of the Bloomsbury Market</td><td>14.0%</td><td><span class="rate-bar"><i style="width:28%"></i></span></td><td></td></tr>
+    <tr><td>17</td><td>How the Change Came</td><td>6.1%</td><td><span class="rate-bar"><i style="width:12%"></i></span></td><td></td></tr>
+    <tr><td>18</td><td>The Beginning of the New Life</td><td>2.7%</td><td><span class="rate-bar"><i style="width:5%"></i></span></td><td></td></tr>
+    <tr class="phase-row"><th colspan="5">III　Thames航行・帰還（第19–32章）</th></tr>
+    <tr><td>19</td><td>The Drive Back to Hammersmith</td><td>11.7%</td><td><span class="rate-bar"><i style="width:23%"></i></span></td><td></td></tr>
+    <tr><td>20</td><td>The Hammersmith Guest-House Again</td><td>35.0%</td><td><span class="rate-bar"><i style="width:69%"></i></span></td><td><small>20窓</small></td></tr>
+    <tr><td>21</td><td>Going up the River</td><td>34.1%</td><td><span class="rate-bar"><i style="width:67%"></i></span></td><td></td></tr>
+    <tr><td>22</td><td>Hampton Court</td><td>20.9%</td><td><span class="rate-bar"><i style="width:41%"></i></span></td><td></td></tr>
+    <tr><td>23</td><td>An Early Morning by Runnymede</td><td>24.7%</td><td><span class="rate-bar"><i style="width:49%"></i></span></td><td><span class="case-chip false">● NFN-01</span></td></tr>
+    <tr><td>24</td><td>Up the Thames: The Second Day</td><td>21.5%</td><td><span class="rate-bar"><i style="width:42%"></i></span></td><td><span class="case-chip caveat">● NFN-09</span></td></tr>
+    <tr><td>25</td><td>The Third Day on the Thames</td><td>23.8%</td><td><span class="rate-bar"><i style="width:47%"></i></span></td><td><span class="case-chip caveat">● NFN-13</span></td></tr>
+    <tr><td>26</td><td>The Obstinate Refusers</td><td>21.9%</td><td><span class="rate-bar"><i style="width:43%"></i></span></td><td><span class="case-chip good">● NFN-11</span></td></tr>
+    <tr><td>27</td><td>The Upper Waters</td><td>15.9%</td><td><span class="rate-bar"><i style="width:31%"></i></span></td><td></td></tr>
+    <tr><td>28</td><td>The Little River</td><td>19.3%</td><td><span class="rate-bar"><i style="width:38%"></i></span></td><td></td></tr>
+    <tr><td>29</td><td>A Resting-Place on the Upper Thames</td><td>18.5%</td><td><span class="rate-bar"><i style="width:37%"></i></span></td><td><span class="case-chip weak">● NFN-12</span></td></tr>
+    <tr class="peak"><td>30</td><td>The Journey’s End</td><td><b>50.6%</b></td><td><span class="rate-bar"><i style="width:100%"></i></span></td><td></td></tr>
+    <tr><td>31</td><td>An Old House amongst New Folk</td><td>25.4%</td><td><span class="rate-bar"><i style="width:50%"></i></span></td><td><span class="case-chip good">● NFN-10</span></td></tr>
+    <tr><td>32</td><td>The Feast’s Beginning — The End</td><td>12.4%</td><td><span class="rate-bar"><i style="width:24%"></i></span></td><td></td></tr>
+  </tbody>
+</table>
+</div>
+```
+
+::: note
+色付きタグは事例監査の判定：緑＝実質的、青＝要留保、橙＝弱い、赤＝未検出／形式的誤検出。章率が高くても個々の語義監査は別に必要である。
+:::
+::::
+
 :::: {.section .screen}
 ::: kicker
-6 — News from Nowhere: local evidence
+8 — News from Nowhere: local evidence
 :::
 
 ## Bennettの論点に対応するmixed場面は、局所的には強い
@@ -251,7 +367,7 @@ Morrisの特徴は全体量ではなく、London・建築・産業を自然と�
 
 :::: {.section .screen}
 ::: kicker
-7 — Comparative counterexample
+9 — Comparative counterexample
 :::
 
 ## *A Crystal Age* は別の仕方で、より頻繁に両極を結ぶ
@@ -281,9 +397,75 @@ Morrisのrewildingが都市・社会の変容を語るのに対し、Hudsonで�
 :::
 ::::
 
+:::: {.section .flow .crystal-evidence-slide}
+::: kicker
+10 — A Crystal Age: extended evidence
+:::
+
+## 自然と建築は、少なくとも6つの異なる仕方で接続される
+
+::: lead
+上位mixed窓を原文へ戻し、多義語による誤検出を除きながら読む。Hudsonの高いmixing率は、単一の反復語ではなく、室内・素材・眺望・比喩を横断する。
+:::
+
+::: {.long-evidence-list}
+::: {.panel .long-example}
+<b>1　花が窓と室内を変える</b><span>第3章 · rank 2</span>
+
+> “lilies … This lovely window gave a fresh charm to the whole apartment …”
+
+`lily` × `window · apartment`。花と採光が室内の見え方を変える。`hand/piece` は多義語由来なので解釈から除外。
+:::
+
+::: {.panel .long-example}
+<b>2　海が家の内部に響く</b><span>第5章 · rank 4</span>
+
+> “the ocean’s voice is in their rooms … salt spray … low tide … the whitewinged bird”
+
+`tide · sea · bird` × `roof · room · floor`。海・風・砂・鳥がHouse of Coradineの室内へ入り込む比喩。
+:::
+
+::: {.panel .long-example}
+<b>3　生花の不在を人工の花が示す</b><span>第14章 · rank 7</span>
+
+> “The only flowers in the house … wrought in metal and carved in wood … stony flowers”
+
+`flower` × `house · metal`。自然物を金属・木・石に固定する装飾が、家の秩序と禁忌を可視化する。
+:::
+
+::: {.panel .long-example}
+<b>4　葉の形が金属の扉になる</b><span>第3章 · rank 9</span>
+
+> “horse-chestnut leaves of brass or copper … a double door with agate handles”
+
+`leaf` × `brass · door · handle`。植物形態が素材と建具へ翻訳される。色彩語`grey/shade/yellow`はNature hitから除外して読む。
+:::
+
+::: {.panel .long-example}
+<b>5　ポルティコが川への視線を組み立てる</b><span>第4章 · rank 14</span>
+
+> “a large portico-like place … the roof … the house … looked upon the river”
+
+`river` × `roof · house`。開放された建築が自然を遮断せず、川を眺めるフレームとして働く。
+:::
+
+::: {.panel .long-example}
+<b>6　ステンドグラスから川霧へ連続する</b><span>第12章 · rank 16</span>
+
+> “stained glass in the windows … river … white mist … reeds and bushes … old trees”
+
+`river · mist · tree` × `glass · window`。室内的な比喩から川景へ視線が滑り、人工光景と自然景が連続する。
+:::
+:::
+
+::: {.verdict}
+Hudsonでは「自然が都市を取り戻す」より、自然の形・音・眺望が家の内部と装飾体系へ取り込まれる。量的な高さは同じでも、Morrisとは物語上の機能が異なる。
+:::
+::::
+
 :::: {.section .screen}
 ::: kicker
-8 — Direct validation of Bennett's examples
+11 — Direct validation of Bennett's examples
 :::
 
 ## Bennettの13場面を照合すると、9件は実質的に拾える
@@ -325,7 +507,7 @@ Morrisのrewildingが都市・社会の変容を語るのに対し、Hudsonで�
 
 :::: {.section .screen}
 ::: kicker
-9 — Diagnostic cases
+12 — Diagnostic cases
 :::
 
 ## 橋は拾えた。町と田舎の関係は落ちた。
@@ -360,7 +542,7 @@ Stage 2 rank 12：<br>
 
 :::: {.section .screen .center .closing-slide}
 ::: kicker
-10 — Answer to Bennett
+13 — Answer to Bennett
 :::
 
 ## 計量分析はBennettを「限定つきで」支持する
@@ -395,9 +577,10 @@ Appendix — Sources & reproducibility
 - `index.html`: generated presentation
 - `data/work_summary.csv`: work-level results
 - `data/permutation_summary.csv`: null-model results
+- `data/nfn_chapter_summary.csv`: Morrisの全32章とBennett事例の対応
 - `data/bennett_2026_nfn_alignment.csv`: 13-case external alignment
 
 ::: note
-Main window: 50 tokens / step 25. Global and paragraph-preserving permutations: 1,000 each. The primary frozen axis was not retuned after observing Stage 2 results.
+Main window: 50 tokens、25語ずつ移動（50%重複）。Global and paragraph-preserving permutations: 1,000 each. The primary frozen axis was not retuned after observing Stage 2 results.
 :::
 ::::

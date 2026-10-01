@@ -1,7 +1,8 @@
 # Utopian Nature–Built Talk
 
 約10分のHTMLスライドです。Bennett (2026) の *News from Nowhere* 読解を
-4作品のNature–Built local mixingと13場面の直接照合によって検証します。
+4作品のNature–Built local mixing、Morrisの全32章、13場面の直接照合によって
+検証します。章別監査と *A Crystal Age* の6例は縦に読める長い証拠スライドです。
 
 ## Build
 
@@ -18,7 +19,7 @@ sh scripts/build.sh
 - `slides.md`: 発表原稿
 - `index.html`: 配布・GitHub Pages用HTML
 - `assets/`: CSSと分析図
-- `data/`: work-level集計、permutation集計、Bennett照合表
+- `data/`: work-level集計、permutation集計、Morris章別集計、Bennett照合表
 - `templates/`: Pandoc HTML template
 - `scripts/build.sh`: 再生成スクリプト
 
