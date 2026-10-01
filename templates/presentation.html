@@ -24,21 +24,21 @@ $endif$
         const isEditableTarget = (target) =>
           target instanceof Element && Boolean(target.closest(editableSelector));
 
-        const slideTops = () =>
-          slides.map((slide) => slide.getBoundingClientRect().top + window.scrollY);
+        const slideLefts = () =>
+          slides.map((slide) => slide.getBoundingClientRect().left + window.scrollX);
 
         const scrollToSlide = (direction) => {
-          const tops = slideTops();
-          const currentY = window.scrollY;
+          const lefts = slideLefts();
+          const currentX = window.scrollX;
           const threshold = 24;
           let targetIndex = -1;
 
           if (direction > 0) {
-            targetIndex = tops.findIndex((top) => top > currentY + threshold);
-            if (targetIndex === -1) targetIndex = tops.length - 1;
+            targetIndex = lefts.findIndex((left) => left > currentX + threshold);
+            if (targetIndex === -1) targetIndex = lefts.length - 1;
           } else {
-            for (let index = tops.length - 1; index >= 0; index -= 1) {
-              if (tops[index] < currentY - threshold) {
+            for (let index = lefts.length - 1; index >= 0; index -= 1) {
+              if (lefts[index] < currentX - threshold) {
                 targetIndex = index;
                 break;
               }
@@ -46,17 +46,17 @@ $endif$
             if (targetIndex === -1) targetIndex = 0;
           }
 
-          slides[targetIndex]?.scrollIntoView({ block: "start", behavior: "smooth" });
+          window.scrollTo({ left: lefts[targetIndex], top: window.scrollY, behavior: "smooth" });
         };
 
         window.addEventListener("keydown", (event) => {
           if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
           if (isEditableTarget(event.target)) return;
-          if (!["ArrowRight", "ArrowDown", "PageDown", "ArrowLeft", "ArrowUp", "PageUp"].includes(event.key)) return;
+          if (!["ArrowRight", "ArrowLeft"].includes(event.key)) return;
           if (event.repeat) return;
 
           event.preventDefault();
-          const forward = ["ArrowRight", "ArrowDown", "PageDown"].includes(event.key);
+          const forward = event.key === "ArrowRight";
           scrollToSlide(forward ? 1 : -1);
         });
       });

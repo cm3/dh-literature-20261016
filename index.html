@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="4つのユートピア文学をNature–Built軸で比較し、Bennett (2026) のNews from Nowhere読解で検証する10分発表" />
-    <title>自然と建造環境は、同じ文章に現れるか</title>
+    <meta name="description" content="4つの後期ヴィクトリア朝ユートピアをNature–Built軸で比較し、Bennett (2026) のNews from Nowhere読解を検証する10分発表" />
+    <title>Bennett (2026) のMorris読解を計量的に検証する</title>
     <script>
       if (new URLSearchParams(window.location.search).has("present")) {
         document.documentElement.classList.add("present");
@@ -22,21 +22,21 @@
         const isEditableTarget = (target) =>
           target instanceof Element && Boolean(target.closest(editableSelector));
 
-        const slideTops = () =>
-          slides.map((slide) => slide.getBoundingClientRect().top + window.scrollY);
+        const slideLefts = () =>
+          slides.map((slide) => slide.getBoundingClientRect().left + window.scrollX);
 
         const scrollToSlide = (direction) => {
-          const tops = slideTops();
-          const currentY = window.scrollY;
+          const lefts = slideLefts();
+          const currentX = window.scrollX;
           const threshold = 24;
           let targetIndex = -1;
 
           if (direction > 0) {
-            targetIndex = tops.findIndex((top) => top > currentY + threshold);
-            if (targetIndex === -1) targetIndex = tops.length - 1;
+            targetIndex = lefts.findIndex((left) => left > currentX + threshold);
+            if (targetIndex === -1) targetIndex = lefts.length - 1;
           } else {
-            for (let index = tops.length - 1; index >= 0; index -= 1) {
-              if (tops[index] < currentY - threshold) {
+            for (let index = lefts.length - 1; index >= 0; index -= 1) {
+              if (lefts[index] < currentX - threshold) {
                 targetIndex = index;
                 break;
               }
@@ -44,17 +44,17 @@
             if (targetIndex === -1) targetIndex = 0;
           }
 
-          slides[targetIndex]?.scrollIntoView({ block: "start", behavior: "smooth" });
+          window.scrollTo({ left: lefts[targetIndex], top: window.scrollY, behavior: "smooth" });
         };
 
         window.addEventListener("keydown", (event) => {
           if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
           if (isEditableTarget(event.target)) return;
-          if (!["ArrowRight", "ArrowDown", "PageDown", "ArrowLeft", "ArrowUp", "PageUp"].includes(event.key)) return;
+          if (!["ArrowRight", "ArrowLeft"].includes(event.key)) return;
           if (event.repeat) return;
 
           event.preventDefault();
-          const forward = ["ArrowRight", "ArrowDown", "PageDown"].includes(event.key);
+          const forward = event.key === "ArrowRight";
           scrollToSlide(forward ? 1 : -1);
         });
       });
@@ -77,28 +77,97 @@
 <div class="kicker">
 <p>10-minute research talk</p>
 </div>
-<section id="自然と建造環境は同じ文章に現れるか" class="level1">
-<h1>自然と建造環境は、同じ文章に現れるか</h1>
+<section id="bennett-2026-のmorris読解を計量的に検証する" class="level1">
+<h1>Bennett (2026) のMorris読解を計量的に検証する</h1>
 <div class="lead">
-<p>4つのユートピア文学を意味軸で比較し、文学研究の具体例で検証する</p>
+<p>「再野生化されたThames」と自然―建造環境の局所的な共存</p>
 </div>
 <div class="title-axis" aria-label="Nature to Built axis">
 <p><span class="nature-word">river · tree · meadow</span> <span class="axis-line"></span> <span class="built-word">house · street · building</span></p>
 </div>
 <div class="byline">
-<p><em>News from Nowhere</em> / <em>Looking Backward</em> / <em>Erewhon</em> / <em>A Crystal Age</em><br> Stage 2 analysis + Bennett (2026) external comparison</p>
+<p><em>News from Nowhere</em> を、同時代のユートピア文学3作品と比較する<br> Stage 2 quantitative analysis + close reading</p>
 </div>
 </section>
 </section>
 <section class="screen">
 <div class="kicker">
-<p>1 — Question</p>
+<p>1 — Starting point: Bennett (2026)</p>
 </div>
-<section id="morrisは自然と都市をより強く混ぜるのか" class="level2">
-<h2>Morrisは自然と都市を、より強く混ぜるのか？</h2>
+<section id="rewilded-britainという読解は本文分布にも現れるか" class="level2">
+<h2>「rewilded Britain」という読解は、本文分布にも現れるか？</h2>
+<div class="paper-card paper-card-wide">
+<div class="paper-label">
+GREEN LETTERS · 20 SEP 2026
+</div>
+<h3>
+Wild Belongings
+</h3>
+<p>
+Stories of Rewilding in William Morris’s <i>News from Nowhere</i> and Diane Setterfield’s <i>Once Upon a River</i>
+</p>
+<p class="paper-author">
+Phillippa Bennett
+</p>
+<p><a href="https://doi.org/10.1080/14688417.2026.2733353">doi:10.1080/14688417.2026.2733353</a></p>
+</div>
+<div class="three-col claim-grid">
+<div class="panel">
+<p><strong>Thamesのagency</strong></p>
+<p>川は人間の背景ではなく、自律的な存在として回復する。</p>
+</div>
+<div class="panel">
+<p><strong>都市と田園の接続</strong></p>
+<p>Londonは森・草地・果樹・川によって再編される。</p>
+</div>
+<div class="panel">
+<p><strong>土地に応答する建築</strong></p>
+<p>家や橋は自然と対立せず、土地から育つように構想される。</p>
+</div>
+</div>
+<div class="quote">
+<p><strong>検証課題</strong>　この読解は、自然語と建造環境語の局所的共存として測れるか。またMorrisに固有なのか。</p>
+</div>
+</section>
+</section>
+<section class="screen">
+<div class="kicker">
+<p>2 — Literary corpus</p>
+</div>
+<section id="作品の文学史的位置づけ" class="level2">
+<h2>4作品の文学史的位置づけ</h2>
 <div class="lead">
-<p>直感は「そうだ」。しかし、作品全体の量と、特徴的な一場面は分けて測る必要がある。</p>
+<p>同時代に「よりよい社会」を描きながら、産業・都市・自然への態度が異なる4作品を選ぶ。</p>
 </div>
+<div class="two-col corpus-grid">
+<div class="panel work-card morris-card">
+<p><strong>William Morris, <em>News from Nowhere</em></strong> <span>1890 / 1891</span></p>
+<p>革命後の未来イングランドをThamesの旅として描く社会主義的・田園的ユートピア。Bennettの検証対象。</p>
+</div>
+<div class="panel work-card">
+<p><strong>Edward Bellamy, <em>Looking Backward</em></strong> <span>1888</span></p>
+<p>西暦2000年のBostonを、中央集権的な産業組織と都市制度によって描く技術・制度中心の対照作。</p>
+</div>
+<div class="panel work-card">
+<p><strong>Samuel Butler, <em>Erewhon</em></strong> <span>1872</span></p>
+<p>機械・病気・制度を反転して批判する風刺的ユートピア／ディストピア。産業文明への両義性を担う。</p>
+</div>
+<div class="panel work-card">
+<p><strong>W. H. Hudson, <em>A Crystal Age</em></strong> <span>1887 / 1919 rev.</span></p>
+<p>遠未来の共同体を田園、家、装飾、家族秩序から描く牧歌的ロマンス。自然密度の高い比較作。</p>
+</div>
+</div>
+<div class="note">
+<p>同一ジャンルの均質な標本ではなく、後期ヴィクトリア朝ユートピアの「自然―産業」スペクトラムをつくる小規模な比較コーパスである。</p>
+</div>
+</section>
+</section>
+<section class="screen">
+<div class="kicker">
+<p>3 — Operationalization</p>
+</div>
+<section id="bennettの質的主張をnaturebuilt-mixingへ翻訳する" class="level2">
+<h2>Bennettの質的主張をNature–Built mixingへ翻訳する</h2>
 <div class="axis">
 <div class="panel nature-panel">
 <p><strong>Nature pole</strong></p>
@@ -112,53 +181,33 @@
 <p>house / street / wall / building / window</p>
 </div>
 </div>
-<div class="quote">
-<p><strong>問い</strong></p>
-<p>両極のstrong語が、同じ50語の窓に1語以上ずつ現れる割合を比較する。</p>
-</div>
-</section>
-</section>
-<section class="screen">
-<div class="kicker">
-<p>2 — Design</p>
-</div>
-<section id="固定した意味軸を4作品へ同じ条件で適用" class="level2">
-<h2>固定した意味軸を、4作品へ同じ条件で適用</h2>
 <div class="three-col method-grid">
 <div class="panel">
-<p><strong>① 語の極性</strong></p>
-<p>GloVe embeddingからNature–Built軸を作り、strong語彙をStage 1で凍結。</p>
+<p><strong>① 意味軸を凍結</strong></p>
+<p>GloVe embeddingから軸を作り、strong語彙をStage 1で固定。</p>
 </div>
 <div class="panel">
-<p><strong>② 局所窓</strong></p>
-<p>50 word tokens、step 25。章境界を越えず、両極語があればmixed。</p>
+<p><strong>② 50語の局所窓</strong></p>
+<p>step 25、章境界を保持。両極のstrong語があればmixed。</p>
 </div>
 <div class="panel">
-<p><strong>③ 比較</strong></p>
-<p>観測値、global shuffle、段落内shuffleを各1,000回比較。</p>
+<p><strong>③ 二段階で検証</strong></p>
+<p>4作品の全体比較 → Bennettが挙げる13場面の直接照合。</p>
 </div>
-</div>
-<div class="case-tags corpus-tags">
-<ul>
-<li>1891 <em>News from Nowhere</em></li>
-<li>1888 <em>Looking Backward</em></li>
-<li>1872 <em>Erewhon</em></li>
-<li>1919 rev. <em>A Crystal Age</em></li>
-</ul>
 </div>
 <div class="note">
-<p>本文・版・前処理・axisのSHA-256を固定し、同じNLTK pipelineで再現可能にした。</p>
+<p>作品比較は「Morrisに固有か」を、13場面照合は「Bennettの具体例を拾えるか」を問う。</p>
 </div>
 </section>
 </section>
 <section class="screen">
 <div class="kicker">
-<p>3 — Main result</p>
+<p>4 — Corpus-level test</p>
 </div>
-<section id="全体では-a-crystal-age-が最もmixed" class="level2">
-<h2>全体では <em>A Crystal Age</em> が最もmixed</h2>
+<section id="morrisは比較コーパスで最多ではなかった" class="level2">
+<h2>Morrisは比較コーパスで最多ではなかった</h2>
 <div class="lead">
-<p>主仮説「<em>News from Nowhere</em> が比較作品より多く両極を共存させる」は支持されなかった。</p>
+<p><em>News from Nowhere</em> が自然と建造環境を最も多く共存させる、という強い予測は支持されない。</p>
 </div>
 <p><img class="hero-chart" src="assets/work_densities_and_mixing.png" alt="4作品のNature・Built語密度とmixed window率" /></p>
 <div class="result-strip">
@@ -168,10 +217,10 @@
 </section>
 <section class="screen">
 <div class="kicker">
-<p>4 — Null model</p>
+<p>5 — Null model</p>
 </div>
-<section id="作品ともランダム配置より両極が分離する" class="level2">
-<h2>4作品とも、ランダム配置より両極が分離する</h2>
+<section id="作品ともランダム配置より両極を分けて置く" class="level2">
+<h2>4作品とも、ランダム配置より両極を分けて置く</h2>
 <p><img class="null-chart" src="assets/observed_vs_expected.png" alt="観測mixed率とglobal shuffle期待値" /></p>
 <div class="two-col takeaway-grid">
 <div class="panel">
@@ -180,44 +229,20 @@
 </div>
 <div class="panel">
 <p><strong>段落内shuffle比</strong></p>
-<p>Morrisは <strong>0.927</strong>。分離の多くは「別段落に置かれる」ことから生じる。</p>
+<p>Morrisは <strong>0.927</strong>。分離の多くは、両極が別段落へ配分されることから生じる。</p>
 </div>
 </div>
-</section>
-</section>
-<section class="screen">
-<div class="kicker">
-<p>5 — Close reading: A Crystal Age</p>
-</div>
-<section id="自然が室内へ入り人工物が自然形態を保存する" class="level2">
-<h2>自然が室内へ入り、人工物が自然形態を保存する</h2>
-<div class="two-col evidence-grid">
-<div class="panel excerpt-card nature-panel">
-<p><strong>海が家の内部に響く</strong><br> 第5章 / mixed rank 4</p>
-<blockquote>
-<p>“the ocean’s voice is in their rooms … salt spray … low tide … the whitewinged bird”</p>
-</blockquote>
-<p><code>tide · sea · bird</code> × <code>roof · room · floor</code></p>
-</div>
-<div class="panel excerpt-card built-panel">
-<p><strong>花が素材へ固定される</strong><br> 第14章 / mixed rank 7</p>
-<blockquote>
-<p>“The only flowers in the house … wrought in metal and carved in wood”</p>
-</blockquote>
-<p><code>flower</code> × <code>house · metal</code></p>
-</div>
-</div>
-<div class="note">
-<p>量的首位は、自然描写の多さだけでなく、室内・装飾・素材との反復的な結合による。</p>
+<div class="verdict">
+<p>Bennettの読解は、作品全体の単純な「混合量」ではなく、特定場面の構成として検証すべきである。</p>
 </div>
 </section>
 </section>
 <section class="screen">
 <div class="kicker">
-<p>6 — Close reading: News from Nowhere</p>
+<p>6 — News from Nowhere: local evidence</p>
 </div>
-<section id="morrisの強みは総量より都市再編の場面にある" class="level2">
-<h2>Morrisの強みは「総量」より都市再編の場面にある</h2>
+<section id="bennettの論点に対応するmixed場面は局所的には強い" class="level2">
+<h2>Bennettの論点に対応するmixed場面は、局所的には強い</h2>
 <div class="three-col evidence-grid">
 <div class="panel excerpt-card">
 <p><strong>産業の荒廃</strong><br> 第10章 / rank 1</p>
@@ -236,49 +261,43 @@
 </div>
 </div>
 <div class="verdict">
-<p>作品全体の優越ではなく、London・建築・産業の変容を描く局所に注目する。</p>
+<p>Morrisの特徴は全体量ではなく、London・建築・産業を自然との関係から作り直す場面にある。</p>
 </div>
 </section>
 </section>
 <section class="screen">
 <div class="kicker">
-<p>7 — External comparison</p>
+<p>7 — Comparative counterexample</p>
 </div>
-<section id="bennett-2026-のrewilded-thamesで外部検証" class="level2">
-<h2>Bennett (2026) の「rewilded Thames」で外部検証</h2>
-<div class="paper-card">
-<div class="paper-label">
-GREEN LETTERS · 20 SEP 2026
+<section id="a-crystal-age-は別の仕方でより頻繁に両極を結ぶ" class="level2">
+<h2><em>A Crystal Age</em> は別の仕方で、より頻繁に両極を結ぶ</h2>
+<div class="two-col evidence-grid">
+<div class="panel excerpt-card nature-panel">
+<p><strong>自然が家の内部に響く</strong><br> 第5章 / mixed rank 4</p>
+<blockquote>
+<p>“the ocean’s voice is in their rooms … salt spray … low tide … the whitewinged bird”</p>
+</blockquote>
+<p><code>tide · sea · bird</code> × <code>roof · room · floor</code></p>
 </div>
-<h3>
-Wild Belongings
-</h3>
-<p>
-Stories of Rewilding in William Morris’s <i>News from Nowhere</i> and Diane Setterfield’s <i>Once Upon a River</i>
-</p>
-<p class="paper-author">
-Phillippa Bennett
-</p>
-<p><a href="https://doi.org/10.1080/14688417.2026.2733353">doi:10.1080/14688417.2026.2733353</a></p>
+<div class="panel excerpt-card built-panel">
+<p><strong>自然形態が素材へ固定される</strong><br> 第14章 / mixed rank 7</p>
+<blockquote>
+<p>“The only flowers in the house … wrought in metal and carved in wood”</p>
+</blockquote>
+<p><code>flower</code> × <code>house · metal</code></p>
 </div>
-<div class="two-col paper-points">
-<div class="panel">
-<p><strong>論文の焦点</strong></p>
-<p>Thamesのagency、都市と田園の接続、環境正義、建築と土地の関係。</p>
 </div>
-<div class="panel">
-<p><strong>照合単位</strong></p>
-<p>論文が引用・要約するMorrisの <strong>13場面</strong> を採用版本文の文字offsetへ対応。</p>
-</div>
+<div class="note">
+<p>Morrisのrewildingが都市・社会の変容を語るのに対し、Hudsonでは自然と室内・装飾の接続が反復される。mixing率だけでは両者の文学的機能は区別できない。</p>
 </div>
 </section>
 </section>
 <section class="screen">
 <div class="kicker">
-<p>8 — Audit</p>
+<p>8 — Direct validation of Bennett’s examples</p>
 </div>
-<section id="検出だけでは成功とは言えない" class="level2">
-<h2>「12/13検出」だけでは、成功とは言えない</h2>
+<section id="bennettの13場面を照合すると9件は実質的に拾える" class="level2">
+<h2>Bennettの13場面を照合すると、9件は実質的に拾える</h2>
 <div class="metric-grid">
 <div class="metric good">
 <p><b>9</b> <span>実質的ヒット</span> <small>橋・道路・家・都市の森など</small></p>
@@ -294,23 +313,23 @@ Phillippa Bennett
 </div>
 </div>
 <div class="audit-line">
-<p><span>binary mixed</span><b>12 / 13</b><span>→ 人手監査</span><b>9 + 1</b><span>有効候補</span></p>
+<p><span>binary mixed</span><b>12 / 13</b><span>→ 語義を人手監査</span><b>9 + 1</b><span>有効候補</span></p>
 </div>
 <div class="note warn">
-<p>static embeddingは語義を分けない。数値は「物理的自然と都市」ではなく、凍結した意味軸の両極共存をまず測っている。</p>
+<p>「12/13を検出」だけなら過大評価になる。static embeddingの多義語を除くと、明確な支持は9件である。</p>
 </div>
 </section>
 </section>
 <section class="screen">
 <div class="kicker">
-<p>9 — What was caught, what was missed</p>
+<p>9 — Diagnostic cases</p>
 </div>
 <section id="橋は拾えた町と田舎の関係は落ちた" class="level2">
 <h2>橋は拾えた。町と田舎の関係は落ちた。</h2>
 <div class="two-col contrast-grid">
 <div class="panel caught">
 <p><strong>✓ 捕捉：Hammersmith Bridge</strong></p>
-<p>論文頁5の「澄んだThames・鮭・工場の消失・新しい橋」。</p>
+<p>Bennett論文頁5の「澄んだThames・鮭・工場の消失・新しい橋」。</p>
 <p>Stage 2 rank 12：<br> <code>river</code> × <code>building · booth · shop</code></p>
 <p>上位20と直接重なる論文事例はこの1クラスター。</p>
 </div>
@@ -318,34 +337,33 @@ Phillippa Bennett
 <p><strong>△ 未捕捉：town ↔︎ country</strong></p>
 <p>論文頁6の「町と田舎が相互に影響し、差が小さくなる」。</p>
 <p>10 overlapping windows中 <strong>mixed = 0</strong></p>
-<p>物体語ではなく、関係・変化を表す概念だからである。</p>
+<p>物体語ではなく、関係と変化を表す概念だからである。</p>
 </div>
 </div>
 <div class="quote">
-<p><strong>改善の方向</strong></p>
-<p>場所語・関係表現の辞書、または文脈埋め込みを加え、語義監査済みの結果と比較する。</p>
+<p><strong>次の改善</strong>　場所語・関係表現の辞書、または文脈埋め込みを加え、語義監査済みの結果と比較する。</p>
 </div>
 </section>
 </section>
 <section class="screen center closing-slide">
 <div class="kicker">
-<p>10 — Conclusion</p>
+<p>10 — Answer to Bennett</p>
 </div>
-<section id="結論はmorrisが最多ではない" class="level2">
-<h2>結論は「Morrisが最多」ではない</h2>
+<section id="計量分析はbennettを限定つきで支持する" class="level2">
+<h2>計量分析はBennettを「限定つきで」支持する</h2>
 <div class="closing-points">
 <div>
-<b>1</b><span><em>A Crystal Age</em> が4作品中もっとも高いlocal mixing。</span>
+<b>1</b><span><strong>支持：</strong>論文の13場面中9件で、自然と建造環境の実質的な局所共存を確認した。</span>
 </div>
 <div>
-<b>2</b><span>Morrisの特徴は、都市・建築の再編を自然と結ぶ特定場面にある。</span>
+<b>2</b><span><strong>限定：</strong>Morrisは比較コーパスで最多ではなく、rewildingの特徴は作品全体量より場面の機能にある。</span>
 </div>
 <div>
-<b>3</b><span>Bennettの13場面は9件を実質的に捕捉。ただし誤検出と概念的な取りこぼしが残る。</span>
+<b>3</b><span><strong>課題：</strong>town–countryのような関係概念と、static embeddingの多義語を別の方法で扱う必要がある。</span>
 </div>
 </div>
 <div class="verdict final-verdict">
-<p>量的比較で仮説を絞り、外部の文学研究とclose readingで意味を確かめる。</p>
+<p>Bennettのclose readingを置き換えるのではなく、どの主張が分布として再現し、どこから解釈が必要かを可視化する。</p>
 </div>
 </section>
 </section>

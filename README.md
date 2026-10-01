@@ -1,7 +1,7 @@
 # Utopian Nature–Built Talk
 
-約10分のHTMLスライドです。4作品のNature–Built local mixing分析と、
-Bennett (2026) が論じる *News from Nowhere* の13場面との照合をまとめます。
+約10分のHTMLスライドです。Bennett (2026) の *News from Nowhere* 読解を
+4作品のNature–Built local mixingと13場面の直接照合によって検証します。
 
 ## Build
 
@@ -10,8 +10,8 @@ sh scripts/build.sh
 ```
 
 `slides.md` が編集元、`index.html` が生成物です。ブラウザでは
-`index.html?present=1` を開くとscroll snapが強制され、矢印キーまたは
-Page Up / Page Downで移動できます。
+`index.html?present=1` を開くと横方向だけscroll snapが強制されます。
+左右矢印キーまたは横スクロールで移動します。縦方向にはsnapしません。
 
 ## Contents
 

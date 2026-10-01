@@ -27,14 +27,14 @@
 
       html {
         min-height: 100%;
-        scroll-snap-type: y proximity;
-        scroll-padding-block-start: 0;
+        scroll-snap-type: x proximity;
+        scroll-padding-inline-start: 0;
         scroll-behavior: smooth;
         background: var(--bg);
       }
 
       html.present {
-        scroll-snap-type: y mandatory;
+        scroll-snap-type: x mandatory;
       }
 
       body {
@@ -52,20 +52,23 @@
       }
 
       .talk {
-        width: 100%;
+        display: flex;
+        width: max-content;
+        align-items: flex-start;
       }
 
       .screen,
       .flow {
-        width: min(var(--measure), calc(100% - 40px));
-        margin: 0 auto;
-        padding: 44px 0;
+        flex: 0 0 100vw;
+        width: 100vw;
+        min-height: 100svh;
+        margin: 0;
+        padding: 44px max(20px, calc((100vw - var(--measure)) / 2));
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
       }
 
       .screen {
-        min-height: 100svh;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -419,8 +422,8 @@
 
         .screen,
         .flow {
-          width: min(100% - 24px, var(--measure));
-          padding: 32px 0;
+          width: 100vw;
+          padding: 32px 12px;
         }
 
         .screen {
@@ -452,8 +455,15 @@
           font-size: 12pt;
         }
 
+        .talk {
+          display: block;
+          width: auto;
+        }
+
         .screen,
         .flow {
+          display: block;
+          flex: none;
           width: auto;
           min-height: auto;
           padding: 24pt 0;
@@ -528,21 +538,22 @@
       }
 
       body {
-        background:
-          linear-gradient(90deg, rgba(47, 107, 79, 0.08) 0 49.7%, rgba(166, 69, 45, 0.07) 50.3% 100%),
-          var(--bg);
+        background: var(--bg);
       }
 
       .screen,
       .flow {
         position: relative;
+        background:
+          linear-gradient(90deg, rgba(47, 107, 79, 0.08) 0 49.7%, rgba(166, 69, 45, 0.07) 50.3% 100%),
+          var(--bg);
       }
 
       .screen::after,
       .flow::after {
         content: attr(data-slide-number);
         position: absolute;
-        right: 0;
+        right: max(20px, calc((100vw - var(--measure)) / 2));
         bottom: 16px;
         color: var(--muted);
         font-size: 0.72rem;
@@ -623,7 +634,7 @@
       }
 
       .null-chart {
-        max-height: 40svh;
+        max-height: 32svh;
       }
 
       .result-strip {
@@ -736,6 +747,75 @@
 
       .paper-points .panel {
         min-height: 120px;
+      }
+
+      .paper-card-wide {
+        max-width: 100%;
+        margin-bottom: 16px;
+        padding: 14px 22px;
+      }
+
+      .paper-card-wide h3 {
+        display: inline-block;
+        margin-right: 14px;
+        font-size: 1.7rem;
+      }
+
+      .paper-card-wide p {
+        display: inline;
+        font-size: 0.9rem;
+      }
+
+      .paper-card-wide .paper-label,
+      .paper-card-wide .paper-author,
+      .paper-card-wide a {
+        display: block;
+      }
+
+      .claim-grid .panel {
+        min-height: 145px;
+      }
+
+      .claim-grid .panel p:last-child {
+        margin-bottom: 0;
+      }
+
+      .corpus-grid {
+        gap: 14px;
+        margin-top: 18px;
+      }
+
+      .work-card {
+        min-height: 188px;
+        padding: 14px 16px;
+      }
+
+      .work-card > p:first-child {
+        display: flex;
+        gap: 10px;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 8px;
+      }
+
+      .work-card > p:first-child strong {
+        margin: 0;
+        font-size: 1.06rem;
+      }
+
+      .work-card span {
+        flex: 0 0 auto;
+        border: 1px solid var(--line);
+        background: #f3f1e8;
+        padding: 1px 7px;
+        color: var(--muted);
+        font-size: 0.72rem;
+        font-weight: 800;
+      }
+
+      .morris-card {
+        border-top: 6px solid var(--accent);
+        background: var(--soft);
       }
 
       .metric-grid {
