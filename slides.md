@@ -332,7 +332,7 @@ mixed率 **21.4%**（204 / 953窓）。その他21章の **13.4%** より7.9ポ�
 ## Bennettの論点に対応するmixed場面は、局所的には強い
 
 ::: {.three-col .evidence-grid}
-::: {.panel .excerpt-card}
+::: {.panel .excerpt-card .scene-card .scene-industrial}
 **産業の荒廃**<br>
 第10章 / rank 1
 
@@ -341,7 +341,7 @@ mixed率 **21.4%**（204 / 953窓）。その他21章の **13.4%** より7.9ポ�
 `tree` × `manufacturing · house · building`
 :::
 
-::: {.panel .excerpt-card}
+::: {.panel .excerpt-card .scene-card .scene-old-house}
 **開かれた古い家**<br>
 第31章 / rank 2
 
@@ -350,7 +350,7 @@ mixed率 **21.4%**（204 / 953窓）。その他21章の **13.4%** より7.9ポ�
 `river · meadow · flower` × `house · door · window`
 :::
 
-::: {.panel .excerpt-card}
+::: {.panel .excerpt-card .scene-card .scene-museum}
 **都市のMuseum**<br>
 第8章 / rank 7
 
@@ -363,6 +363,10 @@ mixed率 **21.4%**（204 / 953窓）。その他21章の **13.4%** より7.9ポ�
 ::: {.verdict}
 Morrisの特徴は全体量ではなく、London・建築・産業を自然との関係から作り直す場面にある。
 :::
+
+::: image-disclaimer
+背景画像は本文の記述に基づく生成イラストであり、同時代の史料画像ではない。
+:::
 ::::
 
 :::: {.section .screen}
@@ -373,7 +377,7 @@ Morrisの特徴は全体量ではなく、London・建築・産業を自然と�
 ## *A Crystal Age* は別の仕方で、より頻繁に両極を結ぶ
 
 ::: {.two-col .evidence-grid}
-::: {.panel .excerpt-card .nature-panel}
+::: {.panel .excerpt-card .nature-panel .scene-card .scene-ocean-rooms}
 **自然が家の内部に響く**<br>
 第5章 / mixed rank 4
 
@@ -382,7 +386,7 @@ Morrisの特徴は全体量ではなく、London・建築・産業を自然と�
 `tide · sea · bird` × `roof · room · floor`
 :::
 
-::: {.panel .excerpt-card .built-panel}
+::: {.panel .excerpt-card .built-panel .scene-card .scene-artificial-flowers}
 **自然形態が素材へ固定される**<br>
 第14章 / mixed rank 7
 
@@ -394,6 +398,10 @@ Morrisの特徴は全体量ではなく、London・建築・産業を自然と�
 
 ::: note
 Morrisのrewildingが都市・社会の変容を語るのに対し、Hudsonでは自然と室内・装飾の接続が反復される。mixing率だけでは両者の文学的機能は区別できない。
+:::
+
+::: image-disclaimer
+背景画像は本文の記述に基づく生成イラストであり、同時代の史料画像ではない。
 :::
 ::::
 

@@ -23,6 +23,7 @@ sh scripts/build.sh
 - `slides.md`: 発表原稿
 - `index.html`: 配布・GitHub Pages用HTML
 - `assets/`: CSSと分析図
+- `assets/scenes/`: 第8・9節の本文情景を表す生成イラスト
 - `data/`: work-level集計、permutation集計、Morris章別集計、Bennett照合表
 - `templates/`: Pandoc HTML template
 - `scripts/build.sh`: 再生成スクリプト

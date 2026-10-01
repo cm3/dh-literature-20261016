@@ -1075,6 +1075,95 @@
         font-size: 0.76em;
       }
 
+      .scene-card {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        border-color: rgba(255, 255, 255, 0.34);
+        background: #173e2e;
+        color: #fffef8;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+      }
+
+      .scene-card::before,
+      .scene-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        pointer-events: none;
+      }
+
+      .scene-card::before {
+        background-image: var(--scene-image);
+        background-position: var(--scene-position, center);
+        background-size: cover;
+        filter: saturate(0.75) contrast(0.92);
+        transform: scale(1.015);
+      }
+
+      .scene-card::after {
+        z-index: -1;
+        background:
+          linear-gradient(180deg, rgba(8, 20, 14, 0.52) 0%, rgba(8, 20, 14, 0.78) 62%, rgba(8, 20, 14, 0.9) 100%),
+          linear-gradient(90deg, rgba(10, 21, 16, 0.28), rgba(10, 21, 16, 0.08));
+      }
+
+      .scene-card > p:first-child {
+        color: white;
+        font-size: 1.02rem;
+      }
+
+      .scene-card blockquote {
+        border-left-color: rgba(255, 255, 255, 0.65);
+        background: rgba(10, 22, 16, 0.34);
+        color: #fffef8;
+        padding: 10px 12px;
+      }
+
+      .scene-card code {
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.88);
+        padding: 1px 4px;
+        color: #173e2e;
+        text-shadow: none;
+      }
+
+      .scene-industrial {
+        --scene-image: url("scenes/nfn-industrial-decay.png");
+        --scene-position: 42% center;
+      }
+
+      .scene-old-house {
+        --scene-image: url("scenes/nfn-old-house-river.png");
+        --scene-position: 38% center;
+      }
+
+      .scene-museum {
+        --scene-image: url("scenes/nfn-museum-trees.png");
+        --scene-position: 58% center;
+      }
+
+      .scene-ocean-rooms {
+        --scene-image: url("scenes/crystal-ocean-rooms.png");
+      }
+
+      .scene-artificial-flowers {
+        --scene-image: url("scenes/crystal-artificial-flowers.png");
+      }
+
+      .image-disclaimer {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 0.62rem;
+        line-height: 1.3;
+        text-align: right;
+      }
+
+      .image-disclaimer > p {
+        margin: 0;
+      }
+
       .verdict {
         margin-top: 22px;
         border: 2px solid var(--accent);
