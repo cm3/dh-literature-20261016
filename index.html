@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="4つのユートピア文学をNature–Built軸で比較し、Bennett (2026) のNews from Nowhere読解で検証する10分発表" />
+    <title>自然と建造環境は、同じ文章に現れるか</title>
+    <script>
+      if (new URLSearchParams(window.location.search).has("present")) {
+        document.documentElement.classList.add("present");
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const slides = Array.from(document.querySelectorAll("main > section, main > .screen, main > .flow"));
+        if (!slides.length) return;
+
+        slides.forEach((slide, index) => {
+          slide.dataset.slideNumber = (index + 1) + " / " + slides.length;
+        });
+
+        const editableSelector = "input, textarea, select, button, [contenteditable='true']";
+        const isEditableTarget = (target) =>
+          target instanceof Element && Boolean(target.closest(editableSelector));
+
+        const slideTops = () =>
+          slides.map((slide) => slide.getBoundingClientRect().top + window.scrollY);
+
+        const scrollToSlide = (direction) => {
+          const tops = slideTops();
+          const currentY = window.scrollY;
+          const threshold = 24;
+          let targetIndex = -1;
+
+          if (direction > 0) {
+            targetIndex = tops.findIndex((top) => top > currentY + threshold);
+            if (targetIndex === -1) targetIndex = tops.length - 1;
+          } else {
+            for (let index = tops.length - 1; index >= 0; index -= 1) {
+              if (tops[index] < currentY - threshold) {
+                targetIndex = index;
+                break;
+              }
+            }
+            if (targetIndex === -1) targetIndex = 0;
+          }
+
+          slides[targetIndex]?.scrollIntoView({ block: "start", behavior: "smooth" });
+        };
+
+        window.addEventListener("keydown", (event) => {
+          if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+          if (isEditableTarget(event.target)) return;
+          if (!["ArrowRight", "ArrowDown", "PageDown", "ArrowLeft", "ArrowUp", "PageUp"].includes(event.key)) return;
+          if (event.repeat) return;
+
+          event.preventDefault();
+          const forward = ["ArrowRight", "ArrowDown", "PageDown"].includes(event.key);
+          scrollToSlide(forward ? 1 : -1);
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="assets/presentation.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+          <path d="M0,0 L10,4 L0,8 Z" fill="#1d4ed8"></path>
+        </marker>
+        <marker id="arrowhead-warn" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+          <path d="M0,0 L10,4 L0,8 Z" fill="#9a3412"></path>
+        </marker>
+      </defs>
+    </svg>
+    <main class="talk">
+<section class="screen center title-slide">
+<div class="kicker">
+<p>10-minute research talk</p>
+</div>
+<section id="自然と建造環境は同じ文章に現れるか" class="level1">
+<h1>自然と建造環境は、同じ文章に現れるか</h1>
+<div class="lead">
+<p>4つのユートピア文学を意味軸で比較し、文学研究の具体例で検証する</p>
+</div>
+<div class="title-axis" aria-label="Nature to Built axis">
+<p><span class="nature-word">river · tree · meadow</span> <span class="axis-line"></span> <span class="built-word">house · street · building</span></p>
+</div>
+<div class="byline">
+<p><em>News from Nowhere</em> / <em>Looking Backward</em> / <em>Erewhon</em> / <em>A Crystal Age</em><br> Stage 2 analysis + Bennett (2026) external comparison</p>
+</div>
+</section>
+</section>
+<section class="screen">
+<div class="kicker">
+<p>1 — Question</p>
+</div>
+<section id="morrisは自然と都市をより強く混ぜるのか" class="level2">
+<h2>Morrisは自然と都市を、より強く混ぜるのか？</h2>
+<div class="lead">
+<p>直感は「そうだ」。しかし、作品全体の量と、特徴的な一場面は分けて測る必要がある。</p>
+</div>
+<div class="axis">
+<div class="panel nature-panel">
+<p><strong>Nature pole</strong></p>
+<p>river / tree / meadow / flower / mist</p>
+</div>
+<div class="arrow">
+<p>×</p>
+</div>
+<div class="panel built-panel">
+<p><strong>Built pole</strong></p>
+<p>house / street / wall / building / window</p>
+</div>
+</div>
+<div class="quote">
+<p><strong>問い</strong></p>
+<p>両極のstrong語が、同じ50語の窓に1語以上ずつ現れる割合を比較する。</p>
+</div>
+</section>
+</section>
+<section class="screen">
+<div class="kicker">
+<p>2 — Design</p>
+</div>
+<section id="固定した意味軸を4作品へ同じ条件で適用" class="level2">
+<h2>固定した意味軸を、4作品へ同じ条件で適用</h2>
+<div class="three-col method-grid">
+<div class="panel">
+<p><strong>① 語の極性</strong></p>
+<p>GloVe embeddingからNature–Built軸を作り、strong語彙をStage 1で凍結。</p>
+</div>
+<div class="panel">
+<p><strong>② 局所窓</strong></p>
+<p>50 word tokens、step 25。章境界を越えず、両極語があればmixed。</p>
+</div>
+<div class="panel">
+<p><strong>③ 比較</strong></p>
+<p>観測値、global shuffle、段落内shuffleを各1,000回比較。</p>
+</div>
+</div>
+<div class="case-tags corpus-tags">
+<ul>
+<li>1891 <em>News from Nowhere</em></li>
+<li>1888 <em>Looking Backward</em></li>
+<li>1872 <em>Erewhon</em></li>
+<li>1919 rev. <em>A Crystal Age</em></li>
+</ul>
+</div>
+<div class="note">
+<p>本文・版・前処理・axisのSHA-256を固定し、同じNLTK pipelineで再現可能にした。</p>
+</div>
+</section>
+</section>
+<section class="screen">
+<div class="kicker">
+<p>3 — Main result</p>
+</div>
+<section id="全体では-a-crystal-age-が最もmixed" class="level2">
+<h2>全体では <em>A Crystal Age</em> が最もmixed</h2>
+<div class="lead">
+<p>主仮説「<em>News from Nowhere</em> が比較作品より多く両極を共存させる」は支持されなかった。</p>
+</div>
+<p><img class="hero-chart" src="assets/work_densities_and_mixing.png" alt="4作品のNature・Built語密度とmixed window率" /></p>
+<div class="result-strip">
+<p><span><b>0.269</b><small>A Crystal Age</small></span> <span><b>0.171</b><small>Erewhon</small></span> <span class="focus"><b>0.159</b><small>News from Nowhere</small></span> <span><b>0.087</b><small>Looking Backward</small></span></p>
+</div>
+</section>
+</section>
+<section class="screen">
+<div class="kicker">
+<p>4 — Null model</p>
+</div>
+<section id="作品ともランダム配置より両極が分離する" class="level2">
+<h2>4作品とも、ランダム配置より両極が分離する</h2>
+<p><img class="null-chart" src="assets/observed_vs_expected.png" alt="観測mixed率とglobal shuffle期待値" /></p>
+<div class="two-col takeaway-grid">
+<div class="panel">
+<p><strong>global shuffle比</strong></p>
+<p>Morrisは <strong>0.756</strong>。どの作品も1を下回り、Nature/Built語はランダムより凝集・分離する。</p>
+</div>
+<div class="panel">
+<p><strong>段落内shuffle比</strong></p>
+<p>Morrisは <strong>0.927</strong>。分離の多くは「別段落に置かれる」ことから生じる。</p>
+</div>
+</div>
+</section>
+</section>
+<section class="screen">
+<div class="kicker">
+<p>5 — Close reading: A Crystal Age</p>
+</div>
+<section id="自然が室内へ入り人工物が自然形態を保存する" class="level2">
+<h2>自然が室内へ入り、人工物が自然形態を保存する</h2>
+<div class="two-col evidence-grid">
+<div class="panel excerpt-card nature-panel">
+<p><strong>海が家の内部に響く</strong><br> 第5章 / mixed rank 4</p>
+<blockquote>
+<p>“the ocean’s voice is in their rooms … salt spray … low tide … the whitewinged bird”</p>
+</blockquote>
+<p><code>tide · sea · bird</code> × <code>roof · room · floor</code></p>
+</div>
+<div class="panel excerpt-card built-panel">
+<p><strong>花が素材へ固定される</strong><br> 第14章 / mixed rank 7</p>
+<blockquote>
+<p>“The only flowers in the house … wrought in metal and carved in wood”</p>
+</blockquote>
+<p><code>flower</code> × <code>house · metal</code></p>
+</div>
+</div>
+<div class="note">
+<p>量的首位は、自然描写の多さだけでなく、室内・装飾・素材との反復的な結合による。</p>
+</div>
+</section>
+</section>
+<section class="screen">
+<div class="kicker">
+<p>6 — Close reading: News from Nowhere</p>
+</div>
+<section id="morrisの強みは総量より都市再編の場面にある" class="level2">
+<h2>Morrisの強みは「総量」より都市再編の場面にある</h2>
+<div class="three-col evidence-grid">
+<div class="panel excerpt-card">
+<p><strong>産業の荒廃</strong><br> 第10章 / rank 1</p>
+<p>“manufacturing districts … Houses … trees were cut down … building”</p>
+<p><code>tree</code> × <code>manufacturing · house · building</code></p>
+</div>
+<div class="panel excerpt-card">
+<p><strong>開かれた古い家</strong><br> 第31章 / rank 2</p>
+<p>“river … meadow … house … door and windows … flowers”</p>
+<p><code>river · meadow · flower</code> × <code>house · door · window</code></p>
+</div>
+<div class="panel excerpt-card">
+<p><strong>都市のMuseum</strong><br> 第8章 / rank 7</p>
+<p>“railings were gone … boughs of the trees … pigeons … building”</p>
+<p><code>tree</code> × <code>building</code></p>
+</div>
+</div>
+<div class="verdict">
+<p>作品全体の優越ではなく、London・建築・産業の変容を描く局所に注目する。</p>
+</div>
+</section>
+</section>
+<section class="screen">
+<div class="kicker">
+<p>7 — External comparison</p>
+</div>
+<section id="bennett-2026-のrewilded-thamesで外部検証" class="level2">
+<h2>Bennett (2026) の「rewilded Thames」で外部検証</h2>
+<div class="paper-card">
+<div class="paper-label">
+GREEN LETTERS · 20 SEP 2026
+</div>
+<h3>
+Wild Belongings
+</h3>
+<p>
+Stories of Rewilding in William Morris’s <i>News from Nowhere</i> and Diane Setterfield’s <i>Once Upon a River</i>
+</p>
+<p class="paper-author">
+Phillippa Bennett
+</p>
+<p><a href="https://doi.org/10.1080/14688417.2026.2733353">doi:10.1080/14688417.2026.2733353</a></p>
+</div>
+<div class="two-col paper-points">
+<div class="panel">
+<p><strong>論文の焦点</strong></p>
+<p>Thamesのagency、都市と田園の接続、環境正義、建築と土地の関係。</p>
+</div>
+<div class="panel">
+<p><strong>照合単位</strong></p>
+<p>論文が引用・要約するMorrisの <strong>13場面</strong> を採用版本文の文字offsetへ対応。</p>
+</div>
+</div>
+</section>
+</section>
+<section class="screen">
+<div class="kicker">
+<p>8 — Audit</p>
+</div>
+<section id="検出だけでは成功とは言えない" class="level2">
+<h2>「12/13検出」だけでは、成功とは言えない</h2>
+<div class="metric-grid">
+<div class="metric good">
+<p><b>9</b> <span>実質的ヒット</span> <small>橋・道路・家・都市の森など</small></p>
+</div>
+<div class="metric weak">
+<p><b>1</b> <span>弱い／曖昧</span> <small>tree × space</small></p>
+</div>
+<div class="metric bad">
+<p><b>2</b> <span>形式的誤検出</span> <small>power / morning / night</small></p>
+</div>
+<div class="metric miss">
+<p><b>1</b> <span>未検出</span> <small>town–countryの関係概念</small></p>
+</div>
+</div>
+<div class="audit-line">
+<p><span>binary mixed</span><b>12 / 13</b><span>→ 人手監査</span><b>9 + 1</b><span>有効候補</span></p>
+</div>
+<div class="note warn">
+<p>static embeddingは語義を分けない。数値は「物理的自然と都市」ではなく、凍結した意味軸の両極共存をまず測っている。</p>
+</div>
+</section>
+</section>
+<section class="screen">
+<div class="kicker">
+<p>9 — What was caught, what was missed</p>
+</div>
+<section id="橋は拾えた町と田舎の関係は落ちた" class="level2">
+<h2>橋は拾えた。町と田舎の関係は落ちた。</h2>
+<div class="two-col contrast-grid">
+<div class="panel caught">
+<p><strong>✓ 捕捉：Hammersmith Bridge</strong></p>
+<p>論文頁5の「澄んだThames・鮭・工場の消失・新しい橋」。</p>
+<p>Stage 2 rank 12：<br> <code>river</code> × <code>building · booth · shop</code></p>
+<p>上位20と直接重なる論文事例はこの1クラスター。</p>
+</div>
+<div class="panel missed">
+<p><strong>△ 未捕捉：town ↔︎ country</strong></p>
+<p>論文頁6の「町と田舎が相互に影響し、差が小さくなる」。</p>
+<p>10 overlapping windows中 <strong>mixed = 0</strong></p>
+<p>物体語ではなく、関係・変化を表す概念だからである。</p>
+</div>
+</div>
+<div class="quote">
+<p><strong>改善の方向</strong></p>
+<p>場所語・関係表現の辞書、または文脈埋め込みを加え、語義監査済みの結果と比較する。</p>
+</div>
+</section>
+</section>
+<section class="screen center closing-slide">
+<div class="kicker">
+<p>10 — Conclusion</p>
+</div>
+<section id="結論はmorrisが最多ではない" class="level2">
+<h2>結論は「Morrisが最多」ではない</h2>
+<div class="closing-points">
+<div>
+<b>1</b><span><em>A Crystal Age</em> が4作品中もっとも高いlocal mixing。</span>
+</div>
+<div>
+<b>2</b><span>Morrisの特徴は、都市・建築の再編を自然と結ぶ特定場面にある。</span>
+</div>
+<div>
+<b>3</b><span>Bennettの13場面は9件を実質的に捕捉。ただし誤検出と概念的な取りこぼしが残る。</span>
+</div>
+</div>
+<div class="verdict final-verdict">
+<p>量的比較で仮説を絞り、外部の文学研究とclose readingで意味を確かめる。</p>
+</div>
+</section>
+</section>
+<section class="flow appendix">
+<div class="kicker">
+<p>Appendix — Sources &amp; reproducibility</p>
+</div>
+<section id="sources" class="level2">
+<h2>Sources</h2>
+<ul>
+<li>Bennett, Phillippa. “Wild Belongings: Stories of Rewilding in William Morris’s <em>News from Nowhere</em> and Diane Setterfield’s <em>Once Upon a River</em>.” <em>Green Letters</em>, 2026. <a href="https://doi.org/10.1080/14688417.2026.2733353" class="uri">https://doi.org/10.1080/14688417.2026.2733353</a></li>
+<li>Morris, William. <em>News from Nowhere</em>. Reeves &amp; Turner, 1891.</li>
+<li>Hudson, W. H. <em>A Crystal Age</em>. Duckworth, 1919 revised edition.</li>
+<li>Bellamy, Edward. <em>Looking Backward: 2000–1887</em>. Ticknor, 1888.</li>
+<li>Butler, Samuel. <em>Erewhon</em>. Trübner, 1872.</li>
+</ul>
+</section>
+<section id="repository-artifacts" class="level2">
+<h2>Repository artifacts</h2>
+<ul>
+<li><code>slides.md</code>: editable source of truth</li>
+<li><code>index.html</code>: generated presentation</li>
+<li><code>data/work_summary.csv</code>: work-level results</li>
+<li><code>data/permutation_summary.csv</code>: null-model results</li>
+<li><code>data/bennett_2026_nfn_alignment.csv</code>: 13-case external alignment</li>
+</ul>
+<div class="note">
+<p>Main window: 50 tokens / step 25. Global and paragraph-preserving permutations: 1,000 each. The primary frozen axis was not retuned after observing Stage 2 results.</p>
+</div>
+</section>
+</section>
+    </main>
+  </body>
+</html>
