@@ -9,9 +9,9 @@
 sh scripts/build.sh
 ```
 
-`slides.md` が編集元、`index.html` が生成物です。ブラウザでは
-`index.html?present=1` を開くと横方向だけscroll snapが強制されます。
-左右矢印キーまたは横スクロールで移動します。縦方向にはsnapしません。
+`slides.md` が編集元、`index.html` が生成物です。スライドは縦に連続しており、
+通常の縦スクロールにはsnapをかけません。左右矢印キーを押したときだけ、
+前後のスライド先頭へ移動します。
 
 ## Contents
 

@@ -6,10 +6,6 @@
     <meta name="description" content="4つの後期ヴィクトリア朝ユートピアをNature–Built軸で比較し、Bennett (2026) のNews from Nowhere読解を検証する10分発表" />
     <title>Bennett (2026) のMorris読解を計量的に検証する</title>
     <script>
-      if (new URLSearchParams(window.location.search).has("present")) {
-        document.documentElement.classList.add("present");
-      }
-
       window.addEventListener("DOMContentLoaded", () => {
         const slides = Array.from(document.querySelectorAll("main > section, main > .screen, main > .flow"));
         if (!slides.length) return;
@@ -22,29 +18,21 @@
         const isEditableTarget = (target) =>
           target instanceof Element && Boolean(target.closest(editableSelector));
 
-        const slideLefts = () =>
-          slides.map((slide) => slide.getBoundingClientRect().left + window.scrollX);
+        const slideTops = () =>
+          slides.map((slide) => slide.getBoundingClientRect().top + window.scrollY);
 
         const scrollToSlide = (direction) => {
-          const lefts = slideLefts();
-          const currentX = window.scrollX;
-          const threshold = 24;
-          let targetIndex = -1;
+          const tops = slideTops();
+          const viewportMiddle = window.scrollY + window.innerHeight / 2;
+          let currentIndex = 0;
 
-          if (direction > 0) {
-            targetIndex = lefts.findIndex((left) => left > currentX + threshold);
-            if (targetIndex === -1) targetIndex = lefts.length - 1;
-          } else {
-            for (let index = lefts.length - 1; index >= 0; index -= 1) {
-              if (lefts[index] < currentX - threshold) {
-                targetIndex = index;
-                break;
-              }
-            }
-            if (targetIndex === -1) targetIndex = 0;
+          for (let index = 0; index < tops.length; index += 1) {
+            if (tops[index] <= viewportMiddle) currentIndex = index;
+            else break;
           }
 
-          window.scrollTo({ left: lefts[targetIndex], top: window.scrollY, behavior: "smooth" });
+          const targetIndex = Math.max(0, Math.min(slides.length - 1, currentIndex + direction));
+          window.scrollTo({ left: 0, top: tops[targetIndex], behavior: "smooth" });
         };
 
         window.addEventListener("keydown", (event) => {

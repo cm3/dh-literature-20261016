@@ -27,14 +27,9 @@
 
       html {
         min-height: 100%;
-        scroll-snap-type: x proximity;
-        scroll-padding-inline-start: 0;
         scroll-behavior: smooth;
         background: var(--bg);
-      }
-
-      html.present {
-        scroll-snap-type: x mandatory;
+        overflow-x: hidden;
       }
 
       body {
@@ -52,20 +47,16 @@
       }
 
       .talk {
-        display: flex;
-        width: max-content;
-        align-items: flex-start;
+        display: block;
+        width: 100%;
       }
 
       .screen,
       .flow {
-        flex: 0 0 100vw;
-        width: 100vw;
+        width: 100%;
         min-height: 100svh;
         margin: 0;
         padding: 44px max(20px, calc((100vw - var(--measure)) / 2));
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
       }
 
       .screen {
@@ -445,11 +436,6 @@
       }
 
       @media print {
-        html,
-        html.present {
-          scroll-snap-type: none;
-        }
-
         body {
           background: #fff;
           font-size: 12pt;
@@ -463,11 +449,9 @@
         .screen,
         .flow {
           display: block;
-          flex: none;
           width: auto;
           min-height: auto;
           padding: 24pt 0;
-          scroll-snap-align: none;
           page-break-inside: avoid;
         }
       }
