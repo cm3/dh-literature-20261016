@@ -280,16 +280,16 @@ mixed率 **21.4%**（204 / 953窓）。その他21章の **13.4%** より7.9ポ�
   <thead><tr><th>章</th><th>章題</th><th>mixed率</th><th>分布</th><th>Bennett事例</th></tr></thead>
   <tbody>
     <tr class="phase-row"><th colspan="5">I　Londonでの遭遇（第1–10章）</th></tr>
-    <tr><td>1</td><td>Discussion and Bed</td><td>16.7%</td><td><span class="rate-bar"><i style="width:33%"></i></span></td><td><span class="case-chip good">● NFN-02</span></td></tr>
-    <tr><td>2</td><td>A Morning Bath</td><td>29.8%</td><td><span class="rate-bar"><i style="width:59%"></i></span></td><td><span class="case-chip mixed">● NFN-03/04</span></td></tr>
+    <tr><td>1</td><td>Discussion and Bed</td><td>16.7%</td><td><span class="rate-bar"><i style="width:33%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-02" aria-haspopup="dialog">● NFN-02</button></td></tr>
+    <tr><td>2</td><td>A Morning Bath</td><td>29.8%</td><td><span class="rate-bar"><i style="width:59%"></i></span></td><td><button class="case-chip mixed" type="button" data-cases="NFN-03,NFN-04" aria-haspopup="dialog">● NFN-03/04</button></td></tr>
     <tr><td>3</td><td>The Guest House and Breakfast Therein</td><td>17.6%</td><td><span class="rate-bar"><i style="width:35%"></i></span></td><td></td></tr>
-    <tr><td>4</td><td>A Market by the Way</td><td>22.2%</td><td><span class="rate-bar"><i style="width:44%"></i></span></td><td><span class="case-chip good">● NFN-06</span></td></tr>
-    <tr><td>5</td><td>Children on the Road</td><td>9.8%</td><td><span class="rate-bar"><i style="width:19%"></i></span></td><td><span class="case-chip good">● NFN-07/08</span></td></tr>
+    <tr><td>4</td><td>A Market by the Way</td><td>22.2%</td><td><span class="rate-bar"><i style="width:44%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-06" aria-haspopup="dialog">● NFN-06</button></td></tr>
+    <tr><td>5</td><td>Children on the Road</td><td>9.8%</td><td><span class="rate-bar"><i style="width:19%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-07,NFN-08" aria-haspopup="dialog">● NFN-07/08</button></td></tr>
     <tr><td>6</td><td>A Little Shopping</td><td>10.0%</td><td><span class="rate-bar"><i style="width:20%"></i></span></td><td></td></tr>
     <tr><td>7</td><td>Trafalgar Square</td><td>25.0%</td><td><span class="rate-bar"><i style="width:49%"></i></span></td><td></td></tr>
     <tr><td>8</td><td>An Old Friend</td><td>21.6%</td><td><span class="rate-bar"><i style="width:43%"></i></span></td><td></td></tr>
     <tr><td>9</td><td>Concerning Love</td><td>8.5%</td><td><span class="rate-bar"><i style="width:17%"></i></span></td><td></td></tr>
-    <tr><td>10</td><td>Questions and Answers</td><td>20.0%</td><td><span class="rate-bar"><i style="width:40%"></i></span></td><td><span class="case-chip miss">● NFN-05</span></td></tr>
+    <tr><td>10</td><td>Questions and Answers</td><td>20.0%</td><td><span class="rate-bar"><i style="width:40%"></i></span></td><td><button class="case-chip miss" type="button" data-cases="NFN-05" aria-haspopup="dialog">● NFN-05</button></td></tr>
     <tr class="phase-row"><th colspan="5">II　制度説明・革命史（第11–18章）</th></tr>
     <tr><td>11</td><td>Concerning Government</td><td>0.0%</td><td><span class="rate-bar"><i style="width:0%"></i></span></td><td></td></tr>
     <tr><td>12</td><td>Concerning the Arrangement of Life</td><td>4.0%</td><td><span class="rate-bar"><i style="width:8%"></i></span></td><td></td></tr>
@@ -304,15 +304,15 @@ mixed率 **21.4%**（204 / 953窓）。その他21章の **13.4%** より7.9ポ�
     <tr><td>20</td><td>The Hammersmith Guest-House Again</td><td>35.0%</td><td><span class="rate-bar"><i style="width:69%"></i></span></td><td><small>20窓</small></td></tr>
     <tr><td>21</td><td>Going up the River</td><td>34.1%</td><td><span class="rate-bar"><i style="width:67%"></i></span></td><td></td></tr>
     <tr><td>22</td><td>Hampton Court</td><td>20.9%</td><td><span class="rate-bar"><i style="width:41%"></i></span></td><td></td></tr>
-    <tr><td>23</td><td>An Early Morning by Runnymede</td><td>24.7%</td><td><span class="rate-bar"><i style="width:49%"></i></span></td><td><span class="case-chip false">● NFN-01</span></td></tr>
-    <tr><td>24</td><td>Up the Thames: The Second Day</td><td>21.5%</td><td><span class="rate-bar"><i style="width:42%"></i></span></td><td><span class="case-chip caveat">● NFN-09</span></td></tr>
-    <tr><td>25</td><td>The Third Day on the Thames</td><td>23.8%</td><td><span class="rate-bar"><i style="width:47%"></i></span></td><td><span class="case-chip caveat">● NFN-13</span></td></tr>
-    <tr><td>26</td><td>The Obstinate Refusers</td><td>21.9%</td><td><span class="rate-bar"><i style="width:43%"></i></span></td><td><span class="case-chip good">● NFN-11</span></td></tr>
+    <tr><td>23</td><td>An Early Morning by Runnymede</td><td>24.7%</td><td><span class="rate-bar"><i style="width:49%"></i></span></td><td><button class="case-chip false" type="button" data-cases="NFN-01" aria-haspopup="dialog">● NFN-01</button></td></tr>
+    <tr><td>24</td><td>Up the Thames: The Second Day</td><td>21.5%</td><td><span class="rate-bar"><i style="width:42%"></i></span></td><td><button class="case-chip caveat" type="button" data-cases="NFN-09" aria-haspopup="dialog">● NFN-09</button></td></tr>
+    <tr><td>25</td><td>The Third Day on the Thames</td><td>23.8%</td><td><span class="rate-bar"><i style="width:47%"></i></span></td><td><button class="case-chip caveat" type="button" data-cases="NFN-13" aria-haspopup="dialog">● NFN-13</button></td></tr>
+    <tr><td>26</td><td>The Obstinate Refusers</td><td>21.9%</td><td><span class="rate-bar"><i style="width:43%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-11" aria-haspopup="dialog">● NFN-11</button></td></tr>
     <tr><td>27</td><td>The Upper Waters</td><td>15.9%</td><td><span class="rate-bar"><i style="width:31%"></i></span></td><td></td></tr>
     <tr><td>28</td><td>The Little River</td><td>19.3%</td><td><span class="rate-bar"><i style="width:38%"></i></span></td><td></td></tr>
-    <tr><td>29</td><td>A Resting-Place on the Upper Thames</td><td>18.5%</td><td><span class="rate-bar"><i style="width:37%"></i></span></td><td><span class="case-chip weak">● NFN-12</span></td></tr>
+    <tr><td>29</td><td>A Resting-Place on the Upper Thames</td><td>18.5%</td><td><span class="rate-bar"><i style="width:37%"></i></span></td><td><button class="case-chip weak" type="button" data-cases="NFN-12" aria-haspopup="dialog">● NFN-12</button></td></tr>
     <tr class="peak"><td>30</td><td>The Journey’s End</td><td><b>50.6%</b></td><td><span class="rate-bar"><i style="width:100%"></i></span></td><td></td></tr>
-    <tr><td>31</td><td>An Old House amongst New Folk</td><td>25.4%</td><td><span class="rate-bar"><i style="width:50%"></i></span></td><td><span class="case-chip good">● NFN-10</span></td></tr>
+    <tr><td>31</td><td>An Old House amongst New Folk</td><td>25.4%</td><td><span class="rate-bar"><i style="width:50%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-10" aria-haspopup="dialog">● NFN-10</button></td></tr>
     <tr><td>32</td><td>The Feast’s Beginning — The End</td><td>12.4%</td><td><span class="rate-bar"><i style="width:24%"></i></span></td><td></td></tr>
   </tbody>
 </table>

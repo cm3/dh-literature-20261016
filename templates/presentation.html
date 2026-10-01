@@ -7,6 +7,7 @@ $if(description)$
     <meta name="description" content="$description$" />
 $endif$
     <title>$if(title)$$title$$else$Presentation$endif$</title>
+    <script src="assets/bennett-cases.js"></script>
     <script>
       window.addEventListener("DOMContentLoaded", () => {
         const slides = Array.from(document.querySelectorAll("main > section, main > .screen, main > .flow"));
@@ -37,8 +38,73 @@ $endif$
           window.scrollTo({ left: 0, top: tops[targetIndex], behavior: "smooth" });
         };
 
+        const escapeHtml = (value) =>
+          String(value).replace(/[&<>"]/g, (character) => ({
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;"
+          })[character]);
+
+        const caseDialog = document.createElement("dialog");
+        caseDialog.className = "case-modal";
+        caseDialog.setAttribute("aria-labelledby", "case-modal-title");
+        caseDialog.innerHTML = [
+          '<div class="case-modal-header">',
+          '<div>',
+          '<span class="case-modal-kicker">Bennett (2026) × News from Nowhere</span>',
+          '<h2 id="case-modal-title">事例の本文文脈</h2>',
+          '</div>',
+          '<button class="case-modal-close" type="button" aria-label="モーダルを閉じる">×</button>',
+          '</div>',
+          '<div class="case-modal-content"></div>'
+        ].join("");
+        document.body.append(caseDialog);
+
+        const statusLabels = {
+          good: "実質的ヒット",
+          caveat: "実質的・要留保",
+          weak: "弱い／曖昧",
+          miss: "未検出",
+          false: "形式的誤検出"
+        };
+
+        const openCases = (caseIds) => {
+          const caseData = window.BENNETT_CASES || {};
+          const records = caseIds.map((caseId) => caseData[caseId]).filter(Boolean);
+          if (!records.length) return;
+
+          caseDialog.querySelector(".case-modal-content").innerHTML = records.map((record) => [
+            '<article class="modal-case">',
+            '<div class="modal-case-meta">',
+            '<b>' + escapeHtml(record.id) + '</b>',
+            '<span>第' + escapeHtml(record.chapter) + '章</span>',
+            '<span>Bennett p.' + escapeHtml(record.page) + '</span>',
+            '<span class="modal-status ' + escapeHtml(record.status) + '">' +
+              escapeHtml(statusLabels[record.status] || record.status) + '</span>',
+            '</div>',
+            '<h3>' + escapeHtml(record.label) + '</h3>',
+            '<blockquote lang="en">“' + escapeHtml(record.excerpt) + '”</blockquote>',
+            '<p>' + escapeHtml(record.note) + '</p>',
+            '</article>'
+          ].join("")).join("");
+
+          caseDialog.showModal();
+          caseDialog.querySelector(".case-modal-close").focus();
+        };
+
+        document.querySelectorAll(".case-chip[data-cases]").forEach((button) => {
+          button.addEventListener("click", () => openCases(button.dataset.cases.split(",")));
+        });
+
+        caseDialog.querySelector(".case-modal-close").addEventListener("click", () => caseDialog.close());
+        caseDialog.addEventListener("click", (event) => {
+          if (event.target === caseDialog) caseDialog.close();
+        });
+
         window.addEventListener("keydown", (event) => {
           if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+          if (caseDialog.open) return;
           if (isEditableTarget(event.target)) return;
           if (!["ArrowRight", "ArrowLeft"].includes(event.key)) return;
           if (event.repeat) return;
