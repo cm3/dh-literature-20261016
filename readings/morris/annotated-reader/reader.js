@@ -297,8 +297,10 @@
     // Keep neighbouring reference points visible (notably the two Yorkshire
     // peaks), even when opening a UK location from the default Thames view.
     placeMarkers.forEach(({ marker }) => markerLayer.addLayer(marker));
+    map.closePopup();
     map.setView([item.place.lat, item.place.lon], item.place.zoom || 13, { animate: false });
-    item.marker.openPopup();
+    // The selected card already shows the details. A popup here can auto-pan
+    // the short map away from the requested marker.
     document.querySelectorAll("[data-map-view]").forEach((button) => button.setAttribute("aria-pressed", "false"));
   }
 
