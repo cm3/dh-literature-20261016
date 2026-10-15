@@ -1,0 +1,115 @@
+lemma,semantic_class,combined_frequency,llm_lemma_label,llm_context_labels,source,rule
+house,built,399,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+room,built,133,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+machine,built,130,built,c1=built; c2=outside; c3=built,user_2026-10-15,Accept the proposed lexical built classification despite metaphorical uses.
+river,nature,127,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+water,nature,104,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+earth,nature,97,ambiguous,c1=nature; c2=nature; c3=nature,user_2026-10-15,Accept the proposed lexical nature classification.
+building,built,91,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+city,built,89,ambiguous,c1=built; c2=built; c3=outside,user_2026-10-15,Accept the proposed lexical built classification of a built settlement.
+tree,nature,81,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+air,nature,76,ambiguous,c1=outside; c2=nature; c3=nature,user_2026-10-15,Classify atmosphere as nature despite the old built label and figurative uses.
+flower,nature,69,nature,c1=built; c2=nature; c3=nature,user_2026-10-15,Classify the word as nature even when a sampled occurrence refers to embroidered flowers.
+door,built,68,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+sun,nature,63,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+street,built,62,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+wall,built,61,ambiguous,c1=built; c2=built; c3=built,user_2026-10-15,Accept the proposed lexical built classification despite possible natural walls.
+mountain,nature,57,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+cloud,nature,54,ambiguous,c1=nature; c2=outside; c3=nature,user_2026-10-15,Accept the proposed lexical nature classification despite figurative uses.
+horse,nature,53,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+land,nature,51,ambiguous,c1=nature; c2=ambiguous; c3=nature,lexical_review_2026-10-15,Physical terrain is a natural feature; political senses remain a limitation.
+bird,nature,49,nature,c1=nature; c2=outside; c3=nature,user_2026-10-15,Accept the proposed lexical nature classification despite a figurative occurrence.
+hall,built,48,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+leaf,nature,47,ambiguous,c1=nature; c2=outside; c3=nature,user_2026-10-15,Accept the proposed lexical nature classification despite a tagged verb occurrence.
+clothes,built,46,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+machinery,built,44,built,c1=outside; c2=built; c3=outside,llm_lemma_label,LLM lexical label agrees with frozen label
+picture,built,43,ambiguous,c1=built; c2=outside; c3=outside,lexical_review_2026-10-15,A picture is a human-made visual artifact; figurative uses remain a limitation.
+animal,nature,42,nature,c1=nature; c2=nature; c3=outside,llm_lemma_label,LLM lexical label agrees with frozen label
+grass,nature,42,nature,c1=nature; c2=ambiguous; c3=nature,user_2026-10-15,Accept the proposed lexical nature classification despite noisy OCR.
+paper,built,42,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+store,built,40,ambiguous,c1=built; c2=outside; c3=built,lexical_review_2026-10-15,A store is a human-built retail space; idioms remain a limitation.
+glass,built,39,ambiguous,c1=built; c2=built; c3=built,lexical_review_2026-10-15,Manufactured glass or a glass vessel is human-made.
+floor,built,35,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+window,built,35,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+sea,nature,34,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+chamber,built,33,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+newspaper,built,31,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+prison,built,31,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+seat,built,29,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+valley,nature,29,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+meadow,nature,27,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+roof,built,27,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+shop,built,27,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+mist,nature,22,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+forest,nature,21,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+engine,built,20,built,c1=built; c2=outside; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+island,nature,20,ambiguous,c1=nature; c2=nature; c3=nature,lexical_review_2026-10-15,A geographic landform is natural.
+root,nature,20,ambiguous,c1=nature; c2=nature; c3=outside,lexical_review_2026-10-15,A plant root is natural; metaphorical uses remain a limitation.
+apartment,built,19,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+dog,nature,19,nature,c1=outside; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+moon,nature,19,ambiguous,c1=nature; c2=nature; c3=nature,lexical_review_2026-10-15,The moon is a natural celestial object.
+slope,nature,19,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+fruit,nature,18,ambiguous,c1=nature; c2=nature; c3=nature,lexical_review_2026-10-15,Fruit is a biological product even if picked or prepared.
+chair,built,17,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+pipe,built,16,ambiguous,c1=built; c2=built; c3=built,lexical_review_2026-10-15,A pipe is a human-made object.
+carriage,built,15,ambiguous,c1=built; c2=built; c3=outside,lexical_review_2026-10-15,A carriage is a human-made vehicle; posture senses remain a limitation.
+dwelling,built,15,built,c1=built; c2=built; c3=built,lexical_review_2026-10-15,A dwelling is a built habitation; the old nature label was erroneous.
+railway,built,15,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+sheep,nature,15,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+ash,nature,14,ambiguous,c1=nature; c2=outside; c3=nature,lexical_review_2026-10-15,Tree or combustion ash are naturally occurring matter.
+lily,nature,13,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+rainbow,nature,13,nature,c1=nature; c2=ambiguous; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+station,built,13,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+car,built,12,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+coal,nature,12,ambiguous,c1=nature; c2=nature; c3=built,lexical_review_2026-10-15,Coal is a naturally occurring mineral fuel even when used by industry.
+snow,nature,12,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+warehouse,built,12,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+gallery,built,11,built,c1=built; c2=built; c3=ambiguous,lexical_review_2026-10-15,A gallery is a built space or architectural structure.
+library,built,11,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+platform,built,11,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+rain,nature,11,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+soil,nature,11,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+clothing,built,10,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+train,built,10,ambiguous,c1=built; c2=built; c3=outside,lexical_review_2026-10-15,A train is a human-made vehicle; verb tagging remains a limitation.
+workshop,built,10,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+cattle,nature,9,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+dust,nature,9,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+tide,nature,9,ambiguous,c1=nature; c2=outside; c3=nature,lexical_review_2026-10-15,Tides are natural phenomena; metaphorical uses remain a limitation.
+brick,built,8,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+bull,nature,8,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+foliage,nature,8,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+gate,built,8,ambiguous,c1=built; c2=outside; c3=built,lexical_review_2026-10-15,A gate is a human-made structure.
+glacier,nature,8,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+grove,nature,8,ambiguous,c1=nature; c2=nature; c3=nature,lexical_review_2026-10-15,A group of trees is natural even if planted.
+oak,nature,8,ambiguous,c1=built; c2=nature; c3=built,lexical_review_2026-10-15,An oak is a tree.
+tail,nature,8,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+wheel,built,8,built,c1=built; c2=ambiguous; c3=built,lexical_review_2026-10-15,A wheel is a human-made object.
+wolf,nature,8,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+booth,built,7,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+desert,nature,7,nature,c1=outside; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+factory,built,7,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+furniture,built,7,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+goat,nature,7,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+hospital,built,7,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+telephone,built,7,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+box,built,6,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+clock,built,6,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+flood,nature,6,ambiguous,c1=outside; c2=nature; c3=outside,lexical_review_2026-10-15,A flood is a natural water phenomenon.
+orchard,nature,6,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+pillar,built,6,ambiguous,c1=built; c2=built; c3=outside,lexical_review_2026-10-15,A pillar is a built structural element.
+rose,nature,6,nature,c1=nature; c2=nature; c3=outside,lexical_review_2026-10-15,A rose is a flowering plant; the old built label was erroneous.
+shoe,built,6,built,c1=built; c2=outside; c3=built,lexical_review_2026-10-15,A shoe is a human-made object.
+arcade,built,5,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+blossom,nature,5,ambiguous,c1=nature; c2=outside; c3=nature,lexical_review_2026-10-15,A flower blossom is natural.
+chestnut,nature,5,ambiguous,c1=nature; c2=outside; c3=nature,lexical_review_2026-10-15,A chestnut tree or nut is natural.
+cow,nature,5,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+duck,nature,5,ambiguous,c1=nature; c2=outside; c3=nature,lexical_review_2026-10-15,A duck is an animal.
+gun,built,5,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+lake,nature,5,nature,c1=nature; c2=nature; c3=nature,llm_lemma_label,LLM lexical label agrees with frozen label
+lion,nature,5,ambiguous,c1=nature; c2=outside; c3=nature,lexical_review_2026-10-15,A lion is an animal.
+mansion,built,5,built,c1=built; c2=built; c3=outside,lexical_review_2026-10-15,A mansion is a built dwelling.
+roadway,built,5,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+tenement,built,5,ambiguous,c1=outside; c2=built; c3=outside,lexical_review_2026-10-15,A tenement is a built dwelling.
+tower,built,5,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+tube,built,5,built,c1=built; c2=built; c3=built,llm_lemma_label,LLM lexical label agrees with frozen label
+vehicle,built,5,ambiguous,c1=built; c2=built; c3=outside,lexical_review_2026-10-15,A vehicle is a human-made object.

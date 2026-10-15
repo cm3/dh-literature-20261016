@@ -1,647 +1,595 @@
 ---
-title: "Bennett (2026) のMorris読解を計量的に検証する"
-description: "4つの後期ヴィクトリア朝ユートピアをNature–BuiltとCountry–Townの二軸で比較し、Bennett (2026) のNews from Nowhere読解を検証する10分発表"
+title: "自然物と人工物の語はどこで出会うか"
+description: "Bennett (2026) のMorris読解を、自然・人工物の116語リストで同時代の4作品と照合する10分発表"
 lang: ja
 ---
 
 :::: {.section .screen .center .title-slide}
 ::: kicker
-10-minute research talk
+後半：本文の分析を試みる
 :::
 
-# Bennett (2026) のMorris読解を計量的に検証する
+# 自然物と人工物の語は<br>どこで出会うか
 
 ::: lead
-「再野生化されたThames」を自然―建造環境／田園―都市の二軸で読む
+Morrisの *News from Nowhere*（1890年連載／1891年刊）を、自然56語・人工60語のリストで同時代のユートピア／ディストピア文学3作品と比較する
 :::
 
-::: {.title-axis aria-label="Nature to Built axis"}
+::: {.title-axis aria-label="Nature and human-made objects"}
 <span class="nature-word">river · tree · meadow</span>
 <span class="axis-line"></span>
 <span class="built-word">house · street · building</span>
 :::
 
 ::: byline
-*News from Nowhere* を、同時代のユートピア文学3作品と比較する<br>
-Stage 2 quantitative analysis + two-axis extension + close reading
+Bennett (2026) の「再野生化」読解を手がかりに
 :::
 ::::
 
-:::: {.section .screen}
+:::: {.section .screen .starting-point}
 ::: kicker
-1 — Starting point: Bennett (2026)
+1 — Starting point
 :::
 
-## 「rewilded Britain」という読解は、本文分布にも現れるか？
+## 「再野生化された英国」は、本文にどう現れるか？
 
 ::: {.paper-card .paper-card-wide}
-<div class="paper-label">GREEN LETTERS · 20 SEP 2026</div>
+<div class="paper-label">GREEN LETTERS: STUDIES IN ECOCRITICISM · 2026</div>
 <h3>Wild Belongings</h3>
 <p>Stories of Rewilding in William Morris’s <i>News from Nowhere</i> and Diane Setterfield’s <i>Once Upon a River</i></p>
 <p class="paper-author">Phillippa Bennett</p>
 <a href="https://doi.org/10.1080/14688417.2026.2733353">doi:10.1080/14688417.2026.2733353</a>
 :::
 
-::: {.three-col .claim-grid}
-::: panel
-**Thamesのagency**
+::: {.panel .paper-summary}
+**論文と本発表の位置づけ**
 
-川は人間の背景ではなく、自律的な存在として回復する。
+エコクリティシズムは、文学のなかで人間と自然・環境の関係がどう描かれるかを考える研究で、Bennettの論文はその一例である。
+
+BennettはMorrisの『News from Nowhere』とDiane Setterfieldの『Once Upon a River』を比較し、Thamesを軸に、人間中心の見方を問い直す再野生化の物語と社会・環境正義の可能性を読む。
+
 :::
 
-::: panel
-**都市と田園の接続**
+::: {.bennett-quote}
+> “… there is a more organic relationship between the natural and the built environments in Morris’s vision.”
 
-Londonは森・草地・果樹・川によって再編される。
-:::
-
-::: panel
-**土地に応答する建築**
-
-家や橋は自然と対立せず、土地から育つように構想される。
-:::
+<span>Bennett (2026), p. 6 · 「Morrisの構想では、自然環境と建造環境がより有機的に結びついている」</span>
 :::
 
 ::: quote
-**検証課題**　この読解は、自然語と建造環境語の局所的共存として測れるか。またMorrisに固有なのか。
+**問い**　自然物と人工物が同じ場面に現れる頻度は、Morrisでとくに高いのか？
 :::
 ::::
 
 :::: {.section .screen}
 ::: kicker
-2 — Literary corpus
+2 — Bennett's two novels
 :::
 
-## 4作品の文学史的位置づけ
+## 二つの小説をつなぐThames
 
 ::: lead
-同時代に「よりよい社会」を描きながら、産業・都市・自然への態度が異なる4作品を選ぶ。
+Bennettが比較するのは、1890年のMorrisと、2018年のSetterfieldである。
 :::
 
-::: {.two-col .corpus-grid}
-::: {.panel .work-card .morris-card}
-**William Morris, *News from Nowhere*** <span>1890 / 1891</span>
+::: {.two-col .evidence-grid}
+::: {.panel .excerpt-card .nature-panel}
+**Morris, *News from Nowhere***
 
-革命後の未来イングランドをThamesの旅として描く社会主義的・田園的ユートピア。Bennettの検証対象。
+革命後の未来社会を描く。Thamesの旅で、街・家・樹木・野生生物との関係が見直される。
 :::
 
-::: {.panel .work-card}
-**Edward Bellamy, *Looking Backward*** <span>1888</span>
+::: {.panel .excerpt-card .built-panel}
+**Setterfield, *Once Upon a River***
 
-西暦2000年のBostonを、中央集権的な産業組織と都市制度によって描く技術・制度中心の対照作。
-:::
-
-::: {.panel .work-card}
-**Samuel Butler, *Erewhon*** <span>1872</span>
-
-機械・病気・制度を反転して批判する風刺的ユートピア／ディストピア。産業文明への両義性を担う。
-:::
-
-::: {.panel .work-card}
-**W. H. Hudson, *A Crystal Age*** <span>1887 / 1919 rev.</span>
-
-遠未来の共同体を田園、家、装飾、家族秩序から描く牧歌的ロマンス。自然密度の高い比較作。
-:::
-:::
-
-::: note
-同一ジャンルの均質な標本ではなく、後期ヴィクトリア朝ユートピアの「自然―産業」スペクトラムをつくる小規模な比較コーパス。BellamyはTicknor 1888初版OCRを主入力、Project Gutenberg 624を感度分析に使うと、Nature–Built mixed率は **8.72% → 9.00%**。順位は変わらないため、底本不明のPG版では置換しない。
-:::
-::::
-
-:::: {.section .screen}
-::: kicker
-3 — Operationalization
-:::
-
-## Bennettの質的主張をNature–Built mixingへ翻訳する
-
-::::: axis
-::: {.panel .nature-panel}
-**Nature pole**
-
-river / tree / meadow / flower / mist
-:::
-
-::: arrow
-×
-:::
-
-::: {.panel .built-panel}
-**Built pole**
-
-house / street / wall / building / window
-:::
-:::::
-
-::: {.three-col .method-grid}
-::: panel
-**① 意味軸を凍結**
-
-GloVe embeddingから軸を作り、strong語彙をStage 1で固定。
-:::
-
-::: panel
-**② 50語の局所窓**
-
-25語ずつ移動（50%重複）。章境界を保持し、両極のstrong語があればmixed。
-:::
-
-::: panel
-**③ 二段階で検証**
-
-4作品の全体比較 → Bennettが挙げる13場面の直接照合。
-:::
-:::
-
-::: note
-作品比較は「Morrisに固有か」を、13場面照合は「Bennettの具体例を拾えるか」を問う。
-:::
-::::
-
-:::: {.section .screen}
-::: kicker
-4 — Corpus-level test
-:::
-
-## Morrisは比較コーパスで最多ではなかった
-
-::: lead
-*News from Nowhere* が自然と建造環境を最も多く共存させる、という強い予測は支持されない。
-:::
-
-<img class="hero-chart" src="assets/work_densities_and_mixing.png" alt="4作品のNature・Built語密度とmixed window率" />
-
-::: {.result-strip}
-<span><b>0.269</b><small>A Crystal Age</small></span>
-<span><b>0.171</b><small>Erewhon</small></span>
-<span class="focus"><b>0.159</b><small>News from Nowhere</small></span>
-<span><b>0.087</b><small>Looking Backward</small></span>
-:::
-::::
-
-:::: {.section .screen}
-::: kicker
-5 — Null model
-:::
-
-## 4作品とも、ランダム配置より両極を分けて置く
-
-<img class="null-chart" src="assets/observed_vs_expected.png" alt="観測mixed率とglobal shuffle期待値" />
-
-::: {.two-col .takeaway-grid}
-::: panel
-**global shuffle比**
-
-Morrisは **0.756**。どの作品も1を下回り、Nature/Built語はランダムより凝集・分離する。
-:::
-
-::: panel
-**段落内shuffle比**
-
-Morrisは **0.927**。分離の多くは、両極が別段落へ配分されることから生じる。
+19世紀末を描く現代の歴史小説。Thamesは人間の思いどおりにならず、洪水も共同体の物語を動かす。
 :::
 :::
 
 ::: {.verdict}
-Bennettの読解は、作品全体の単純な「混合量」ではなく、特定場面の構成として検証すべきである。
+Bennettは両作に、人間中心の見方の転換、過去とのつながり、正義、物語ることを読む。
+:::
+
+::: note
+ここはBennett (2026) の比較の要約。Setterfieldの本文全体を用いた語数・共存率の集計ではない。
 :::
 ::::
 
-:::: {.section .screen .chapter-summary-slide}
+:::: {.section .screen}
 ::: kicker
-6 — News from Nowhere: chapter-level test
+3 — Four works
 :::
 
-## 章別mixingはThames航行部で上がる
+## 比較するのは4つの同時代の<br>ユートピア／ディストピア文学
+
+::: {.two-col .corpus-grid}
+::: {.panel .work-card .morris-card}
+**Morris, *News from Nowhere*** <span>1890 / 1891</span>
+
+Thamesの旅を通して、革命後の英国を描く。Bennettの読解対象。
+
+<nav class="work-links" aria-label="News from Nowhere の資料リンク"><a href="https://openlibrary.org/books/OL24233393M" target="_blank" rel="noopener">Open Library</a><a href="https://www.gutenberg.org/ebooks/3261" target="_blank" rel="noopener">Gutenberg</a><a href="https://www.wikidata.org/wiki/Q7019506" target="_blank" rel="noopener">Wikidata</a></nav>
+:::
+
+::: {.panel .work-card}
+**Bellamy, *Looking Backward*** <span>1888</span>
+
+Bostonの中央集権的な産業組織と都市制度。
+
+<nav class="work-links" aria-label="Looking Backward の資料リンク"><a href="https://openlibrary.org/books/OL6967789M" target="_blank" rel="noopener">Open Library</a><a href="https://www.gutenberg.org/ebooks/624" target="_blank" rel="noopener">Gutenberg</a><a href="https://www.wikidata.org/wiki/Q1305106" target="_blank" rel="noopener">Wikidata</a></nav>
+:::
+
+::: {.panel .work-card}
+**Butler, *Erewhon*** <span>1872</span>
+
+機械・制度を反転して問う風刺的作品。
+
+<nav class="work-links" aria-label="Erewhon の資料リンク"><a href="https://openlibrary.org/books/OL23297922M" target="_blank" rel="noopener">Open Library</a><a href="https://www.gutenberg.org/ebooks/1906" target="_blank" rel="noopener">Gutenberg</a><a href="https://www.wikidata.org/wiki/Q1350048" target="_blank" rel="noopener">Wikidata</a></nav>
+:::
+
+::: {.panel .work-card}
+**Hudson, *A Crystal Age*** <span>1887 / 1919 rev.</span>
+
+田園、共同体、巨大な家と装飾を描く牧歌的ロマンス。
+
+<nav class="work-links" aria-label="A Crystal Age の資料リンク"><a href="https://openlibrary.org/books/OL7151703M" target="_blank" rel="noopener">Open Library</a><a href="https://www.gutenberg.org/ebooks/7401" target="_blank" rel="noopener">Gutenberg</a><a href="https://www.wikidata.org/wiki/Q4656205" target="_blank" rel="noopener">Wikidata</a></nav>
+:::
+:::
+
+::: note
+Open Libraryは参照した所蔵版、Gutenbergは今回の集計本文、Wikidataは作品の項目。リンク先は同一の版を表すとは限らない。
+:::
+::::
+
+:::: {.section .flow .lexicon-slide}
+::: kicker
+4 — What we count
+:::
+
+## 自然物と人工物の語を、先にリストにする
 
 ::: lead
-全32章を物語段階に分けると、Bennettが重視する川の旅にmixingが集中する。
+本文で数える116語。自然物56語と人工物60語を、あらかじめ固定する。
 :::
+
+<div class="lexicon-grid"><section class="panel lexicon-panel nature-panel"><h3>自然物 · 56語</h3><ul class="lexicon-words"><li>air</li><li>animal</li><li>ash</li><li>bird</li><li>blossom</li><li>bull</li><li>cattle</li><li>chestnut</li><li>cloud</li><li>coal</li><li>cow</li><li>desert</li><li>dog</li><li>duck</li><li>dust</li><li>earth</li><li>flood</li><li>flower</li><li>foliage</li><li>forest</li><li>fruit</li><li>glacier</li><li>goat</li><li>grass</li><li>grove</li><li>horse</li><li>island</li><li>lake</li><li>land</li><li>leaf</li><li>lily</li><li>lion</li><li>meadow</li><li>mist</li><li>moon</li><li>mountain</li><li>oak</li><li>orchard</li><li>rain</li><li>rainbow</li><li>river</li><li>root</li><li>rose</li><li>sea</li><li>sheep</li><li>slope</li><li>snow</li><li>soil</li><li>sun</li><li>tail</li><li>tide</li><li>tree</li><li>valley</li><li>water</li><li>wolf</li><li>wood</li></ul></section><section class="panel lexicon-panel built-panel"><h3>人工物 · 60語</h3><ul class="lexicon-words"><li>apartment</li><li>arcade</li><li>booth</li><li>box</li><li>brick</li><li>bridge</li><li>building</li><li>car</li><li>carriage</li><li>chair</li><li>chamber</li><li>city</li><li>clock</li><li>clothes</li><li>clothing</li><li>door</li><li>dwelling</li><li>engine</li><li>factory</li><li>floor</li><li>furniture</li><li>gallery</li><li>gate</li><li>glass</li><li>gun</li><li>hall</li><li>hospital</li><li>house</li><li>library</li><li>machine</li><li>machinery</li><li>mansion</li><li>newspaper</li><li>paper</li><li>picture</li><li>pillar</li><li>pipe</li><li>platform</li><li>prison</li><li>railway</li><li>roadway</li><li>roof</li><li>room</li><li>seat</li><li>shoe</li><li>shop</li><li>station</li><li>store</li><li>street</li><li>telephone</li><li>tenement</li><li>tower</li><li>train</li><li>tube</li><li>vehicle</li><li>wall</li><li>warehouse</li><li>wheel</li><li>window</li><li>workshop</li></ul></section></div>
+
+::: {.excluded-words}
+**入れなかった語の例**
+
+<span>family</span><span>company</span><span>morning</span><span>work</span><span>system</span><span>business</span><span>service</span><span>power</span><span>bank</span><span>hand</span>
+:::
+
+::: note
+社会集団・制度・時間・抽象概念、多義的な語は、物理的な自然物・人工物のリストに含めない。
+:::
+::::
+
+:::: {.section .screen .window-example-slide}
+::: kicker
+5 — Local co-occurrence
+:::
+
+## 50語の範囲で、両方が現れるか？
+
+::: lead
+章をまたがない50語窓を25語ずつ動かす。自然物と人工物が両方あれば「共存」1件。
+:::
+
+<div class="window-steps" aria-label="50語窓を25語ずつ動かす図"><div class="step-ranges"><span>1–25語</span><span>26–50語</span><span>51–75語</span></div><div class="step-window first">窓A：1–50語</div><div class="step-window second">窓B：26–75語</div></div>
+
+::: {.panel .window-example}
+**実例：Morris『News from Nowhere』第10章より**
+
+> “Beyond that the houses are scattered wide about the meadows there … the lovely river Lea”
+
+<div class="window-hits"><span class="built-hit">7語目 houses → house〈人工物〉</span><span class="nature-hit">13語目 meadows → meadow〈自然物〉</span><span class="nature-hit">27語目 river〈自然物〉</span></div>
+:::
+
+::: {.verdict}
+この50語には両方あるので「共存」。語の近さや物語での関係は、続けて本文を読む。
+:::
+::::
+
+:::: {.section .screen}
+::: kicker
+6 — Four-work result
+:::
+
+## 今回のリストではHudsonが最も高い
+
+::: lead
+50語窓の共存率：Hudson 8.18%、Morris 7.22%。差は0.96ポイント。
+:::
+
+<img class="hero-chart" src="assets/gutenberg_work_densities_and_mixing.png" alt="Gutenberg版本文と116語の自然・人工物リストによる4作品の語密度と共存率" />
+
+::: {.result-strip}
+<span class="focus"><b>7.22%</b><small>News from Nowhere</small></span>
+<span><b>8.18%</b><small>A Crystal Age</small></span>
+<span><b>3.76%</b><small>Erewhon</small></span>
+<span><b>2.11%</b><small>Looking Backward</small></span>
+:::
+
+::: note
+OCR誤読による語の抽出ミスを減らすためGutenberg版を利用。Open Libraryから辿れるInternet Archive版OCRを742箇所修正して比べても、共存率差は最大0.2ポイントで作品順位は同じ（版差も含む）。
+:::
+::::
+
+:::: {.section .screen}
+::: kicker
+7 — Why the list matters
+:::
+
+## 語の選び方で、比較の見え方が変わる
+
+::: {.compact-table .data-table}
+| 作品 | 元の314語 | 語単位の116語 |
+|:--|--:|--:|
+| *News from Nowhere* | 15.65% | **7.22%** |
+| *A Crystal Age* | **27.38%** | 8.18% |
+| *Erewhon* | 16.63% | 3.76% |
+| *Looking Backward* | 9.12% | 2.11% |
+:::
+
+::: {.two-col .takeaway-grid}
+::: panel
+**除外した例**
+
+`family`, `company`, `morning` は自然物・人工物を指す語として数えない。
+:::
+
+::: panel
+**採用した例**
+
+`flower`・`bird`は自然語、`machine`は人工語。比喩の用例だけでは落とさない。
+:::
+:::
+
+::: {.verdict}
+同じGutenberg版本文・同じ50語窓でも、採用する語によって共存率とMorris・Butlerの順位が変わる。
+:::
+::::
+
+:::: {.section .screen}
+::: kicker
+8 — Within Morris
+:::
+
+## 制度の説明では少なく、街と川の旅で現れる
 
 ::: {.phase-grid}
 ::: panel
 **Londonでの遭遇**<br>
 第1–10章
 
-<b>17.5%</b><small>184 / 1,050 windows</small>
+<b>9.5%</b><small>100 / 1,050窓</small>
 :::
 
 ::: panel
 **制度説明・革命史**<br>
 第11–18章
 
-<b>5.3%</b><small>45 / 854 windows</small>
+<b>0.8%</b><small>7 / 854窓</small>
 :::
 
 ::: {.panel .focus-phase}
 **Thames航行・帰還**<br>
 第19–32章
 
-<b>22.4%</b><small>256 / 1,142 windows</small>
+<b>9.9%</b><small>113 / 1,143窓</small>
 :::
 :::
 
 ::: {.two-col .chapter-findings}
 ::: panel
-**Bennettが例を採る11章（窓を合算）**
+**第10章：Aldgateの先**
 
-mixed率 **21.4%**（204 / 953窓）。その他21章の **13.4%** より7.9ポイント高い。
+`meadow · river` × `house · street`。家と草地、River Leaが同じ記述に入る。
 :::
 
 ::: panel
-**ピーク**
+**第30章：旅の終わり**
 
-- **50.6%**　第30章 *The Journey’s End*
-- **35.0%**　第20章
-- **34.1%**　第21章
+15 / 82窓（18.3%）。ただし短い章の率だけで作品全体を代表させない。
 :::
 :::
-
-::: {.note .warn}
-各区分の比率は窓を合算した値。隣接窓は50%重複し、短い章ほど率が不安定になる。ここでは有意差検定ではなく、物語構造に沿った記述的な偏りとして読む。
-:::
-::::
-
-:::: {.section .flow .chapter-audit-slide}
-::: kicker
-7 — News from Nowhere: all 32 chapters
-:::
-
-## 全章監査：高いのは「川」だけではなく、川と家・街・労働が接する章
-
-::: lead
-棒は各章のmixed-window率。●はBennettが具体例を採った章を示す。行を縦にたどると、説明中心の第11–18章で谷になり、旅の再開後に上昇する。
-:::
-
-```{=html}
-<div class="chapter-audit" role="region" aria-label="News from Nowhere chapter-level mixed-window rates">
-<table>
-  <thead><tr><th>章</th><th>章題</th><th>mixed率</th><th>分布</th><th>Bennett事例</th></tr></thead>
-  <tbody>
-    <tr class="phase-row"><th colspan="5">I　Londonでの遭遇（第1–10章）</th></tr>
-    <tr><td>1</td><td>Discussion and Bed</td><td>16.7%</td><td><span class="rate-bar"><i style="width:33%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-02" aria-haspopup="dialog">● NFN-02</button></td></tr>
-    <tr><td>2</td><td>A Morning Bath</td><td>29.8%</td><td><span class="rate-bar"><i style="width:59%"></i></span></td><td><button class="case-chip mixed" type="button" data-cases="NFN-03,NFN-04" aria-haspopup="dialog">● NFN-03/04</button></td></tr>
-    <tr><td>3</td><td>The Guest House and Breakfast Therein</td><td>17.6%</td><td><span class="rate-bar"><i style="width:35%"></i></span></td><td></td></tr>
-    <tr><td>4</td><td>A Market by the Way</td><td>22.2%</td><td><span class="rate-bar"><i style="width:44%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-06" aria-haspopup="dialog">● NFN-06</button></td></tr>
-    <tr><td>5</td><td>Children on the Road</td><td>9.8%</td><td><span class="rate-bar"><i style="width:19%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-07,NFN-08" aria-haspopup="dialog">● NFN-07/08</button></td></tr>
-    <tr><td>6</td><td>A Little Shopping</td><td>10.0%</td><td><span class="rate-bar"><i style="width:20%"></i></span></td><td></td></tr>
-    <tr><td>7</td><td>Trafalgar Square</td><td>25.0%</td><td><span class="rate-bar"><i style="width:49%"></i></span></td><td></td></tr>
-    <tr><td>8</td><td>An Old Friend</td><td>21.6%</td><td><span class="rate-bar"><i style="width:43%"></i></span></td><td></td></tr>
-    <tr><td>9</td><td>Concerning Love</td><td>8.5%</td><td><span class="rate-bar"><i style="width:17%"></i></span></td><td></td></tr>
-    <tr><td>10</td><td>Questions and Answers</td><td>20.0%</td><td><span class="rate-bar"><i style="width:40%"></i></span></td><td><button class="case-chip miss" type="button" data-cases="NFN-05" aria-haspopup="dialog">● NFN-05</button></td></tr>
-    <tr class="phase-row"><th colspan="5">II　制度説明・革命史（第11–18章）</th></tr>
-    <tr><td>11</td><td>Concerning Government</td><td>0.0%</td><td><span class="rate-bar"><i style="width:0%"></i></span></td><td></td></tr>
-    <tr><td>12</td><td>Concerning the Arrangement of Life</td><td>4.0%</td><td><span class="rate-bar"><i style="width:8%"></i></span></td><td></td></tr>
-    <tr><td>13</td><td>Concerning Politics</td><td>0.0%</td><td><span class="rate-bar"><i style="width:0%"></i></span></td><td><small>3窓のみ</small></td></tr>
-    <tr><td>14</td><td>How Matters Are Managed</td><td>6.5%</td><td><span class="rate-bar"><i style="width:13%"></i></span></td><td></td></tr>
-    <tr><td>15</td><td>On the Lack of Incentive to Labour…</td><td>2.6%</td><td><span class="rate-bar"><i style="width:5%"></i></span></td><td></td></tr>
-    <tr><td>16</td><td>Dinner in the Hall of the Bloomsbury Market</td><td>14.0%</td><td><span class="rate-bar"><i style="width:28%"></i></span></td><td></td></tr>
-    <tr><td>17</td><td>How the Change Came</td><td>6.1%</td><td><span class="rate-bar"><i style="width:12%"></i></span></td><td></td></tr>
-    <tr><td>18</td><td>The Beginning of the New Life</td><td>2.7%</td><td><span class="rate-bar"><i style="width:5%"></i></span></td><td></td></tr>
-    <tr class="phase-row"><th colspan="5">III　Thames航行・帰還（第19–32章）</th></tr>
-    <tr><td>19</td><td>The Drive Back to Hammersmith</td><td>11.7%</td><td><span class="rate-bar"><i style="width:23%"></i></span></td><td></td></tr>
-    <tr><td>20</td><td>The Hammersmith Guest-House Again</td><td>35.0%</td><td><span class="rate-bar"><i style="width:69%"></i></span></td><td><small>20窓</small></td></tr>
-    <tr><td>21</td><td>Going up the River</td><td>34.1%</td><td><span class="rate-bar"><i style="width:67%"></i></span></td><td></td></tr>
-    <tr><td>22</td><td>Hampton Court</td><td>20.9%</td><td><span class="rate-bar"><i style="width:41%"></i></span></td><td></td></tr>
-    <tr><td>23</td><td>An Early Morning by Runnymede</td><td>24.7%</td><td><span class="rate-bar"><i style="width:49%"></i></span></td><td><button class="case-chip false" type="button" data-cases="NFN-01" aria-haspopup="dialog">● NFN-01</button></td></tr>
-    <tr><td>24</td><td>Up the Thames: The Second Day</td><td>21.5%</td><td><span class="rate-bar"><i style="width:42%"></i></span></td><td><button class="case-chip caveat" type="button" data-cases="NFN-09" aria-haspopup="dialog">● NFN-09</button></td></tr>
-    <tr><td>25</td><td>The Third Day on the Thames</td><td>23.8%</td><td><span class="rate-bar"><i style="width:47%"></i></span></td><td><button class="case-chip caveat" type="button" data-cases="NFN-13" aria-haspopup="dialog">● NFN-13</button></td></tr>
-    <tr><td>26</td><td>The Obstinate Refusers</td><td>21.9%</td><td><span class="rate-bar"><i style="width:43%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-11" aria-haspopup="dialog">● NFN-11</button></td></tr>
-    <tr><td>27</td><td>The Upper Waters</td><td>15.9%</td><td><span class="rate-bar"><i style="width:31%"></i></span></td><td></td></tr>
-    <tr><td>28</td><td>The Little River</td><td>19.3%</td><td><span class="rate-bar"><i style="width:38%"></i></span></td><td></td></tr>
-    <tr><td>29</td><td>A Resting-Place on the Upper Thames</td><td>18.5%</td><td><span class="rate-bar"><i style="width:37%"></i></span></td><td><button class="case-chip weak" type="button" data-cases="NFN-12" aria-haspopup="dialog">● NFN-12</button></td></tr>
-    <tr class="peak"><td>30</td><td>The Journey’s End</td><td><b>50.6%</b></td><td><span class="rate-bar"><i style="width:100%"></i></span></td><td></td></tr>
-    <tr><td>31</td><td>An Old House amongst New Folk</td><td>25.4%</td><td><span class="rate-bar"><i style="width:50%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-10" aria-haspopup="dialog">● NFN-10</button></td></tr>
-    <tr><td>32</td><td>The Feast’s Beginning — The End</td><td>12.4%</td><td><span class="rate-bar"><i style="width:24%"></i></span></td><td></td></tr>
-  </tbody>
-</table>
-</div>
-```
 
 ::: note
-色付きタグは事例監査の判定：緑＝実質的、青＝要留保、橙＝弱い、赤＝未検出／形式的誤検出。章率が高くても個々の語義監査は別に必要である。
+LondonとThames区間は近い率。制度説明の章群では低いという傾向が残る。
 :::
 ::::
 
 :::: {.section .screen}
 ::: kicker
-8 — News from Nowhere: local evidence
+9 — Read the passages
 :::
 
-## Bennettの論点に対応するmixed場面は、局所的には強い
-
-::: {.three-col .evidence-grid}
-::: {.panel .excerpt-card .scene-card .scene-industrial}
-**産業の荒廃**<br>
-第10章 / rank 1
-
-“manufacturing districts … Houses … trees were cut down … building”
-
-`tree` × `manufacturing · house · building`
-:::
-
-::: {.panel .excerpt-card .scene-card .scene-old-house}
-**開かれた古い家**<br>
-第31章 / rank 2
-
-“river … meadow … house … door and windows … flowers”
-
-`river · meadow · flower` × `house · door · window`
-:::
-
-::: {.panel .excerpt-card .scene-card .scene-museum}
-**都市のMuseum**<br>
-第8章 / rank 7
-
-“railings were gone … boughs of the trees … pigeons … building”
-
-`tree` × `building`
-:::
-:::
-
-::: {.verdict}
-Morrisの特徴は全体量ではなく、London・建築・産業を自然との関係から作り直す場面にある。
-:::
-
-::: image-disclaimer
-背景画像は本文の記述に基づく生成イラストであり、同時代の史料画像ではない。
-:::
-::::
-
-:::: {.section .screen}
-::: kicker
-9 — Comparative counterexample
-:::
-
-## *A Crystal Age* は別の仕方で、より頻繁に両極を結ぶ
+## 同じ「共存」でも、物語上の働きは異なる
 
 ::: {.two-col .evidence-grid}
-::: {.panel .excerpt-card .nature-panel .scene-card .scene-ocean-rooms}
-**自然が家の内部に響く**<br>
-第5章 / mixed rank 4
+::: {.panel .excerpt-card .nature-panel}
+**Morris：都市の再編**<br>
+*News from Nowhere* 第10章
 
-> “the ocean’s voice is in their rooms … salt spray … low tide … the whitewinged bird”
+> “Beyond that the houses are scattered wide about the meadows … the lovely river Lea”
 
-`tide · sea · bird` × `roof · room · floor`
+`house` × `meadow · river`。家々が草地と川の中へ散らばる。
 :::
 
-::: {.panel .excerpt-card .built-panel .scene-card .scene-artificial-flowers}
-**自然形態が素材へ固定される**<br>
-第14章 / mixed rank 7
+::: {.panel .excerpt-card .built-panel}
+**Hudson：家の立地**<br>
+*A Crystal Age* 第2章
 
-> “The only flowers in the house … wrought in metal and carved in wood”
+> “the house had been raised on the natural foundation of one of these rocks … the river that flowed behind it”
 
-`flower` × `house · metal`
-:::
-:::
-
-::: note
-Morrisのrewildingが都市・社会の変容を語るのに対し、Hudsonでは自然と室内・装飾の接続が反復される。mixing率だけでは両者の文学的機能は区別できない。
-:::
-
-::: image-disclaimer
-背景画像は本文の記述に基づく生成イラストであり、同時代の史料画像ではない。
-:::
-::::
-
-:::: {.section .flow .crystal-evidence-slide}
-::: kicker
-10 — A Crystal Age: extended evidence
-:::
-
-## 自然と建築は、少なくとも6つの異なる仕方で接続される
-
-::: lead
-上位mixed窓を原文へ戻し、多義語による誤検出を除きながら読む。Hudsonの高いmixing率は、単一の反復語ではなく、室内・素材・眺望・比喩を横断する。
-:::
-
-::: {.long-evidence-list}
-::: {.panel .long-example}
-<b>1　花が窓と室内を変える</b><span>第3章 · rank 2</span>
-
-> “lilies … This lovely window gave a fresh charm to the whole apartment …”
-
-`lily` × `window · apartment`。花と採光が室内の見え方を変える。`hand/piece` は多義語由来なので解釈から除外。
-:::
-
-::: {.panel .long-example}
-<b>2　海が家の内部に響く</b><span>第5章 · rank 4</span>
-
-> “the ocean’s voice is in their rooms … salt spray … low tide … the whitewinged bird”
-
-`tide · sea · bird` × `roof · room · floor`。海・風・砂・鳥がHouse of Coradineの室内へ入り込む比喩。
-:::
-
-::: {.panel .long-example}
-<b>3　生花の不在を人工の花が示す</b><span>第14章 · rank 7</span>
-
-> “The only flowers in the house … wrought in metal and carved in wood … stony flowers”
-
-`flower` × `house · metal`。自然物を金属・木・石に固定する装飾が、家の秩序と禁忌を可視化する。
-:::
-
-::: {.panel .long-example}
-<b>4　葉の形が金属の扉になる</b><span>第3章 · rank 9</span>
-
-> “horse-chestnut leaves of brass or copper … a double door with agate handles”
-
-`leaf` × `brass · door · handle`。植物形態が素材と建具へ翻訳される。色彩語`grey/shade/yellow`はNature hitから除外して読む。
-:::
-
-::: {.panel .long-example}
-<b>5　ポルティコが川への視線を組み立てる</b><span>第4章 · rank 14</span>
-
-> “a large portico-like place … the roof … the house … looked upon the river”
-
-`river` × `roof · house`。開放された建築が自然を遮断せず、川を眺めるフレームとして働く。
-:::
-
-::: {.panel .long-example}
-<b>6　ステンドグラスから川霧へ連続する</b><span>第12章 · rank 16</span>
-
-> “stained glass in the windows … river … white mist … reeds and bushes … old trees”
-
-`river · mist · tree` × `glass · window`。室内的な比喩から川景へ視線が滑り、人工光景と自然景が連続する。
+`house` × `river`。家が岩と川の地形に沿って置かれる。
 :::
 :::
 
 ::: {.verdict}
-Hudsonでは「自然が都市を取り戻す」より、自然の形・音・眺望が家の内部と装飾体系へ取り込まれる。量的な高さは同じでも、Morrisとは物語上の機能が異なる。
+共存率は入口。都市の変容と家の立地という意味の違いは、本文を読んで確かめる。
+
+<span class="reading-link-row"><a href="readings/morris/annotated-reader/chapter-10.html" target="_blank" rel="noopener">Morris：第10章の対訳 ↗</a><a href="readings/hudson/annotated-reader/index.html" target="_blank" rel="noopener">Hudson：対訳読書稿 ↗</a></span>
+<small class="reading-link-note">Hudsonの対訳は第3・5・14章。引用した第2章の記述は<a href="readings/hudson/annotated-reader/landscape.html#house-exterior" target="_blank" rel="noopener">家の模式図と原文根拠 ↗</a>へ。</small>
 :::
+
 ::::
 
-:::: {.section .screen}
+:::: {.section .screen .case-review-slide}
 ::: kicker
-11 — Direct validation of Bennett's examples
+10 — Bennett's 13 examples
 :::
 
-## Bennettの13場面を照合すると、9件は実質的に拾える
+## 語を増やすと、形式上の検出も増える
 
 ::: {.metric-grid}
 ::: {.metric .good}
-<b>9</b>
-<span>実質的ヒット</span>
-<small>橋・道路・家・都市の森など</small>
-:::
-
-::: {.metric .weak}
-<b>1</b>
-<span>弱い／曖昧</span>
-<small>tree × space</small>
-:::
-
-::: {.metric .bad}
-<b>2</b>
-<span>形式的誤検出</span>
-<small>power / morning / night</small>
+<b>11</b>
+<span>窓が形式上重なる事例</span>
+<small>13件中。隣接文脈のヒットも含む</small>
 :::
 
 ::: {.metric .miss}
-<b>1</b>
-<span>未検出</span>
-<small>town–countryの関係概念</small>
+<b>2</b>
+<span>同じ窓に両語がない事例</span>
+<small>検出できない＝本文に関係がない、ではない</small>
 :::
 :::
-
-::: {.audit-line}
-<span>binary mixed</span><b>12 / 13</b><span>→ 語義を人手監査</span><b>9 + 1</b><span>有効候補</span>
-:::
-
-::: {.note .warn}
-「12/13を検出」だけなら過大評価になる。static embeddingの多義語を除くと、明確な支持は9件である。
-:::
-::::
-
-:::: {.section .screen}
-::: kicker
-12 — Diagnostic cases
-:::
-
-## Nature–Builtだけでは、町と田舎の関係が落ちた
 
 ::: {.two-col .contrast-grid}
 ::: {.panel .caught}
-**✓ 捕捉：Hammersmith Bridge**
+**拾えた例：橋と川**
 
-Bennett論文頁5の「澄んだThames・鮭・工場の消失・新しい橋」。
-
-Stage 2 rank 12：<br>
-`river` × `building · booth · shop`
-
-上位20と直接重なる論文事例はこの1クラスター。
+第2章で `river` と `building · booth · shop` が同じ窓に現れる。原文ではThamesと橋上の建物が一景に入る。
 :::
 
 ::: {.panel .missed}
-**△ 未捕捉：town ↔ country**
+**拾えない例：町と田舎**
 
-論文頁6の「町と田舎が相互に影響し、差が小さくなる」。
-
-10 overlapping windows中 **mixed = 0**
-
-物体語ではなく、関係と変化を表す概念だからである。
+`town` と `country` の相互変化は、物理的な自然物・人工物の語彙とは別の問いである。
 :::
 :::
-
-::: quote
-**次の検証**　同じGloVe空間にCountry–Town軸を別に作り、この未検出例を回収できるか試す。
-:::
-::::
-
-:::: {.section .screen .two-axis-slide}
-::: kicker
-13 — Two-axis extension
-:::
-
-## town ↔ country は第2軸で回収できた
-
-::: lead
-Nature–Builtは物理環境、Country–Townは居住・社会地理を表す。Morrisは通常の対応だけでなく、交差する二領域を反復する。
-:::
-
-::::: {.two-col .two-axis-layout}
-```{=html}
-<div class="quadrant-map" role="img" aria-label="Country–Town and Nature–Built two-axis map">
-  <div class="quadrant-label q-country">Country →</div>
-  <div class="quadrant-label q-town">← Town</div>
-  <div class="quadrant-label q-nature">Nature ↑</div>
-  <div class="quadrant-label q-built">↓ Built</div>
-  <div class="quadrant q-country-nature"><b>Country × Nature</b><span>meadow · river · wood</span></div>
-  <div class="quadrant q-town-nature"><b>Town × Nature</b><span>Kensington · Aldgate · Oxford</span></div>
-  <div class="quadrant q-country-built"><b>Country × Built</b><span>countryfied houses · locks · machinery</span></div>
-  <div class="quadrant q-town-built"><b>Town × Built</b><span>street · market · factory</span></div>
-</div>
-```
-
-::: {.panel .axis-result-card}
-**NFN-05を回収**
-
-<div class="axis-metrics">
-  <span><b>−0.120</b><small><i>town</i> polarity</small></span>
-  <span><b>＋0.043</b><small><i>country</i> polarity</small></span>
-  <span><b>15窓</b><small>literal town–country</small></span>
-</div>
-
-第10章の10窓が、侵入 → surroundingsへの順応 → 相互影響 → 差異縮小、というBennettの連鎖を含む。
-
-::: case-tags
-- Ch. 10: 10窓
-- Ch. 23: 2窓
-- Ch. 27: 3窓
-:::
-:::
-:::::
 
 ::: {.note .warn}
-二軸のpolarity相関は **Pearson 0.555**。別々に構築したが直交はせず、`night / day / company` などの誤分類もある。比率は探索用、文学的証拠は原文確認済みの交差場面に限定する。
+「11/13」は選定したInternet Archive版で文字位置が重なる窓の件数で、Gutenberg版については未再計算。花の彫刻を指す`flower`も自然語として数えるため、解釈を11件検証した意味ではない。
 :::
 ::::
 
 :::: {.section .screen .center .closing-slide}
 ::: kicker
-14 — Answer to Bennett
+11 — Conclusion
 :::
 
-## 計量分析はBennettを「限定つきで」支持する
+## 分布は、読解の入口を示す
 
 ::: {.closing-points}
-<div><b>1</b><span><strong>支持：</strong>論文の13場面中9件でNature–Builtの実質的共存を確認し、さらに1件をCountry–Townで回収した。</span></div>
-<div><b>2</b><span><strong>限定：</strong>Morrisは比較コーパスで最多ではなく、rewildingの特徴は作品全体量より場面の機能にある。</span></div>
-<div><b>3</b><span><strong>二軸化：</strong>都市を自然化する場面と、田園の建造物を環境へ馴染ませる場面を同じ枠組みで記述できる。</span></div>
+<div><b>1</b><span><strong>比較：</strong>Gutenberg版と116語のリストではHudsonが8.18%、Morrisが7.22%。率と一部の作品順位は語彙選択に左右される。</span></div>
+<div><b>2</b><span><strong>場所：</strong>Morrisでは制度説明よりLondonとThamesの具体的場面に共存が現れる。</span></div>
+<div><b>3</b><span><strong>読解：</strong>語が一緒に出ることと、自然・人工物がどう関係するかは別に確認する。</span></div>
 :::
 
 ::: {.verdict .final-verdict}
-Bennettのclose readingを置き換えるのではなく、どの主張が分布として再現し、どこから解釈が必要かを可視化する。
+今回の数値は、固定した116語による探索的な集計。語が現れた用例の意味まで自動判定したものではない。
+:::
+::::
+
+:::: {.section .flow .future-slide}
+::: kicker
+12 — Future directions
+:::
+
+## 固定した語彙の先へ
+
+::: lead
+今回は116語を固定して本文を数えた。今後は、語の選び方と、語を二分しない測り方を検討する。
+:::
+
+```{=html}
+<figure class="semantic-space">
+  <svg viewBox="0 0 1000 360" role="img" aria-labelledby="semantic-space-title semantic-space-desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="semantic-space-title">自然語群と人工語群を結ぶベクトル軸の模式図</title>
+    <desc id="semantic-space-desc">三次元に投影した語の空間。左の自然語群にはtree、river、bird、右の人工語群にはhouse、machine、streetがあり、二つの語群の中心を結ぶ斜めの矢印が自然と人工の軸を表す。</desc>
+    <defs>
+      <marker id="semantic-axis-head" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="11" markerHeight="11" orient="auto">
+        <path d="M1 1 L11 6 L1 11 Z" fill="#273b45" />
+      </marker>
+      <marker id="semantic-dim-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+        <path d="M1 1 L9 5 L1 9 Z" fill="#9aa9af" />
+      </marker>
+    </defs>
+    <path class="semantic-floor" d="M125 267 L795 267 L910 328 L240 328 Z" />
+    <path class="semantic-box" d="M125 267 L125 90 L795 90 L795 267 M125 90 L240 151 L910 151 L795 90 M910 151 L910 328 M240 151 L240 328" />
+    <path class="semantic-dim" d="M125 267 L205 267 M125 267 L215 315 M125 267 L125 133" marker-end="url(#semantic-dim-head)" />
+    <text class="semantic-dim-label" x="160" y="259">次元1</text>
+    <text class="semantic-dim-label" x="202" y="334">次元2</text>
+    <text class="semantic-dim-label" x="82" y="123">次元3</text>
+    <path class="semantic-projection" d="M355 190 L355 281 M710 158 L710 278" />
+    <ellipse class="semantic-cloud nature" cx="355" cy="190" rx="139" ry="74" />
+    <ellipse class="semantic-cloud built" cx="710" cy="158" rx="145" ry="76" />
+    <path class="semantic-main-axis" d="M375 188 L690 160" marker-end="url(#semantic-axis-head)" />
+    <circle class="semantic-centre nature" cx="355" cy="190" r="9" />
+    <circle class="semantic-centre built" cx="710" cy="158" r="9" />
+    <text class="semantic-group nature" x="255" y="102">自然語群</text>
+    <text class="semantic-group built" x="662" y="62">人工語群</text>
+    <circle class="semantic-point nature" cx="295" cy="163" r="7" /><text class="semantic-word" x="252" y="153">tree</text>
+    <circle class="semantic-point nature" cx="322" cy="220" r="7" /><text class="semantic-word" x="281" y="247">river</text>
+    <circle class="semantic-point nature" cx="405" cy="204" r="7" /><text class="semantic-word" x="417" y="211">bird</text>
+    <circle class="semantic-point built" cx="645" cy="139" r="7" /><text class="semantic-word" x="601" y="128">house</text>
+    <circle class="semantic-point built" cx="737" cy="117" r="7" /><text class="semantic-word" x="748" y="113">machine</text>
+    <circle class="semantic-point built" cx="761" cy="191" r="7" /><text class="semantic-word" x="773" y="199">street</text>
+    <rect class="semantic-axis-label-bg" x="432" y="237" width="178" height="40" rx="20" />
+    <text class="semantic-axis-label" x="521" y="264" text-anchor="middle">自然 ↔ 人工の軸</text>
+  </svg>
+  <figcaption>語を空間内の点と考え、二つの語群を結ぶ方向に各語を位置づける。模式図：実際のベクトルは多次元で、点の位置は実測値ではない。</figcaption>
+</figure>
+```
+
+::: {.two-col .future-grid}
+::: panel
+**語彙リストの自動化**
+
+候補語の抽出と自然／人工の分類を再現可能な手順にする。境界語は用例を見て確認する。
+:::
+
+::: panel
+**ベクトルのまま分析**
+
+語の自然―人工への近さを連続値で残し、50語窓の分布や局所的な移り変わりを調べる。
+:::
+:::
+
+::: {.verdict}
+次に、ベクトル由来の二軸分析を通じて、計量化と文学史の視点を往復する。
+:::
+::::
+
+:::: {.section .flow .concept-slide}
+::: kicker
+13 — Quantification × literary history
+:::
+
+## 計量化と文学史の視点を往復する
+
+::: {.panel .vector-result}
+<b>9 / 13</b><span>Bennettが挙げるMorrisの13場面で、自然と建造環境の実質的な共存を確認</span>
+<small>GloVe軸から選んだ314語とInternet Archive版本文を使用。語義は人手確認。連続値の判定ではなく、116語による形式的な11/13とも別条件。</small>
+:::
+
+::: {.two-col .concept-grid}
+::: {.panel .nature-panel}
+**自然／建造環境**
+
+川と橋、草地と家。物理的な環境が同じ場面に現れる関係を捉える。
+:::
+
+::: {.panel .built-panel}
+**都市／田園**
+
+Bennettの「町と田舎が互いに変わる」場面は別の関係。元の二軸分析では、この場面も別軸と本文の語から拾い直せた。
+:::
+:::
+
+::: note
+都市／田園は文学史から導入した対立軸（例：[Raymond Williams, *The Country and the City*](https://books.google.com/books/about/The_Country_and_the_City.html?id=3o57NbjApJkC), 1973）。
+:::
+
+::: {.panel .scene-scale-example}
+### NFN-07：Kensingtonの森は、どこから一つの場面か
+
+> “a short street of houses” … “The road plunged at once into a beautiful wood”
+
+現行116語では `wood` と `arcade` が同じ50語窓に入る。ただし家並みから森の奥へ進む描写全体は、もっと長いまとまりである。冒頭の `arcade` と後段の `oak` は約195トークン離れる。`wood` の「森／木材」という多義性も、用例で確かめたい。
+
+語の採否だけでなく、どこまでを一つの場面とみなすかが、捉える関係を変える。
+:::
+
+::: {.panel .scene-scale-example}
+### NFN-13：鳥と橋は、窓の境界で離れる
+
+> “birds of prey were also commoner” … “the pretty bridge which had taken the place of Basildon railway-bridge”
+
+現行116語には `bird` と `bridge` の両方がある。本文では41トークン離れるが、50語窓を25語ずつ動かすと同じ窓に入らない。<b>75語窓なら入る。</b>
+
+この事例は別の隣接語で形式上ヒットする。ここで見落とすのは、鳥と橋という本文内の具体的な関係である。
+:::
+
+::: {.note .warn}
+<b>「まとまり」の設計：</b> 語彙、窓の長さ、移動幅、場面の境界を変えると、見える関係が変わる。
+:::
+
+::: {.verdict}
+文学史の視点が分析の軸を与え、計量化が「再野生化」の内訳と場面の境界を問い直す。
+:::
+::::
+
+:::: {.section .flow .audience-slide}
+::: kicker
+14 — Questions from participants
+:::
+
+## 事前アンケートの関心事項より
+
+::: {.audience-grid}
+::: panel
+### LLMを利用したテクスト解析、批評テーマの提案など
+
+- 今回の分析でのLLM利用は限定的。
+- 情報学の先行研究をLLMで整理すると、問いの着想が浮かぶことがある。文学批評でも起こりうるのでは、という個人的な感触。
+- 今回のように、問いを精緻化する助けにもなりうる。
+:::
+
+::: panel
+### 多義語を頻用した多層構造の文脈を、AIはどれだけ解読できるか
+
+> 多義語を頻用（又は使用）した多層構造を持つ文脈をAIはどれだけ解読できるのでしょうか。
+
+- LLMは文脈に応じた多義性を読める。掛け言葉に気づくことも、問いかけ方次第で可能。
+- その読みをベクトルなどに落とした分析で適切に扱えるかは、モデルと分析手順による。
+:::
+
+::: panel
+### 文学作品の版による異同の正確な調べ方
+
+Open Libraryの版情報から分析本文を特定し、Gutenberg版とInternet Archive版の差やOCR修正を、結果とともに記録する。
+:::
+
+::: panel
+### 頻出語を皮切りに研究を進めることはあるか
+
+> 作品の中で頻出するワードがある場合（総語数40万語の小説で100回出現等）、これを皮切りに研究を進めることはありますか。
+
+- あると思う。まず出現箇所と前後の文脈を読み、章・場面ごとの分布も見る。
+- 「頻出」にどんな意味があるかを掘り下げる。たとえば「私」も頻出しうるので、回数だけではその語の重要性は決まらない。
+- その語が作品・時代の中でどう位置づくかを、比較と計量化で（準）客観的に確かめる。
+
+::: {.positioning-example}
+**歴史でも、名前だけでは位置づけが見えない。**
+
+「アブドゥル・ラザク」<span aria-hidden="true">→</span>「1969年の民族間衝突後、貧困削減と民族間の経済格差是正を掲げる新経済政策を進めたマレーシアの首相」
+
+固有名詞を役割と言い換えると、その人物をどう捉えているかが伝わる。頻出語も、回数から作品内での役割へ問いを進める。<small>史実：[マレーシア議会会議録（1971年）](https://repositori.parlimen.gov.my/bitstream/123456789/3540/57/DR-23021971.pdf)</small>
+:::
+:::
 :::
 ::::
 
 :::: {.section .flow .appendix}
 ::: kicker
-Appendix — Sources & reproducibility
+Appendix — Reproducibility
 :::
 
-## Sources
+## 固定した116語から結果を再計算する
 
-- Bennett, Phillippa. “Wild Belongings: Stories of Rewilding in William Morris’s *News from Nowhere* and Diane Setterfield’s *Once Upon a River*.” *Green Letters*, 2026. <https://doi.org/10.1080/14688417.2026.2733353>
-- Morris, William. *News from Nowhere*. Reeves & Turner, 1891.
-- Hudson, W. H. *A Crystal Age*. Duckworth, 1919 revised edition.
-- Bellamy, Edward. *Looking Backward: 2000–1887*. Ticknor, 1888.
-- Butler, Samuel. *Erewhon*. Trübner, 1872.
-
-## Repository artifacts
-
-- `slides.md`: editable source of truth
-- `index.html`: generated presentation
-- `data/work_summary.csv`: work-level results
-- `data/permutation_summary.csv`: null-model results
-- `data/nfn_chapter_summary.csv`: Morrisの全32章とBennett事例の対応
-- `data/bennett_2026_nfn_alignment.csv`: 13-case external alignment
-- `data/two_axis_work_summary.csv`: 二軸の作品別結果
-- `data/morris_literal_town_country.csv`: Morrisのliteral town–country窓
-- `data/bellamy_gutenberg_comparison.csv`: Bellamyの入力本文感度分析
-- `data/bellamy_source_quality.csv`: IA OCRとPG624の機械可読性診断
+- **語彙入力：** `data/expanded_lexicon.csv` の自然56語・人工60語を固定して使用。114語版は `data/curated_lexicon.csv` に保存。
+- **本文入力：** 4作品のProject Gutenberg版。使用した版とリンクは作品紹介スライドに掲載。
+- **数え方：** 名詞の原形を照合し、章をまたがない50語窓を25語ずつ動かして、自然語と人工語が両方あれば共存と数える。
+- **集計結果：** `data/expanded_gutenberg_work_summary.csv`、`data/expanded_gutenberg_chapter_summary.csv`、`data/expanded_gutenberg_permutation_summary.csv`。
+- **検証資料：** `data/expanded_gutenberg_example_window.json` に本文例、`data/expanded_run_metadata.json` に入力ハッシュと計算条件を記録。
+- **補助分析：** Bennett論文の13事例との位置照合は、別に記録したInternet Archive版による（`data/expanded_bennett_alignment.csv`）。
+- **別条件の二軸分析：** 9/13の人手判定は `data/bennett_2026_nfn_alignment.csv`、都市／田園の本文窓は `data/morris_literal_town_country.csv` に記録。
 
 ::: note
-Main window: 50 tokens、25語ずつ移動（50%重複）。Global and paragraph-preserving permutations: 1,000 each. Nature–BuiltとCountry–Townはいずれも作品比較前に固定。BellamyのPG624再計算でも主順位は不変。
+Gutenberg版と選定したInternet Archive版の共存率差は各作品で0.2ポイント以内。ただし底本の異同もあるので、差をOCRの効果だけには帰せない。
 :::
 ::::

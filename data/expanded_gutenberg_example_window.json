@@ -1,0 +1,259 @@
+{
+  "work": "news_from_nowhere",
+  "chapter": 10,
+  "window_start": 23997,
+  "window_end": 24047,
+  "text": "have heard of. Beyond that the houses are scattered wide about the meadows there, which are very beautiful, especially when you get on to the lovely river Lea (where old Isaak Walton used to fish, you know) about the places called Stratford and Old Ford, names which of course you",
+  "tokens": [
+    {
+      "surface": "have",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "heard",
+      "lemma": "heard",
+      "label": 0
+    },
+    {
+      "surface": "of",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "Beyond",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "that",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "the",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "houses",
+      "lemma": "house",
+      "label": -1
+    },
+    {
+      "surface": "are",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "scattered",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "wide",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "about",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "the",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "meadows",
+      "lemma": "meadow",
+      "label": 1
+    },
+    {
+      "surface": "there",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "which",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "are",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "very",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "beautiful",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "especially",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "when",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "you",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "get",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "on",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "to",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "the",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "lovely",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "river",
+      "lemma": "river",
+      "label": 1
+    },
+    {
+      "surface": "Lea",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "where",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "old",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "Isaak",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "Walton",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "used",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "to",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "fish",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "you",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "know",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "about",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "the",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "places",
+      "lemma": "place",
+      "label": 0
+    },
+    {
+      "surface": "called",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "Stratford",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "and",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "Old",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "Ford",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "names",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "which",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "of",
+      "lemma": "",
+      "label": 0
+    },
+    {
+      "surface": "course",
+      "lemma": "course",
+      "label": 0
+    },
+    {
+      "surface": "you",
+      "lemma": "",
+      "label": 0
+    }
+  ]
+}

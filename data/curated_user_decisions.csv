@@ -1,0 +1,12 @@
+lemma,decision,source,note
+flower,keep_nature,user_2026-10-15,Classify the word as nature even when a sampled occurrence refers to embroidered flowers.
+bird,keep_nature,user_2026-10-15,Accept the proposed lexical nature classification despite a figurative occurrence.
+leaf,keep_nature,user_2026-10-15,Accept the proposed lexical nature classification despite a tagged verb occurrence.
+grass,keep_nature,user_2026-10-15,Accept the proposed lexical nature classification despite noisy OCR.
+cloud,keep_nature,user_2026-10-15,Accept the proposed lexical nature classification despite figurative uses.
+machine,keep_built,user_2026-10-15,Accept the proposed lexical built classification despite metaphorical uses.
+wall,keep_built,user_2026-10-15,Accept the proposed lexical built classification despite possible natural walls.
+earth,keep_nature,user_2026-10-15,Accept the proposed lexical nature classification.
+city,keep_built,user_2026-10-15,Accept the proposed lexical built classification of a built settlement.
+air,keep_nature,user_2026-10-15,Classify atmosphere as nature despite the old built label and figurative uses.
+bank,drop,user_2026-10-15,Exclude the ambiguous financial institution and riverbank homonym.

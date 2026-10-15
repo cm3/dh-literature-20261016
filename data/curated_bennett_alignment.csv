@@ -1,0 +1,14 @@
+case_id,label,article_page,overlap_windows,curated_mixed_windows,curated_nature_terms,curated_built_terms,prior_manual_classification
+NFN-01,Runnymede river life,3,5,2,meadow,house,outside_or_spurious
+NFN-02,River mediates transition,5,4,1,river|water,wall,substantive
+NFN-03,Summer Thames on waking,5,4,1,air,house|room,outside_or_spurious
+NFN-04,Salmon bridge and deindustrialised banks,5,36,6,river|tide|water,booth|building|clothes|house|shop,substantive
+NFN-05,Town-country mutual influence,6,10,0,,,missed
+NFN-06,Hammersmith highway through meadows,6,19,3,river|tide|water,brick|dwelling|house,substantive
+NFN-07,Kensington wood as urban wild spot,6,16,0,,,substantive_with_caveat
+NFN-08,Children learn among wild creatures,9,9,1,forest,house,substantive
+NFN-09,Force-barges replace steam power,9,9,4,land|river|water,brick|vehicle,substantive_with_caveat
+NFN-10,Ellen's earth-grown old house,9,9,2,earth|leaf,house|wall,substantive
+NFN-11,Philippa's riverside house and flower carving,9,8,1,flower,house,substantive
+NFN-12,Space for trees,10,6,0,,,weak_or_ambiguous
+NFN-13,Thriving birds of prey,10,5,1,bird,brick,substantive_with_caveat

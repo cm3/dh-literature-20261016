@@ -1,0 +1,49 @@
+{
+  "schema": "all-gutenberg-input-sensitivity.v1",
+  "main_window": {
+    "width": 50,
+    "step": 25
+  },
+  "python": "3.14.3 (main, Mar  8 2026, 16:11:02) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "nltk": "3.10.3",
+  "lexical_114_sha256": "fdbbda2d8dfe598c05970cba5189b69d09e5dd38a0f86499d1aa06c61bd88d12",
+  "original_314_sha256": "bf72f508c303c98d9caa4f813a82760e620611aabf321fa4cb9ec72a00a86f1a",
+  "frozen_axis_sha256": "969f77e3a7cd06c3a28ec77444585d300c74784d27358154a4118cf268c33aae",
+  "ia_curated_summary_sha256": "7f1bf98bc222c5ee0f7893d26142a958ae640b6947e3395dda5c2ab6aa97c73a",
+  "ia_original_summary_sha256": "98f5aeaf978d89108692781bb47c3b84f506b09108a3458ec82e5fe7439598fc",
+  "inputs": [
+    {
+      "work": "news_from_nowhere",
+      "gutenberg_id": 3261,
+      "ia_text_sha256": "6dd3aaa5bd7394d046ac4912c257087334134dedbd2e9eefc52a248dafb4234a",
+      "text_sha256": "b26f36b03135999202051056a14fb8076bc304525c999b91ad8b7f86a86b4179",
+      "chapters_sha256": "95b8767ab23a4da26d38dd9aead6b435968b33ba3a476a3cebd3da41dc17a593",
+      "preparation_metadata_sha256": "49389adba3da0f84bf3e4c46de2d00036e06c485e08cb0b2db70f7cfe38be25d"
+    },
+    {
+      "work": "looking_backward",
+      "gutenberg_id": 624,
+      "ia_text_sha256": "7eb4b790a37b4b253b27548c5295d5c45d3c3a2053c61a7a6e066816b316360a",
+      "text_sha256": "d63b0619c8d1f00881d4af0d2cf1c6bc11092117f54e4711ab05205f629581fe",
+      "chapters_sha256": "eb5a444be43b253b12671e63b0c8beed574aa38eb33925b47e82b3712ab4d545",
+      "preparation_metadata_sha256": "0ba4a7d8aa83fb14e9553a985329c38a72ed74bc7131b345773128654d8ba4b5"
+    },
+    {
+      "work": "erewhon",
+      "gutenberg_id": 1906,
+      "ia_text_sha256": "7677fb013d3313df8fd000f5960ff8f7995cf4f754659f340a9bba4911a5c43e",
+      "text_sha256": "ce22c11100a627596d3dc30b0109ca5cac1fd8c21528bcde1aaacad547892f2e",
+      "chapters_sha256": "be51ee36fd8ef24a5155c9a4bc686ceb9a762cf7a4fa4e8718794c28d6bed1bc",
+      "preparation_metadata_sha256": "33998ca8c548e5de7f53bba757d86eb2f6448c9ff748eaca313e53bddc888634"
+    },
+    {
+      "work": "crystal_age",
+      "gutenberg_id": 7401,
+      "ia_text_sha256": "2345c20389c0fc5a07a3d7d66376bbe56b42c5f859fb422ede493cf27c1e15e2",
+      "text_sha256": "badd0de9ad2fbafb7a6b3aea2d283246675381b3d45c01265458c5d9ffb05827",
+      "chapters_sha256": "a2be1c2e19958881df77b0690aef3ab955f91f9e71b5a6636b299fbb9b2cb965",
+      "preparation_metadata_sha256": "86bedc74ce5298f5c73edd892b4e7e613d30464438b67b00a0524fdcc8534696"
+    }
+  ],
+  "note": "Both IA and PG texts retokenized in the same NLTK environment. PG texts use their own chapter boundaries. Erewhon has 29 PG chapters versus 25 in IA first edition."
+}

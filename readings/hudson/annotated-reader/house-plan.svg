@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1040" role="img" aria-labelledby="plan-title plan-desc">
+<title id="plan-title">A Crystal Age の家：読書のための推定間取り図</title>
+<desc id="plan-desc">部屋の形と左右の位置は仮定。入口の向かいに広間の絵窓がある。広間から通路で音楽室へ、音楽室から長い彫像回廊へ、回廊の奥から階段とガラス戸を通って高い床の母の部屋へ。就寝室は背面テラスに沿って並ぶが、主要室との接続は不明。母の寝室は、母の特別な地位と看病の動線から専用の居住区画の一部として推定配置。一般就寝室の列との位置関係は未確定。図の上が北ではない。</desc>
+<style>
+text{font-family:"Hiragino Sans","Yu Gothic",sans-serif;fill:#28322f;text-anchor:middle;font-size:19px}.sub{font-size:15px;fill:#626f65}.tiny{font-size:13px;fill:#626f65}.title{font-size:23px;font-weight:600}.room{fill:#f5eddf;stroke:#a6aaa0;stroke-width:2;stroke-dasharray:8 5}.hall{fill:#eee5db}.music{fill:#ecf0e7}.gallery{fill:#e6e9e5}.mother{fill:#eee4ee}.terrace{fill:#e0e8d9;stroke:#a5b29b;stroke-width:1.5}.corridor{fill:#f6f3e9;stroke:#a6aaa0;stroke-width:1.5;stroke-dasharray:6 4}.door{stroke:#3a655a;stroke-width:6;fill:none}.inferred{stroke:#9c8a75;stroke-width:2;fill:none;stroke-dasharray:4 7}.window{stroke:#9474a0;stroke-width:7}.water{fill:none;stroke:#92bbc1;stroke-width:14;stroke-linecap:round}a:hover .room{stroke:#3a655a;stroke-width:3}a:focus{outline:2px solid #3a655a}
+</style>
+<rect width="1000" height="1040" fill="#f8f5ec"/>
+<text class="title" x="500" y="38">家の内部を、ひとつの配置案として読む</text>
+<text class="sub" x="500" y="66">破線の輪郭・部屋の大小・左右は仮置き／方角・縮尺なし</text>
+<path class="water" d="M60 100Q170 80 280 100T500 100T720 100T940 100"/>
+<text class="sub" x="500" y="128">川の方向 · 岸まで急な斜面（第4章）</text>
+<rect class="terrace" x="70" y="148" width="860" height="55" rx="3"/>
+<text x="500" y="183">背面のテラス</text>
+<text class="sub" x="285" y="229">就寝室の列（描いた数は実数ではない）</text>
+<g>
+<rect class="room" x="80" y="245" width="80" height="100"/><rect class="room" x="160" y="245" width="80" height="100"/>
+<rect class="room" x="240" y="245" width="80" height="100"/><rect class="room" x="320" y="245" width="80" height="100"/>
+<rect class="room" x="400" y="245" width="80" height="100"/>
+<path class="door" d="M102 245H138M182 245H218M262 245H298M342 245H378M422 245H458M102 345H138M182 345H218M262 345H298M342 345H378M422 345H458"/>
+<text x="120" y="300">寝室</text><text x="200" y="300">寝室</text><text x="280" y="300">寝室</text><text x="360" y="300">寝室</text><text x="440" y="300">…</text>
+</g>
+<rect class="corridor" x="80" y="345" width="400" height="54"/><rect class="corridor" x="480" y="345" width="45" height="105"/>
+<text class="sub" x="280" y="378">広く明るい通路</text><text class="tiny" x="605" y="474">直角に曲がる暗い通路</text>
+<path class="inferred" d="M503 450V480"/><text class="sub" x="290" y="453">主要室への接続位置は不明（第7章）</text>
+<rect class="room" x="540" y="245" width="145" height="110"/><text x="612" y="285">母の寝室</text><text class="tiny" x="612" y="312">地位と動線から推定</text><text class="tiny" x="612" y="334">位置・接続は未確定</text>
+<path class="inferred" d="M685 300H720"/>
+<rect class="room mother" x="720" y="245" width="230" height="145"/><text x="835" y="285">母の部屋</text><text class="sub" x="835" y="315">山景を描いた八枚の窓</text><text class="tiny" x="835" y="340">回廊より高い床</text><text class="tiny" x="835" y="364">寝室とは別の空間</text>
+<path class="window" d="M720 261V279M720 296V314M720 331V349M720 366V384M950 261V279M950 296V314M950 331V349M950 366V384"/>
+<path class="door" d="M810 390H860"/>
+<rect class="corridor" x="785" y="390" width="100" height="50"/>
+<path stroke="#a6aaa0" d="M785 400H885M785 410H885M785 420H885M785 430H885"/>
+<text class="tiny" x="667" y="418">階段 ↑ ガラス戸</text>
+<rect class="room gallery" x="760" y="440" width="150" height="410"/>
+<text x="835" y="520">彫像の回廊</text><text class="tiny" x="835" y="548">長い身廊状の室</text>
+<g fill="#b2bbb1"><circle cx="785" cy="590" r="7"/><circle cx="885" cy="590" r="7"/><circle cx="785" cy="630" r="7"/><circle cx="885" cy="630" r="7"/><circle cx="785" cy="670" r="7"/><circle cx="885" cy="670" r="7"/><circle cx="785" cy="775" r="7"/><circle cx="885" cy="775" r="7"/></g>
+<text class="tiny" x="835" y="810">左右の高い床に彫像</text>
+<a href="chapter-03.html#ca-03-p001"><rect class="room hall" x="100" y="530" width="320" height="290"/><text x="260" y="628">広間</text><text class="sub" x="260" y="657">暗色のモザイク床</text><text class="sub" x="260" y="684">彫像・深い赤の天井</text></a>
+<a href="chapter-03.html#ca-03-p005"><path class="window" d="M215 530H305"/><text class="sub" x="260" y="570">金属の葉の扉／百合の絵窓</text><text class="tiny" x="260" y="596">正面入口に向かい合う</text></a>
+<rect x="103" y="685" width="12" height="95" fill="#af9a85"/><text class="tiny" x="168" y="764">大暖炉</text>
+<path class="door" d="M420 700V745"/>
+<rect class="corridor" x="420" y="700" width="50" height="45"/>
+<text class="tiny" x="445" y="685">通路</text>
+<a href="chapter-05.html#ca-05-p002"><rect class="room music" x="470" y="630" width="260" height="220"/><text x="600" y="675">音楽室</text><text class="sub" x="600" y="705">長い身廊・ガラス屋根</text><text class="sub" x="600" y="735">白と真珠色の床・柱</text><text class="tiny" x="600" y="765">父の壇・朗読・七つの球</text><text class="tiny" x="600" y="815">南向きの戸（図上の位置は仮）</text></a>
+<path class="door" d="M470 700V745M730 715V750M760 715V750M570 850H630"/>
+<path stroke="#3a655a" stroke-width="2" d="M730 735H760"/>
+<path class="door" d="M235 820H285"/>
+<rect class="terrace" x="100" y="850" width="320" height="65"/><text x="260" y="888">正面の柱廊</text>
+<path stroke="#9fa897" fill="none" d="M100 925H420M100 935H420M100 945H420"/>
+<text class="sub" x="260" y="977">広く浅い階段 → 正面入口</text>
+<text class="sub" x="680" y="920">図上の余白は、未記述の空間。</text><text class="sub" x="680" y="949">中庭や廊下の存在を意味しません。</text>
+<path class="door" d="M100 1010H140"/><text class="tiny" x="270" y="1015">本文が述べる戸・連絡（位置・幅は仮）</text>
+<path class="inferred" d="M520 1010H560"/><text class="tiny" x="730" y="1015">形・配置、または接続経路が未確定</text>
+</svg>

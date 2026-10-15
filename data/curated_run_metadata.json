@@ -1,0 +1,22 @@
+{
+  "schema": "nature-built-lexical-recount.v2",
+  "review_sha256": "c62d8900ff59d16d334cb3035d604a6d1143605bfcad8249bdbaf786734ad3f0",
+  "sample_sha256": "c580a0f8b10b100da9c8dc266e10783b14f4abcf7434b4d7856cf30702db2cc2",
+  "responses_sha256": "588a18a7ab90d4289cfbd32f53496580cc1542cb24fdcc4377d83e21ce1627ba",
+  "user_decisions_sha256": "358df2a0f5192804dc8d27f349190be2d33f5343344234762ac8383bab892565",
+  "editorial_decisions_sha256": "2d9dbafe58e8552268baf13e7bcaf6a7e6cbb9f17a155ef8971535c1f607aefb",
+  "old_windows_sha256": "ec84322d907ae232e8f589ce36613afa79a519165f6c94a2eb509ebaf5fbf660",
+  "old_tokens_sha256": "c1c5e8116410522727931ab30b5389a175dbdebea96eedbab3649f6bb8d9dbe9",
+  "selection_rule": "LLM lemma label agrees with frozen label, with explicit user and editorial lexical overrides; sampled occurrences do not veto inclusion",
+  "selected_nature": 55,
+  "selected_built": 59,
+  "fully_human_audited": false,
+  "user_decisions": 11,
+  "editorial_decisions": 31,
+  "permutations": 1000,
+  "random_seed": 20261015,
+  "window": {
+    "width": 50,
+    "step": 25
+  }
+}
