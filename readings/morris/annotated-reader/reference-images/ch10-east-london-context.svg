@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 570" role="img" aria-labelledby="title desc">
+  <title id="title">第10章に登場する東ロンドンの地名の位置関係</title>
+  <desc id="desc">西から東へ、オールドゲート、リー川とストラトフォード、キャニング・タウン、シルバータウン、レイナム湿地を配置し、テムズ南岸にはシューターズ・ヒルを示す概略図。縮尺・移動経路・未来の牧草地の範囲を示さない。</desc>
+  <rect width="960" height="570" fill="#f5f4e9"/>
+  <path d="M0 0H960V330C818 315 711 348 614 314C511 278 432 298 354 338C202 414 96 331 0 362Z" fill="#e9f0d8"/>
+  <path d="M0 481C183 432 310 476 430 438C539 408 650 448 761 421C850 399 902 431 960 418V570H0Z" fill="#e4e9d7"/>
+  <path d="M0 398C150 381 214 450 337 407C450 368 520 379 638 399C760 419 847 368 960 389" fill="none" stroke="#99c4d8" stroke-width="54" stroke-linecap="round"/>
+  <path d="M0 398C150 381 214 450 337 407C450 368 520 379 638 399C760 419 847 368 960 389" fill="none" stroke="#4a8eac" stroke-width="3"/>
+  <path d="M428 0C414 85 442 161 435 230C431 300 455 348 466 373" fill="none" stroke="#79b5ce" stroke-width="29" stroke-linecap="round"/>
+  <path d="M428 0C414 85 442 161 435 230C431 300 455 348 466 373" fill="none" stroke="#4a8eac" stroke-width="2"/>
+  <g font-family="system-ui, sans-serif" fill="#20352e">
+    <text x="32" y="48" font-size="25" font-weight="700">第10章｜東ロンドンの位置関係</text>
+    <text x="32" y="77" font-size="15" fill="#526158">概略図・縮尺なし ／ 語られる風景は作中未来</text>
+    <text x="47" y="155" font-size="18" font-weight="700">西</text>
+    <path d="M92 148H860" stroke="#79907d" stroke-width="2"/>
+    <path d="M860 148l-12-7v14z" fill="#79907d"/>
+    <text x="876" y="155" font-size="18" font-weight="700">東</text>
+    <text x="381" y="109" font-size="16" fill="#276c88">リー川</text>
+    <text x="61" y="380" font-size="16" fill="#276c88">テムズ川</text>
+    <text x="744" y="480" font-size="15" fill="#526158">南岸</text>
+    <text x="635" y="241" font-size="15" fill="#526158">北岸・かつての低地</text>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="15" fill="#20352e" stroke="#f5f4e9" stroke-width="5" paint-order="stroke fill">
+    <circle cx="174" cy="262" r="7" fill="#9a573d" stroke="none"/><text x="118" y="241" font-weight="700">オールドゲート</text>
+    <circle cx="396" cy="305" r="7" fill="#9a573d" stroke="none"/><text x="306" y="289" font-weight="700">オールド・フォード</text>
+    <circle cx="469" cy="221" r="7" fill="#9a573d" stroke="none"/><text x="484" y="226" font-weight="700">ストラトフォード</text>
+    <circle cx="492" cy="349" r="7" fill="#9a573d" stroke="none"/><text x="503" y="337" font-weight="700">キャニング・タウン</text>
+    <circle cx="617" cy="314" r="7" fill="#9a573d" stroke="none"/><text x="586" y="298" font-weight="700">ドックの一例</text>
+    <circle cx="659" cy="358" r="7" fill="#9a573d" stroke="none"/><text x="670" y="356" font-weight="700">シルバータウン</text>
+    <circle cx="850" cy="306" r="7" fill="#4c8062" stroke="none"/><text x="795" y="284" font-weight="700">湿地の参考例</text>
+    <circle cx="713" cy="515" r="7" fill="#9a573d" stroke="none"/><text x="581" y="540" font-weight="700">シューターズ・ヒル</text>
+  </g>
+  <text x="32" y="552" font-family="system-ui, sans-serif" font-size="13" fill="#526158">● 地点は目安。本文の視線・行程・牧草地の範囲を地図から確定しない。</text>
+</svg>

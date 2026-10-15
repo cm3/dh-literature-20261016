@@ -47,7 +47,7 @@ sh scripts/build.sh
 このリポジトリのルートを公開ディレクトリにすると、`index.html` から二つの読書稿へ相対リンクで移動できます。
 読書稿のCSS・スクリプト・挿絵と、Morrisの写真の出典表示も `readings/` に同梱しました。
 二つの読書稿は親プロジェクトの校訂済みHTMLから作った公開用スナップショットです。
-Morrisの舞台地図はLeafletとOpenStreetMapのオンライン配信を利用します。
+Morrisの読書稿には36件の読書注、36枚の典拠つき資料画像、第10章の東ロンドンの位置関係を示す概略図を収録しています。舞台地図はLeafletとOpenStreetMapのオンライン配信を利用します。
 
 - [スライド](index.html)
 - [Morris第10章の対訳](readings/morris/annotated-reader/chapter-10.html)
