@@ -214,42 +214,7 @@ OCR誤読による語の抽出ミスを減らすためGutenberg版を利用。Op
 
 :::: {.section .screen}
 ::: kicker
-6 — Why the list matters
-:::
-
-## 語の選び方で、比較の見え方が変わる
-
-::: {.compact-table .data-table}
-| 作品 | 元の314語 | 語単位の116語 |
-|:--|--:|--:|
-| *News from Nowhere* | 15.65% | **7.22%** |
-| *A Crystal Age* | **27.38%** | 8.18% |
-| *Erewhon* | 16.63% | 3.76% |
-| *Looking Backward* | 9.12% | 2.11% |
-:::
-
-::: {.two-col .takeaway-grid}
-::: panel
-**除外した例**
-
-`family`, `company`, `morning` は自然物・人工物を指す語として数えない。
-:::
-
-::: panel
-**採用した例**
-
-`flower`・`bird`は自然語、`machine`は人工語。比喩の用例だけでは落とさない。
-:::
-:::
-
-::: {.verdict}
-同じGutenberg版本文・同じ50語窓でも、採用する語によって共存率とMorris・Butlerの順位が変わる。
-:::
-::::
-
-:::: {.section .screen}
-::: kicker
-7 — Within Morris
+6 — Within Morris
 :::
 
 ## 制度の説明では少なく、街と川の旅で現れる
@@ -298,7 +263,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .flow .chapter-audit-slide}
 ::: kicker
-8 — Morris: all 32 chapters
+7 — Morris: all 32 chapters
 :::
 
 ## 全32章で見る、共存の山と谷
@@ -359,7 +324,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .screen}
 ::: kicker
-9 — Read the passages
+8 — Read the passages
 :::
 
 ## 同じ「共存」でも、物語上の働きは異なる
@@ -395,10 +360,10 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .screen .case-review-slide}
 ::: kicker
-10 — Bennett's 13 examples
+9 — Bennett's 13 examples
 :::
 
-## 語を増やすと、形式上の検出も増える
+## Bennettの13事例中、11件で窓が反応
 
 ::: {.metric-grid}
 ::: {.metric .good}
@@ -435,13 +400,13 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .screen .center .closing-slide}
 ::: kicker
-11 — Conclusion
+10 — Conclusion
 :::
 
 ## 分布は、読解の入口を示す
 
 ::: {.closing-points}
-<div><b>1</b><span><strong>比較：</strong>Gutenberg版と116語のリストではHudsonが8.18%、Morrisが7.22%。率と一部の作品順位は語彙選択に左右される。</span></div>
+<div><b>1</b><span><strong>比較：</strong>Gutenberg版と116語のリストではHudsonが8.18%、Morrisが7.22%。</span></div>
 <div><b>2</b><span><strong>場所：</strong>Morrisでは制度説明よりLondonとThamesの具体的場面に共存が現れる。</span></div>
 <div><b>3</b><span><strong>読解：</strong>語が一緒に出ることと、自然・人工物がどう関係するかは別に確認する。</span></div>
 :::
@@ -453,7 +418,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .flow .future-slide}
 ::: kicker
-12 — Future directions
+11 — Future directions
 :::
 
 ## 固定した語彙の先へ
@@ -523,14 +488,14 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .flow .concept-slide}
 ::: kicker
-13 — Quantification × literary history
+12 — Quantification × literary history
 :::
 
 ## 計量化と文学史の視点を往復する
 
 ::: {.panel .vector-result}
 <b>9 / 13</b><span>Bennettが挙げるMorrisの13場面で、自然と建造環境の実質的な共存を確認</span>
-<small>GloVe軸から選んだ314語とInternet Archive版本文を使用。語義は人手確認。連続値の判定ではなく、116語による形式的な11/13とも別条件。</small>
+<small>別条件の二軸分析ではGloVe軸から選んだ314語とInternet Archive版本文を使用。語義は人手確認。連続値の判定ではなく、116語による形式的な11/13とも別条件。</small>
 :::
 
 ::: {.two-col .concept-grid}
@@ -582,7 +547,7 @@ Bennettの「町と田舎が互いに変わる」場面は別の関係。元の�
 
 :::: {.section .flow .audience-slide}
 ::: kicker
-14 — Questions from participants
+13 — Questions from participants
 :::
 
 ## 事前アンケートの関心事項より
