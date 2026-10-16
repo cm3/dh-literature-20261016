@@ -2,7 +2,9 @@
 
 [ノートブックをColabで開く](https://colab.research.google.com/github/cm3/dh-literature-20261016/blob/main/colab/fixed_lexicon_demo.ipynb)
 
-Morris『*News from Nowhere*』とHudson『*A Crystal Age*』の2作品について、固定116語と50語窓・25語移動の共存率を再計算します。PythonとNLTK 3.10.3を使い、ノートブック内で2冊の原版テキストから章本文を切り出します。結果はスライドのMorris 220/3,047窓（7.22%）、Hudson 190/2,323窓（8.18%）と一致するよう検証します。
+Morris『*News from Nowhere*』とHudson『*A Crystal Age*』の2作品について、固定116語と50語窓・25語移動の共存率を再計算します。PythonとNLTK 3.10.3を使い、ノートブック内で2冊の未加工TXTから章本文を切り出します。結果はスライドのMorris 220/3,047窓（7.22%）、Hudson 190/2,323窓（8.18%）と一致するよう検証します。
+
+Colabのプロキシ環境ではNLTKの通常のダウンローダーが安全性チェックで停止することがあるため、NLTK公式リポジトリの固定コミットから `punkt_tab`・英語品詞タガー・`wordnet` のZIPを直接取得します。各ZIPのSHA-256を照合してから展開し、NLTKのプロキシ制限を解除する設定は使いません。初回実行時に約16MBを取得します。
 
 配布したProject Gutenbergの未加工TXTは以下の2ファイルです。ライセンス全文を含み、バイト列を変更していません。研究用の整形テキストはノートブック実行時に作ります。入力のSHA-256と整形後本文のSHA-256はノートブック内で照合します。`data/expanded_lexicon.csv` が語彙入力です。
 
