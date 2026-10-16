@@ -50,29 +50,10 @@ BennettはMorrisの『News from Nowhere』（1890年連載／1891年刊）とDia
 
 :::
 
-::: {.bennett-quote}
-> “… there is a more organic relationship between the natural and the built environments in Morris’s vision.”
+::: {.thames-comparison}
+### 二つの小説をつなぐThames
 
-<span>Bennett (2026), p. 6 · 「Morrisの構想では、自然環境と建造環境がより有機的に結びついている」</span>
-:::
-
-::: quote
-**問い**　自然物と人工物が同じ場面に現れる頻度は、Morrisでとくに高いのか？
-:::
-::::
-
-:::: {.section .screen}
-::: kicker
-2 — Bennett's two novels
-:::
-
-## 二つの小説をつなぐThames
-
-::: lead
-Bennettが比較するのは、1890年のMorrisと、2018年のSetterfieldである。
-:::
-
-::: {.two-col .evidence-grid}
+::: {.two-col .evidence-grid .thames-grid}
 ::: {.panel .excerpt-card .nature-panel}
 **Morris, *News from Nowhere***
 
@@ -93,11 +74,22 @@ Bennettは両作に、人間中心の見方の転換、過去とのつながり�
 ::: note
 ここはBennett (2026) の比較の要約。Setterfieldの本文全体を用いた語数・共存率の集計ではない。
 :::
+:::
+
+::: {.bennett-quote}
+> “… there is a more organic relationship between the natural and the built environments in Morris’s vision.”
+
+<span>Bennett (2026), p. 6 · 「Morrisの構想では、自然環境と建造環境がより有機的に結びついている」</span>
+:::
+
+::: quote
+**問い**　自然物と人工物が同じ場面に現れる頻度は、Morrisでとくに高いのか？
+:::
 ::::
 
 :::: {.section .screen}
 ::: kicker
-3 — Four works
+2 — Four works
 :::
 
 ## 比較するのは4つの同時代の<br>ユートピア／ディストピア文学
@@ -143,7 +135,7 @@ Open Libraryは参照した所蔵版、Gutenbergは今回の集計本文、Wikid
 
 :::: {.section .flow .lexicon-slide}
 ::: kicker
-4 — What we count
+3 — What we count
 :::
 
 ## 自然物と人工物の語を、先にリストにする
@@ -167,7 +159,7 @@ Open Libraryは参照した所蔵版、Gutenbergは今回の集計本文、Wikid
 
 :::: {.section .screen .window-example-slide}
 ::: kicker
-5 — Local co-occurrence
+4 — Local co-occurrence
 :::
 
 ## 50語の範囲で、両方が現れるか？
@@ -193,7 +185,7 @@ Open Libraryは参照した所蔵版、Gutenbergは今回の集計本文、Wikid
 
 :::: {.section .screen}
 ::: kicker
-6 — Four-work result
+5 — Four-work result
 :::
 
 ## 今回のリストではHudsonが最も高い
@@ -218,7 +210,7 @@ OCR誤読による語の抽出ミスを減らすためGutenberg版を利用。Op
 
 :::: {.section .screen}
 ::: kicker
-7 — Why the list matters
+6 — Why the list matters
 :::
 
 ## 語の選び方で、比較の見え方が変わる
@@ -253,7 +245,7 @@ OCR誤読による語の抽出ミスを減らすためGutenberg版を利用。Op
 
 :::: {.section .screen}
 ::: kicker
-8 — Within Morris
+7 — Within Morris
 :::
 
 ## 制度の説明では少なく、街と川の旅で現れる
@@ -302,7 +294,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .flow .chapter-audit-slide}
 ::: kicker
-9 — Morris: all 32 chapters
+8 — Morris: all 32 chapters
 :::
 
 ## 全32章で見る、共存の山と谷
@@ -363,7 +355,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .screen}
 ::: kicker
-10 — Read the passages
+9 — Read the passages
 :::
 
 ## 同じ「共存」でも、物語上の働きは異なる
@@ -399,7 +391,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .screen .case-review-slide}
 ::: kicker
-11 — Bennett's 13 examples
+10 — Bennett's 13 examples
 :::
 
 ## 語を増やすと、形式上の検出も増える
@@ -439,7 +431,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .screen .center .closing-slide}
 ::: kicker
-12 — Conclusion
+11 — Conclusion
 :::
 
 ## 分布は、読解の入口を示す
@@ -457,7 +449,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .flow .future-slide}
 ::: kicker
-13 — Future directions
+12 — Future directions
 :::
 
 ## 固定した語彙の先へ
@@ -527,7 +519,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .flow .concept-slide}
 ::: kicker
-14 — Quantification × literary history
+13 — Quantification × literary history
 :::
 
 ## 計量化と文学史の視点を往復する
@@ -586,7 +578,7 @@ Bennettの「町と田舎が互いに変わる」場面は別の関係。元の�
 
 :::: {.section .flow .audience-slide}
 ::: kicker
-15 — Questions from participants
+14 — Questions from participants
 :::
 
 ## 事前アンケートの関心事項より
