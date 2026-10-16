@@ -568,6 +568,7 @@ Appendix — Reproducibility
 - **検証資料：** `data/expanded_gutenberg_example_window.json` に本文例、`data/expanded_run_metadata.json` に入力ハッシュと計算条件を記録。
 - **補助分析：** Bennett論文の13事例をGutenberg版へ対応づけた位置照合は `data/expanded_gutenberg_bennett_alignment.csv`。`scripts/recompute_gutenberg_bennett_alignment.py` で再計算できる。
 - **別条件の二軸分析：** 9/13の人手判定は `data/bennett_2026_nfn_alignment.csv`、都市／田園の本文窓は `data/morris_literal_town_country.csv` に記録。
+- **Colab実演：** [MorrisとHudsonを固定116語で再集計するノートブック](https://colab.research.google.com/github/cm3/dh-literature-20261016/blob/main/colab/fixed_lexicon_demo.ipynb)。章別分布と本文例まで確認できる。
 
 ::: note
 Gutenberg版と選定したInternet Archive版の共存率差は各作品で0.2ポイント以内。ただし底本の異同もあるので、差をOCRの効果だけには帰せない。

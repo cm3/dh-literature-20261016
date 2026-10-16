@@ -35,6 +35,8 @@ sh scripts/build.sh
 - `data/curated_*.csv`: 114語版の記録と採否判断
 - `data/expanded_*.csv`: 116語版の語彙・作品別・章別・無作為化・Bennett事例の再集計
 - `data/expanded_gutenberg_example_window.json`: スライド内で示す第10章の実例窓
+- `colab/fixed_lexicon_demo.ipynb`: MorrisとHudsonの固定116語・50語窓を再計算するColab実演（[開く](https://colab.research.google.com/github/cm3/dh-literature-20261016/blob/main/colab/fixed_lexicon_demo.ipynb)）
+- `colab/data/`: 実演用のProject Gutenberg未加工TXT2冊。出典と配布条件は[Colab説明](colab/README.md)に記載
 - `scripts/build_gutenberg_charts.py`: Gutenberg版の図をCSVから再生成
 - `data/work_summary.csv` など従来ファイル: 元の314語による集計
 - `templates/`: Pandoc HTML template
