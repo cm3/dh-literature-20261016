@@ -612,7 +612,9 @@ Bennettの「町と田舎が互いに変わる」場面は別の関係。元の�
 ::: panel
 ### 文学作品の版による異同の正確な調べ方
 
-Open Libraryの版情報から分析本文を特定し、Gutenberg版とInternet Archive版の差やOCR修正を、結果とともに記録する。
+- Open Libraryの版レコードで、Internet Archiveのスキャンがどの刊本か確認する。OCRで疑わしい語は原画像に戻る。
+- Gutenberg本文は別途、eBook番号・取得元・本文ハッシュを記録する。底本の版が不明なものは断定しない。
+- 二つの本文の差には版差とOCR誤読が混じる。今回の集計比較は分析結果への影響を見たもので、異同を一件ずつ確定したものではない。
 :::
 
 ::: panel
@@ -636,7 +638,7 @@ Appendix — Reproducibility
 ## 固定した116語から結果を再計算する
 
 - **語彙入力：** `data/expanded_lexicon.csv` の自然56語・人工60語を固定して使用。114語版は `data/curated_lexicon.csv` に保存。
-- **本文入力：** 4作品のProject Gutenberg版。使用した版とリンクは作品紹介スライドに掲載。
+- **本文入力：** 4作品のProject Gutenberg版。使用したeBook番号とリンクは作品紹介スライドに掲載。底本の版が不明な作品もある。
 - **数え方：** 名詞の原形を照合し、章をまたがない50語窓を25語ずつ動かして、自然語と人工語が両方あれば共存と数える。
 - **集計結果：** `data/expanded_gutenberg_work_summary.csv`、`data/expanded_gutenberg_chapter_summary.csv`、`data/expanded_gutenberg_permutation_summary.csv`。
 - **検証資料：** `data/expanded_gutenberg_example_window.json` に本文例、`data/expanded_run_metadata.json` に入力ハッシュと計算条件を記録。

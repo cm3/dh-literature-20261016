@@ -1041,7 +1041,11 @@ workshop
 </section>
 <section id="文学作品の版による異同の正確な調べ方" class="level3 panel">
 <h3>文学作品の版による異同の正確な調べ方</h3>
-<p>Open Libraryの版情報から分析本文を特定し、Gutenberg版とInternet Archive版の差やOCR修正を、結果とともに記録する。</p>
+<ul>
+<li>Open Libraryの版レコードで、Internet Archiveのスキャンがどの刊本か確認する。OCRで疑わしい語は原画像に戻る。</li>
+<li>Gutenberg本文は別途、eBook番号・取得元・本文ハッシュを記録する。底本の版が不明なものは断定しない。</li>
+<li>二つの本文の差には版差とOCR誤読が混じる。今回の集計比較は分析結果への影響を見たもので、異同を一件ずつ確定したものではない。</li>
+</ul>
 </section>
 <section id="頻出語を皮切りに研究を進めることはあるか" class="level3 panel">
 <h3>頻出語を皮切りに研究を進めることはあるか</h3>
@@ -1065,7 +1069,7 @@ workshop
 <h2>固定した116語から結果を再計算する</h2>
 <ul>
 <li><strong>語彙入力：</strong> <code>data/expanded_lexicon.csv</code> の自然56語・人工60語を固定して使用。114語版は <code>data/curated_lexicon.csv</code> に保存。</li>
-<li><strong>本文入力：</strong> 4作品のProject Gutenberg版。使用した版とリンクは作品紹介スライドに掲載。</li>
+<li><strong>本文入力：</strong> 4作品のProject Gutenberg版。使用したeBook番号とリンクは作品紹介スライドに掲載。底本の版が不明な作品もある。</li>
 <li><strong>数え方：</strong> 名詞の原形を照合し、章をまたがない50語窓を25語ずつ動かして、自然語と人工語が両方あれば共存と数える。</li>
 <li><strong>集計結果：</strong> <code>data/expanded_gutenberg_work_summary.csv</code>、<code>data/expanded_gutenberg_chapter_summary.csv</code>、<code>data/expanded_gutenberg_permutation_summary.csv</code>。</li>
 <li><strong>検証資料：</strong> <code>data/expanded_gutenberg_example_window.json</code> に本文例、<code>data/expanded_run_metadata.json</code> に入力ハッシュと計算条件を記録。</li>
