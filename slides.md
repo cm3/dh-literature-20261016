@@ -358,27 +358,9 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 ::::
 
-:::: {.section .screen .center .closing-slide}
-::: kicker
-9 — Conclusion
-:::
-
-## 分布は、読解の入口を示す
-
-::: {.closing-points}
-<div><b>1</b><span><strong>比較：</strong>Gutenberg版と116語のリストではHudsonが8.18%、Morrisが7.22%。</span></div>
-<div><b>2</b><span><strong>場所：</strong>Morrisでは制度説明よりLondonとThamesの具体的場面に共存が現れる。</span></div>
-<div><b>3</b><span><strong>読解：</strong>語が一緒に出ることと、自然・人工物がどう関係するかは別に確認する。</span></div>
-:::
-
-::: {.verdict .final-verdict}
-今回の数値は、固定した116語による探索的な集計。語が現れた用例の意味まで自動判定したものではない。
-:::
-::::
-
 :::: {.section .flow .future-slide}
 ::: kicker
-10 — Future directions
+9 — Future directions
 :::
 
 ## 固定した語彙の先へ
@@ -448,7 +430,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .flow .concept-slide}
 ::: kicker
-11 — Quantification × literary history
+10 — Quantification × literary history
 :::
 
 ## 計量化と文学史の視点を往復する
@@ -504,6 +486,24 @@ Gutenberg版では `bird` と `bridge` は41トークン離れる。両語とも
 
 ::: {.verdict}
 文学史が「都市／田園」という軸を与え、計量化が「再野生化」の内訳と場面の境界を問い直す。
+:::
+::::
+
+:::: {.section .screen .center .closing-slide}
+::: kicker
+11 — Conclusion
+:::
+
+## 分布は、読解の入口を示す
+
+::: {.closing-points}
+<div><b>1</b><span><strong>比較：</strong>Gutenberg版と116語のリストではHudsonが8.18%、Morrisが7.22%。</span></div>
+<div><b>2</b><span><strong>場所：</strong>Morrisでは制度説明よりLondonとThamesの具体的場面に共存が現れる。</span></div>
+<div><b>3</b><span><strong>読み直し：</strong>本文に戻ると、都市／田園という別の軸と「一場面」の範囲が問いになる。</span></div>
+:::
+
+::: {.verdict .final-verdict}
+固定116語の集計も、ベクトル由来の分析も探索の入口。文学史の視点と本文の読解が、次に何をどう数えるかを決める。
 :::
 ::::
 
