@@ -783,13 +783,15 @@
         margin-top: 24px;
         border: 1px solid var(--line);
         background: var(--paper);
+        overflow-x: auto;
       }
 
       .chapter-audit table {
         width: 100%;
+        min-width: 850px;
         margin: 0;
         border-collapse: collapse;
-        font-size: 0.78rem;
+        font-size: 0.84rem;
         line-height: 1.3;
       }
 
@@ -812,21 +814,31 @@
       }
 
       .chapter-audit th:nth-child(1),
-      .chapter-audit td:nth-child(1),
-      .chapter-audit th:nth-child(3),
-      .chapter-audit td:nth-child(3) {
+      .chapter-audit td:nth-child(1) {
         width: 72px;
         text-align: right;
       }
 
+      .chapter-audit th:nth-child(3),
+      .chapter-audit td:nth-child(3) {
+        width: 150px;
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      .chapter-audit td:nth-child(3) small {
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+
       .chapter-audit th:nth-child(4),
       .chapter-audit td:nth-child(4) {
-        width: 220px;
+        width: 170px;
       }
 
       .chapter-audit th:nth-child(5),
       .chapter-audit td:nth-child(5) {
-        width: 170px;
+        width: 190px;
       }
 
       .chapter-audit tbody tr:nth-child(even):not(.phase-row) {
@@ -893,6 +905,11 @@
       .case-chip.weak { background: #fff0c9; color: #79520a; }
       .case-chip.false,
       .case-chip.miss { background: #f8dfd8; color: #8a321f; }
+
+      .chapter-audit .case-chip {
+        padding-inline: 6px;
+        font-size: 0.82rem;
+      }
 
       .case-modal {
         width: min(920px, calc(100vw - 48px));

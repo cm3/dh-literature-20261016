@@ -300,9 +300,70 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 :::
 ::::
 
+:::: {.section .flow .chapter-audit-slide}
+::: kicker
+9 — Morris: all 32 chapters
+:::
+
+## 全32章で見る、共存の山と谷
+
+::: lead
+棒は各章の共存窓率（0–20%を横幅で表示）。第11–18章で低く、川の旅に戻ると再び高まる。Bennettが例を挙げた11章は合算11.7%（112/954窓）、ほかの21章は5.2%（108/2,093窓）。右端の番号から本文文脈を読める。
+:::
+
+```{=html}
+<div class="chapter-audit" role="region" aria-label="Gutenberg版News from Nowhereの116語リストによる全32章の共存窓率">
+<table>
+  <thead><tr><th>章</th><th>章題</th><th>共存率（窓数）</th><th>分布</th><th>Bennettの例</th></tr></thead>
+  <tbody>
+    <tr class="phase-row"><th colspan="5">I　Londonでの遭遇（第1–10章）</th></tr>
+    <tr><td>1</td><td>Discussion and Bed</td><td>13.9% <small>5/36</small></td><td><span class="rate-bar"><i style="width:70%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-02" aria-haspopup="dialog">NFN-02</button></td></tr>
+    <tr><td>2</td><td>A Morning Bath</td><td>13.2% <small>16/121</small></td><td><span class="rate-bar"><i style="width:66%"></i></span></td><td><button class="case-chip false" type="button" data-cases="NFN-03" aria-haspopup="dialog">NFN-03</button> <button class="case-chip good" type="button" data-cases="NFN-04" aria-haspopup="dialog">NFN-04</button></td></tr>
+    <tr><td>3</td><td>The Guest House and Breakfast Therein</td><td>10.6% <small>15/141</small></td><td><span class="rate-bar"><i style="width:53%"></i></span></td><td></td></tr>
+    <tr><td>4</td><td>A Market by the Way</td><td>13.3% <small>6/45</small></td><td><span class="rate-bar"><i style="width:67%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-06" aria-haspopup="dialog">NFN-06</button></td></tr>
+    <tr><td>5</td><td>Children on the Road</td><td>9.8% <small>10/102</small></td><td><span class="rate-bar"><i style="width:49%"></i></span></td><td><button class="case-chip caveat" type="button" data-cases="NFN-07" aria-haspopup="dialog">NFN-07</button> <button class="case-chip good" type="button" data-cases="NFN-08" aria-haspopup="dialog">NFN-08</button></td></tr>
+    <tr><td>6</td><td>A Little Shopping</td><td>4.5% <small>5/110</small></td><td><span class="rate-bar"><i style="width:23%"></i></span></td><td></td></tr>
+    <tr><td>7</td><td>Trafalgar Square</td><td>13.0% <small>14/108</small></td><td><span class="rate-bar"><i style="width:65%"></i></span></td><td></td></tr>
+    <tr><td>8</td><td>An Old Friend</td><td>9.8% <small>5/51</small></td><td><span class="rate-bar"><i style="width:49%"></i></span></td><td></td></tr>
+    <tr><td>9</td><td>Concerning Love</td><td>5.4% <small>9/166</small></td><td><span class="rate-bar"><i style="width:27%"></i></span></td><td></td></tr>
+    <tr><td>10</td><td>Questions and Answers</td><td>8.8% <small>15/170</small></td><td><span class="rate-bar"><i style="width:44%"></i></span></td><td><button class="case-chip caveat" type="button" data-cases="NFN-05" aria-haspopup="dialog">NFN-05</button></td></tr>
+    <tr class="phase-row"><th colspan="5">II　制度説明・革命史（第11–18章）</th></tr>
+    <tr><td>11</td><td>Concerning Government</td><td>0.0% <small>0/58</small></td><td><span class="rate-bar"><i style="width:0%"></i></span></td><td></td></tr>
+    <tr><td>12</td><td>Concerning the Arrangement of Life</td><td>0.0% <small>0/75</small></td><td><span class="rate-bar"><i style="width:0%"></i></span></td><td></td></tr>
+    <tr><td>13</td><td>Concerning Politics</td><td>0.0% <small>0/3</small></td><td><span class="rate-bar"><i style="width:0%"></i></span></td><td></td></tr>
+    <tr><td>14</td><td>How Matters Are Managed</td><td>1.3% <small>1/77</small></td><td><span class="rate-bar"><i style="width:7%"></i></span></td><td></td></tr>
+    <tr><td>15</td><td>On the Lack of Incentive to Labour…</td><td>0.0% <small>0/115</small></td><td><span class="rate-bar"><i style="width:0%"></i></span></td><td></td></tr>
+    <tr><td>16</td><td>Dinner in the Hall of the Bloomsbury Market</td><td>8.9% <small>5/56</small></td><td><span class="rate-bar"><i style="width:45%"></i></span></td><td></td></tr>
+    <tr><td>17</td><td>How the Change Came</td><td>0.3% <small>1/397</small></td><td><span class="rate-bar"><i style="width:2%"></i></span></td><td></td></tr>
+    <tr><td>18</td><td>The Beginning of the New Life</td><td>0.0% <small>0/73</small></td><td><span class="rate-bar"><i style="width:0%"></i></span></td><td></td></tr>
+    <tr class="phase-row"><th colspan="5">III　Thames航行・帰還（第19–32章）</th></tr>
+    <tr><td>19</td><td>The Drive Back to Hammersmith</td><td>3.9% <small>3/77</small></td><td><span class="rate-bar"><i style="width:20%"></i></span></td><td></td></tr>
+    <tr><td>20</td><td>The Hammersmith Guest-House Again</td><td>15.0% <small>3/20</small></td><td><span class="rate-bar"><i style="width:75%"></i></span></td><td></td></tr>
+    <tr><td>21</td><td>Going up the River</td><td>12.2% <small>5/41</small></td><td><span class="rate-bar"><i style="width:61%"></i></span></td><td></td></tr>
+    <tr><td>22</td><td>Hampton Court</td><td>8.6% <small>12/140</small></td><td><span class="rate-bar"><i style="width:43%"></i></span></td><td></td></tr>
+    <tr><td>23</td><td>An Early Morning by Runnymede</td><td>9.9% <small>8/81</small></td><td><span class="rate-bar"><i style="width:50%"></i></span></td><td><button class="case-chip false" type="button" data-cases="NFN-01" aria-haspopup="dialog">NFN-01</button></td></tr>
+    <tr><td>24</td><td>Up the Thames: The Second Day</td><td>13.3% <small>18/135</small></td><td><span class="rate-bar"><i style="width:67%"></i></span></td><td><button class="case-chip caveat" type="button" data-cases="NFN-09" aria-haspopup="dialog">NFN-09</button></td></tr>
+    <tr class="peak"><td>25</td><td>The Third Day on the Thames</td><td><b>17.5%</b> <small>11/63</small></td><td><span class="rate-bar"><i style="width:88%"></i></span></td><td><button class="case-chip caveat" type="button" data-cases="NFN-13" aria-haspopup="dialog">NFN-13</button></td></tr>
+    <tr><td>26</td><td>The Obstinate Refusers</td><td>7.7% <small>5/65</small></td><td><span class="rate-bar"><i style="width:39%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-11" aria-haspopup="dialog">NFN-11</button></td></tr>
+    <tr><td>27</td><td>The Upper Waters</td><td>5.1% <small>8/157</small></td><td><span class="rate-bar"><i style="width:26%"></i></span></td><td></td></tr>
+    <tr><td>28</td><td>The Little River</td><td>5.3% <small>3/57</small></td><td><span class="rate-bar"><i style="width:27%"></i></span></td><td></td></tr>
+    <tr><td>29</td><td>A Resting-Place on the Upper Thames</td><td>9.2% <small>6/65</small></td><td><span class="rate-bar"><i style="width:46%"></i></span></td><td><button class="case-chip weak" type="button" data-cases="NFN-12" aria-haspopup="dialog">NFN-12</button></td></tr>
+    <tr class="peak"><td>30</td><td>The Journey’s End</td><td><b>18.3%</b> <small>15/82</small></td><td><span class="rate-bar"><i style="width:92%"></i></span></td><td></td></tr>
+    <tr class="peak"><td>31</td><td>An Old House amongst New Folk</td><td><b>16.9%</b> <small>12/71</small></td><td><span class="rate-bar"><i style="width:85%"></i></span></td><td><button class="case-chip good" type="button" data-cases="NFN-10" aria-haspopup="dialog">NFN-10</button></td></tr>
+    <tr><td>32</td><td>The Feast’s Beginning — The End</td><td>4.5% <small>4/89</small></td><td><span class="rate-bar"><i style="width:23%"></i></span></td><td></td></tr>
+  </tbody>
+</table>
+</div>
+```
+
+::: note
+Gutenberg版本文、固定した116語、章をまたがない50語窓による集計。括弧内は共存窓／全窓。Bennettの色は別途行った本文監査の判定（緑＝実質的、青＝要留保、橙＝弱い、赤＝形式的誤検出）。引用された章の率と、引用箇所そのものの検出率は異なる。隣接窓は半分重なり、短い章の率は変動しやすい。
+:::
+::::
+
 :::: {.section .screen}
 ::: kicker
-9 — Read the passages
+10 — Read the passages
 :::
 
 ## 同じ「共存」でも、物語上の働きは異なる
@@ -338,7 +399,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .screen .case-review-slide}
 ::: kicker
-10 — Bennett's 13 examples
+11 — Bennett's 13 examples
 :::
 
 ## 語を増やすと、形式上の検出も増える
@@ -378,7 +439,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .screen .center .closing-slide}
 ::: kicker
-11 — Conclusion
+12 — Conclusion
 :::
 
 ## 分布は、読解の入口を示す
@@ -396,7 +457,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .flow .future-slide}
 ::: kicker
-12 — Future directions
+13 — Future directions
 :::
 
 ## 固定した語彙の先へ
@@ -466,7 +527,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .flow .concept-slide}
 ::: kicker
-13 — Quantification × literary history
+14 — Quantification × literary history
 :::
 
 ## 計量化と文学史の視点を往復する
@@ -525,7 +586,7 @@ Bennettの「町と田舎が互いに変わる」場面は別の関係。元の�
 
 :::: {.section .flow .audience-slide}
 ::: kicker
-14 — Questions from participants
+15 — Questions from participants
 :::
 
 ## 事前アンケートの関心事項より
