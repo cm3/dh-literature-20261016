@@ -494,12 +494,12 @@ Gutenberg版では `bird` と `bridge` は41トークン離れる。両語とも
 11 — Conclusion
 :::
 
-## 分布は、読解の入口を示す
+## 計量化は、読解の入口を示し、読解を問い直す
 
 ::: {.closing-points}
 <div><b>1</b><span><strong>比較：</strong>Gutenberg版と116語のリストではHudsonが8.18%、Morrisが7.22%。</span></div>
 <div><b>2</b><span><strong>場所：</strong>Morrisでは制度説明よりLondonとThamesの具体的場面に共存が現れる。</span></div>
-<div><b>3</b><span><strong>読み直し：</strong>本文に戻ると、都市／田園という別の軸と「一場面」の範囲が問いになる。</span></div>
+<div><b>3</b><span><strong>問い直し：</strong>「再野生化」を、都市／田園の関係や「一場面」の範囲まで分けて考える。</span></div>
 :::
 
 ::: {.verdict .final-verdict}
