@@ -1369,6 +1369,20 @@
         min-height: 0;
       }
 
+      .starting-point .thames-grid .excerpt-card p:first-child {
+        margin-bottom: 0;
+      }
+
+      .starting-point .thames-grid .excerpt-card p:nth-child(2) {
+        margin-bottom: 10px;
+      }
+
+      .starting-point .thames-grid .work-year {
+        color: var(--muted);
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+
       .starting-point .thames-comparison .verdict {
         margin-top: 12px;
       }

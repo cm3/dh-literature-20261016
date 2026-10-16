@@ -46,7 +46,7 @@ Bennett (2026) の「再野生化」読解を手がかりに
 
 エコクリティシズムは、文学のなかで人間と自然・環境の関係がどう描かれるかを考える研究で、Bennettの論文はその一例である。
 
-BennettはMorrisの『News from Nowhere』（1890年連載／1891年刊）とDiane Setterfieldの『Once Upon a River』（2018年刊）を比較し、Thamesを軸に、人間中心の見方を問い直す再野生化の物語と社会・環境正義の可能性を読む。
+BennettはMorrisの『News from Nowhere』とDiane Setterfieldの『Once Upon a River』を比較し、Thamesを軸に、人間中心の見方を問い直す再野生化の物語と社会・環境正義の可能性を読む。
 
 :::
 
@@ -57,11 +57,15 @@ BennettはMorrisの『News from Nowhere』（1890年連載／1891年刊）とDia
 ::: {.panel .excerpt-card .nature-panel}
 **Morris, *News from Nowhere***
 
+<span class="work-year">（1890年連載／1891年刊）</span>
+
 革命後の未来社会を描く。Thamesの旅で、街・家・樹木・野生生物との関係が見直される。
 :::
 
 ::: {.panel .excerpt-card .built-panel}
 **Setterfield, *Once Upon a River***
+
+<span class="work-year">（2018年刊）</span>
 
 19世紀末を描く現代の歴史小説。Thamesは人間の思いどおりにならず、洪水も共同体の物語を動かす。
 :::
