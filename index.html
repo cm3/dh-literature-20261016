@@ -113,7 +113,7 @@
         });
       });
     </script>
-    <link rel="stylesheet" href="assets/presentation.css?v=24" />
+    <link rel="stylesheet" href="assets/presentation.css?v=25" />
   </head>
   <body>
     <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
@@ -796,38 +796,9 @@ workshop
 </div>
 </section>
 </section>
-<section class="screen case-review-slide">
-<div class="kicker">
-<p>9 — Bennett’s 13 examples</p>
-</div>
-<section id="bennettの13事例中11件で窓が反応" class="level2">
-<h2>Bennettの13事例中、11件で窓が反応</h2>
-<div class="metric-grid">
-<div class="metric good">
-<p><b>11</b> <span>窓が形式上重なる事例</span> <small>13件中。隣接文脈のヒットも含む</small></p>
-</div>
-<div class="metric miss">
-<p><b>2</b> <span>同じ窓に両語がない事例</span> <small>検出できない＝本文に関係がない、ではない</small></p>
-</div>
-</div>
-<div class="two-col contrast-grid">
-<div class="panel caught">
-<p><strong>拾えた例：橋と川</strong></p>
-<p>第2章で <code>river</code> と <code>building · booth · shop</code> が同じ窓に現れる。原文ではThamesと橋上の建物が一景に入る。</p>
-</div>
-<div class="panel missed">
-<p><strong>拾えない例：町と田舎</strong></p>
-<p><code>town</code> と <code>country</code> の相互変化は、物理的な自然物・人工物の語彙とは別の問いである。</p>
-</div>
-</div>
-<div class="note warn">
-<p>「11/13」はGutenberg版で引用範囲と重なる窓に両群の語があった事例数。花の彫刻を指す<code>flower</code>も自然語として数えるため、解釈を11件検証した意味ではない。</p>
-</div>
-</section>
-</section>
 <section class="screen center closing-slide">
 <div class="kicker">
-<p>10 — Conclusion</p>
+<p>9 — Conclusion</p>
 </div>
 <section id="分布は読解の入口を示す" class="level2">
 <h2>分布は、読解の入口を示す</h2>
@@ -849,7 +820,7 @@ workshop
 </section>
 <section class="flow future-slide">
 <div class="kicker">
-<p>11 — Future directions</p>
+<p>10 — Future directions</p>
 </div>
 <section id="固定した語彙の先へ" class="level2">
 <h2>固定した語彙の先へ</h2>
@@ -910,21 +881,24 @@ workshop
 </section>
 <section class="flow concept-slide">
 <div class="kicker">
-<p>12 — Quantification × literary history</p>
+<p>11 — Quantification × literary history</p>
 </div>
 <section id="計量化と文学史の視点を往復する" class="level2">
 <h2>計量化と文学史の視点を往復する</h2>
+<div class="panel vector-result formal-result">
+<p><b>11 / 13</b><span>固定116語では、Bennettの引用範囲に重なる50語窓に自然語と人工語が現れる</span> <small>Gutenberg版。隣接文脈のヒットや、彫刻を指す <code>flower</code> も含む形式的な検出で、場面の解釈を確認した件数ではない。</small></p>
+</div>
 <div class="panel vector-result">
-<p><b>9 / 13</b><span>Bennettが挙げるMorrisの13場面で、自然と建造環境の実質的な共存を確認</span> <small>別条件の二軸分析ではGloVe軸から選んだ314語とInternet Archive版本文を使用。語義は人手確認。連続値の判定ではなく、116語による形式的な11/13とも別条件。</small></p>
+<p><b>9 / 13</b><span>別条件の二軸分析では、自然と建造環境の実質的な共存を人手で確認</span> <small>Internet Archive版とGloVe軸から選んだ314語を使用。本文・語彙・判定法が異なるため、11/13から誤検出2件を引いた値ではない。</small></p>
 </div>
 <div class="two-col concept-grid">
 <div class="panel nature-panel">
 <p><strong>自然／建造環境</strong></p>
-<p>川と橋、草地と家。物理的な環境が同じ場面に現れる関係を捉える。</p>
+<p>川と橋、草地と家。第2章では <code>river</code> と <code>building</code>・<code>booth</code>・<code>shop</code> が近接し、Thamesと橋上の建物が一景に入る。数えた後で、物理的な関係を本文で確かめる。</p>
 </div>
 <div class="panel built-panel">
 <p><strong>都市／田園</strong></p>
-<p>Bennettの「町と田舎が互いに変わる」場面は別の関係。元の二軸分析では、この場面も別軸と本文の語から拾い直せた。</p>
+<p>Bennettの「町と田舎が互いに変わる」場面では、<code>town</code> と <code>country</code> は物理的な自然物・人工物の116語に入らない。文学史から別の軸を導入すると、この関係も拾い直せる。</p>
 </div>
 </div>
 <div class="note">
@@ -956,7 +930,7 @@ workshop
 </section>
 <section class="flow audience-slide">
 <div class="kicker">
-<p>13 — Questions from participants</p>
+<p>12 — Questions from participants</p>
 </div>
 <section id="事前アンケートの関心事項より" class="level2">
 <h2>事前アンケートの関心事項より</h2>

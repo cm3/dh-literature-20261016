@@ -629,8 +629,7 @@
         align-self: center;
       }
 
-      .frequency-slide .takeaway-grid .panel,
-      .case-review-slide .contrast-grid .panel {
+      .frequency-slide .takeaway-grid .panel {
         min-height: 0;
         font-size: 0.95rem;
         line-height: 1.35;
@@ -639,19 +638,6 @@
       .frequency-slide .takeaway-grid .panel strong {
         display: inline;
         margin-bottom: 0;
-      }
-
-      .case-review-slide .metric-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .case-review-slide .metric {
-        min-height: 150px;
-        padding: 12px;
-      }
-
-      .case-review-slide .metric b {
-        font-size: 3rem;
       }
 
       .result-strip {
@@ -1436,6 +1422,15 @@
 
       .vector-result {
         border-top: 6px solid var(--accent);
+      }
+
+      .formal-result {
+        margin-bottom: 14px;
+        border-top-color: var(--accent-3);
+      }
+
+      .vector-result.formal-result b {
+        color: var(--accent-3);
       }
 
       .vector-result > p {

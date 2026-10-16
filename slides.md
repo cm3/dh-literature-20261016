@@ -358,49 +358,9 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 ::::
 
-:::: {.section .screen .case-review-slide}
-::: kicker
-9 — Bennett's 13 examples
-:::
-
-## Bennettの13事例中、11件で窓が反応
-
-::: {.metric-grid}
-::: {.metric .good}
-<b>11</b>
-<span>窓が形式上重なる事例</span>
-<small>13件中。隣接文脈のヒットも含む</small>
-:::
-
-::: {.metric .miss}
-<b>2</b>
-<span>同じ窓に両語がない事例</span>
-<small>検出できない＝本文に関係がない、ではない</small>
-:::
-:::
-
-::: {.two-col .contrast-grid}
-::: {.panel .caught}
-**拾えた例：橋と川**
-
-第2章で `river` と `building · booth · shop` が同じ窓に現れる。原文ではThamesと橋上の建物が一景に入る。
-:::
-
-::: {.panel .missed}
-**拾えない例：町と田舎**
-
-`town` と `country` の相互変化は、物理的な自然物・人工物の語彙とは別の問いである。
-:::
-:::
-
-::: {.note .warn}
-「11/13」はGutenberg版で引用範囲と重なる窓に両群の語があった事例数。花の彫刻を指す`flower`も自然語として数えるため、解釈を11件検証した意味ではない。
-:::
-::::
-
 :::: {.section .screen .center .closing-slide}
 ::: kicker
-10 — Conclusion
+9 — Conclusion
 :::
 
 ## 分布は、読解の入口を示す
@@ -418,7 +378,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .flow .future-slide}
 ::: kicker
-11 — Future directions
+10 — Future directions
 :::
 
 ## 固定した語彙の先へ
@@ -488,27 +448,32 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 :::: {.section .flow .concept-slide}
 ::: kicker
-12 — Quantification × literary history
+11 — Quantification × literary history
 :::
 
 ## 計量化と文学史の視点を往復する
 
+::: {.panel .vector-result .formal-result}
+<b>11 / 13</b><span>固定116語では、Bennettの引用範囲に重なる50語窓に自然語と人工語が現れる</span>
+<small>Gutenberg版。隣接文脈のヒットや、彫刻を指す `flower` も含む形式的な検出で、場面の解釈を確認した件数ではない。</small>
+:::
+
 ::: {.panel .vector-result}
-<b>9 / 13</b><span>Bennettが挙げるMorrisの13場面で、自然と建造環境の実質的な共存を確認</span>
-<small>別条件の二軸分析ではGloVe軸から選んだ314語とInternet Archive版本文を使用。語義は人手確認。連続値の判定ではなく、116語による形式的な11/13とも別条件。</small>
+<b>9 / 13</b><span>別条件の二軸分析では、自然と建造環境の実質的な共存を人手で確認</span>
+<small>Internet Archive版とGloVe軸から選んだ314語を使用。本文・語彙・判定法が異なるため、11/13から誤検出2件を引いた値ではない。</small>
 :::
 
 ::: {.two-col .concept-grid}
 ::: {.panel .nature-panel}
 **自然／建造環境**
 
-川と橋、草地と家。物理的な環境が同じ場面に現れる関係を捉える。
+川と橋、草地と家。第2章では `river` と `building`・`booth`・`shop` が近接し、Thamesと橋上の建物が一景に入る。数えた後で、物理的な関係を本文で確かめる。
 :::
 
 ::: {.panel .built-panel}
 **都市／田園**
 
-Bennettの「町と田舎が互いに変わる」場面は別の関係。元の二軸分析では、この場面も別軸と本文の語から拾い直せた。
+Bennettの「町と田舎が互いに変わる」場面では、`town` と `country` は物理的な自然物・人工物の116語に入らない。文学史から別の軸を導入すると、この関係も拾い直せる。
 :::
 :::
 
@@ -547,7 +512,7 @@ Bennettの「町と田舎が互いに変わる」場面は別の関係。元の�
 
 :::: {.section .flow .audience-slide}
 ::: kicker
-13 — Questions from participants
+12 — Questions from participants
 :::
 
 ## 事前アンケートの関心事項より
