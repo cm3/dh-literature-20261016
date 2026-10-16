@@ -453,15 +453,14 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 
 ## 計量化と文学史の視点を往復する
 
-::: {.panel .vector-result .formal-result}
-<b>11 / 13</b><span>固定116語では、Bennettの引用範囲に重なる50語窓に自然語と人工語が現れる</span>
-<small>Gutenberg版。隣接文脈のヒットや、彫刻を指す `flower` も含む形式的な検出で、場面の解釈を確認した件数ではない。</small>
-:::
+Bennettの13場面を手がかりに、分析の**軸**と**「一場面」の長さ**を考え直す。
 
 ::: {.panel .vector-result}
-<b>9 / 13</b><span>別条件の二軸分析では、自然と建造環境の実質的な共存を人手で確認</span>
-<small>Internet Archive版とGloVe軸から選んだ314語を使用。本文・語彙・判定法が異なるため、11/13から誤検出2件を引いた値ではない。</small>
+<b>9 / 13</b><span>ベクトル由来の二軸分析では、自然と建造環境の実質的な共存を人手で確認</span>
+<small>GloVe軸から選んだ314語とInternet Archive版本文を使用。今回の固定116語による集計とは別の分析。</small>
 :::
+
+### 文学史から、もう一つの軸を加える
 
 ::: {.two-col .concept-grid}
 ::: {.panel .nature-panel}
@@ -481,14 +480,16 @@ Bennettの「町と田舎が互いに変わる」場面では、`town` と `coun
 都市／田園は文学史から導入した対立軸（例：[Raymond Williams, *The Country and the City*](https://books.google.com/books/about/The_Country_and_the_City.html?id=3o57NbjApJkC), 1973）。
 :::
 
+### 固定116語では、「一場面」は50語で足りるか
+
 ::: {.panel .scene-scale-example}
 ### NFN-07：Kensingtonの森は、どこから一つの場面か
 
 > “a short street of houses” … “The road plunged at once into a beautiful wood”
 
-現行116語では `wood` と `arcade` が同じ50語窓に入る。ただし家並みから森の奥へ進む描写全体は、もっと長いまとまりである。冒頭の `arcade` と後段の `oak` は約195トークン離れる。`wood` の「森／木材」という多義性も、用例で確かめたい。
+Gutenberg版では `wood` と `arcade` が同じ50語窓に入る。ただし家並みから森の奥へ進む描写全体は、もっと長いまとまりである。冒頭の `arcade` と後段の `oak` は約195トークン離れる。`wood` の「森／木材」という多義性も、用例で確かめたい。
 
-語の採否だけでなく、どこまでを一つの場面とみなすかが、捉える関係を変える。
+どこまでを一つの場面とみなすかで、捉える関係が変わる。
 :::
 
 ::: {.panel .scene-scale-example}
@@ -496,17 +497,13 @@ Bennettの「町と田舎が互いに変わる」場面では、`town` と `coun
 
 > “birds of prey were also commoner” … “the pretty bridge which had taken the place of Basildon railway-bridge”
 
-現行116語には `bird` と `bridge` の両方がある。本文では41トークン離れるが、50語窓を25語ずつ動かすと同じ窓に入らない。<b>75語窓なら入る。</b>
+Gutenberg版では `bird` と `bridge` は41トークン離れる。両語とも116語にあるが、50語窓を25語ずつ動かすと同じ窓に入らない。<b>75語窓なら入る。</b>
 
 この事例は別の隣接語で形式上ヒットする。ここで見落とすのは、鳥と橋という本文内の具体的な関係である。
 :::
 
-::: {.note .warn}
-<b>「まとまり」の設計：</b> 語彙、窓の長さ、移動幅、場面の境界を変えると、見える関係が変わる。
-:::
-
 ::: {.verdict}
-文学史の視点が分析の軸を与え、計量化が「再野生化」の内訳と場面の境界を問い直す。
+文学史が「都市／田園」という軸を与え、計量化が「再野生化」の内訳と場面の境界を問い直す。
 :::
 ::::
 

@@ -1424,15 +1424,6 @@
         border-top: 6px solid var(--accent);
       }
 
-      .formal-result {
-        margin-bottom: 14px;
-        border-top-color: var(--accent-3);
-      }
-
-      .vector-result.formal-result b {
-        color: var(--accent-3);
-      }
-
       .vector-result > p {
         display: grid;
         grid-template-columns: 125px minmax(0, 1fr);

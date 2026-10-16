@@ -2,10 +2,9 @@
 
 約10分のHTMLスライドです。Bennett (2026) の *News from Nowhere* 読解を、
 自然物・人工物の116語による4作品の再集計、Morrisの章別分布、本文の場面で検討します。
-本編の数値は4作品のProject Gutenberg版本文で再計算したものです。
-後半ではBennettの13事例について、Gutenberg版・116語による形式的な11/13と、
-Internet Archive版・GloVe軸由来の314語・人手監査による9/13を併記します。
-二つの件数は本文・語彙・判定法が異なります。
+4作品の共存率とMorrisの章別分布はProject Gutenberg版本文で再計算しました。
+後半ではBennettの13事例について、Internet Archive版・GloVe軸由来の314語を使った
+別分析で、自然と建造環境の実質的な共存を9場面に人手で確認した結果を紹介します。
 Setterfieldの*Once Upon a River*（2018）はBennett論文の比較対象として本編で紹介します。
 現時点で小説全文の分析入力はなく、4作品の共存率グラフには含めていません。
 116語は、LLMの語単位判定と利用者・編集者の判断による114語に、利用者が承認した `wood`（自然）・`bridge`（人工）を加えた暫定リストです。
@@ -60,7 +59,7 @@ Morrisの読書稿には46件の読書注、36枚の典拠つき資料画像、�
 114語の選定は親プロジェクトの
 `work/nature-built-lexicon-review/scripts/recompute_mixing.py` で行った。
 116語版のGutenberg・Internet Archive作品別・章別集計とInternet Archive版のBennett事例照合は
-`scripts/recompute_expanded_metrics.py` による。スライドに表示するGutenberg版の13事例照合は
+`scripts/recompute_expanded_metrics.py` による。Gutenberg版の13事例の補助的な位置照合は
 `scripts/recompute_gutenberg_bennett_alignment.py` で再計算し、
 `data/expanded_gutenberg_bennett_alignment.csv` とメタデータJSONに保存する。
 IA版とGutenberg版の同じ引用範囲を章内の語列で対応づけ、位置と窓数を検証する。

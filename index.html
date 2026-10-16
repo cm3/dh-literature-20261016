@@ -113,7 +113,7 @@
         });
       });
     </script>
-    <link rel="stylesheet" href="assets/presentation.css?v=25" />
+    <link rel="stylesheet" href="assets/presentation.css?v=26" />
   </head>
   <body>
     <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
@@ -885,12 +885,12 @@ workshop
 </div>
 <section id="計量化と文学史の視点を往復する" class="level2">
 <h2>計量化と文学史の視点を往復する</h2>
-<div class="panel vector-result formal-result">
-<p><b>11 / 13</b><span>固定116語では、Bennettの引用範囲に重なる50語窓に自然語と人工語が現れる</span> <small>Gutenberg版。隣接文脈のヒットや、彫刻を指す <code>flower</code> も含む形式的な検出で、場面の解釈を確認した件数ではない。</small></p>
-</div>
+<p>Bennettの13場面を手がかりに、分析の<strong>軸</strong>と<strong>「一場面」の長さ</strong>を考え直す。</p>
 <div class="panel vector-result">
-<p><b>9 / 13</b><span>別条件の二軸分析では、自然と建造環境の実質的な共存を人手で確認</span> <small>Internet Archive版とGloVe軸から選んだ314語を使用。本文・語彙・判定法が異なるため、11/13から誤検出2件を引いた値ではない。</small></p>
+<p><b>9 / 13</b><span>ベクトル由来の二軸分析では、自然と建造環境の実質的な共存を人手で確認</span> <small>GloVe軸から選んだ314語とInternet Archive版本文を使用。今回の固定116語による集計とは別の分析。</small></p>
 </div>
+<section id="文学史からもう一つの軸を加える" class="level3">
+<h3>文学史から、もう一つの軸を加える</h3>
 <div class="two-col concept-grid">
 <div class="panel nature-panel">
 <p><strong>自然／建造環境</strong></p>
@@ -904,27 +904,28 @@ workshop
 <div class="note">
 <p>都市／田園は文学史から導入した対立軸（例：<a href="https://books.google.com/books/about/The_Country_and_the_City.html?id=3o57NbjApJkC">Raymond Williams, <em>The Country and the City</em></a>, 1973）。</p>
 </div>
+</section>
+<section id="固定116語では一場面は50語で足りるか" class="level3">
+<h3>固定116語では、「一場面」は50語で足りるか</h3>
+</section>
 <section id="nfn-07kensingtonの森はどこから一つの場面か" class="level3 panel scene-scale-example">
 <h3>NFN-07：Kensingtonの森は、どこから一つの場面か</h3>
 <blockquote>
 <p>“a short street of houses” … “The road plunged at once into a beautiful wood”</p>
 </blockquote>
-<p>現行116語では <code>wood</code> と <code>arcade</code> が同じ50語窓に入る。ただし家並みから森の奥へ進む描写全体は、もっと長いまとまりである。冒頭の <code>arcade</code> と後段の <code>oak</code> は約195トークン離れる。<code>wood</code> の「森／木材」という多義性も、用例で確かめたい。</p>
-<p>語の採否だけでなく、どこまでを一つの場面とみなすかが、捉える関係を変える。</p>
+<p>Gutenberg版では <code>wood</code> と <code>arcade</code> が同じ50語窓に入る。ただし家並みから森の奥へ進む描写全体は、もっと長いまとまりである。冒頭の <code>arcade</code> と後段の <code>oak</code> は約195トークン離れる。<code>wood</code> の「森／木材」という多義性も、用例で確かめたい。</p>
+<p>どこまでを一つの場面とみなすかで、捉える関係が変わる。</p>
 </section>
 <section id="nfn-13鳥と橋は窓の境界で離れる" class="level3 panel scene-scale-example">
 <h3>NFN-13：鳥と橋は、窓の境界で離れる</h3>
 <blockquote>
 <p>“birds of prey were also commoner” … “the pretty bridge which had taken the place of Basildon railway-bridge”</p>
 </blockquote>
-<p>現行116語には <code>bird</code> と <code>bridge</code> の両方がある。本文では41トークン離れるが、50語窓を25語ずつ動かすと同じ窓に入らない。<b>75語窓なら入る。</b></p>
+<p>Gutenberg版では <code>bird</code> と <code>bridge</code> は41トークン離れる。両語とも116語にあるが、50語窓を25語ずつ動かすと同じ窓に入らない。<b>75語窓なら入る。</b></p>
 <p>この事例は別の隣接語で形式上ヒットする。ここで見落とすのは、鳥と橋という本文内の具体的な関係である。</p>
 </section>
-<div class="note warn">
-<p><b>「まとまり」の設計：</b> 語彙、窓の長さ、移動幅、場面の境界を変えると、見える関係が変わる。</p>
-</div>
 <div class="verdict">
-<p>文学史の視点が分析の軸を与え、計量化が「再野生化」の内訳と場面の境界を問い直す。</p>
+<p>文学史が「都市／田園」という軸を与え、計量化が「再野生化」の内訳と場面の境界を問い直す。</p>
 </div>
 </section>
 </section>
