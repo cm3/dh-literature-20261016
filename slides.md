@@ -357,7 +357,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 ```
 
 ::: note
-表はGutenberg版本文、固定した116語、章をまたがない50語窓による集計。括弧内は共存窓／全窓。Bennettの色は別途行った本文監査の判定（緑＝実質的、青＝要留保、橙＝弱い、赤＝形式的誤検出）。事例ポップアップの窓数は選定したInternet Archive版による。引用された章の率と引用箇所そのものの検出率は異なる。隣接窓は半分重なり、短い章の率は変動しやすい。
+表と事例ポップアップの窓数はGutenberg版本文、固定した116語、章をまたがない50語窓による集計。括弧内は共存窓／全窓。Bennettの色は別途行った本文監査の判定（緑＝実質的、青＝要留保、橙＝弱い、赤＝形式的誤検出）。引用された章の率と引用箇所そのものの検出率は異なる。隣接窓は半分重なり、短い章の率は変動しやすい。
 :::
 ::::
 
@@ -433,7 +433,7 @@ LondonとThames区間は近い率。制度説明の章群では低いという�
 :::
 
 ::: {.note .warn}
-「11/13」は選定したInternet Archive版で文字位置が重なる窓の件数で、Gutenberg版については未再計算。花の彫刻を指す`flower`も自然語として数えるため、解釈を11件検証した意味ではない。
+「11/13」はGutenberg版で引用範囲と重なる窓に両群の語があった事例数。花の彫刻を指す`flower`も自然語として数えるため、解釈を11件検証した意味ではない。
 :::
 ::::
 
@@ -624,13 +624,6 @@ Open Libraryの版情報から分析本文を特定し、Gutenberg版とInternet
 - 「頻出」にどんな意味があるかを掘り下げる。たとえば「私」も頻出しうるので、回数だけではその語の重要性は決まらない。
 - その語が作品・時代の中でどう位置づくかを、比較と計量化で（準）客観的に確かめる。
 
-::: {.positioning-example}
-**歴史でも、名前だけでは位置づけが見えない。**
-
-「アブドゥル・ラザク」<span aria-hidden="true">→</span>「1969年の民族間衝突後、貧困削減と民族間の経済格差是正を掲げる新経済政策を進めたマレーシアの首相」
-
-固有名詞を役割と言い換えると、その人物をどう捉えているかが伝わる。頻出語も、回数から作品内での役割へ問いを進める。<small>史実：[マレーシア議会会議録（1971年）](https://repositori.parlimen.gov.my/bitstream/123456789/3540/57/DR-23021971.pdf)</small>
-:::
 :::
 :::
 ::::
@@ -647,7 +640,7 @@ Appendix — Reproducibility
 - **数え方：** 名詞の原形を照合し、章をまたがない50語窓を25語ずつ動かして、自然語と人工語が両方あれば共存と数える。
 - **集計結果：** `data/expanded_gutenberg_work_summary.csv`、`data/expanded_gutenberg_chapter_summary.csv`、`data/expanded_gutenberg_permutation_summary.csv`。
 - **検証資料：** `data/expanded_gutenberg_example_window.json` に本文例、`data/expanded_run_metadata.json` に入力ハッシュと計算条件を記録。
-- **補助分析：** Bennett論文の13事例との位置照合は、別に記録したInternet Archive版による（`data/expanded_bennett_alignment.csv`）。
+- **補助分析：** Bennett論文の13事例をGutenberg版へ対応づけた位置照合は `data/expanded_gutenberg_bennett_alignment.csv`。`scripts/recompute_gutenberg_bennett_alignment.py` で再計算できる。
 - **別条件の二軸分析：** 9/13の人手判定は `data/bennett_2026_nfn_alignment.csv`、都市／田園の本文窓は `data/morris_literal_town_country.csv` に記録。
 
 ::: note

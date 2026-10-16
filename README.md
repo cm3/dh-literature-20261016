@@ -58,11 +58,13 @@ Morrisの読書稿には46件の読書注、36枚の典拠つき資料画像、�
 
 114語の選定は親プロジェクトの
 `work/nature-built-lexicon-review/scripts/recompute_mixing.py` で行った。
-116語版のGutenberg・Internet Archive作品別・章別集計とBennett事例照合は
-`scripts/recompute_expanded_metrics.py`、
+116語版のGutenberg・Internet Archive作品別・章別集計とInternet Archive版のBennett事例照合は
+`scripts/recompute_expanded_metrics.py` による。スライドに表示するGutenberg版の13事例照合は
+`scripts/recompute_gutenberg_bennett_alignment.py` で再計算し、
+`data/expanded_gutenberg_bennett_alignment.csv` とメタデータJSONに保存する。
+IA版とGutenberg版の同じ引用範囲を章内の語列で対応づけ、位置と窓数を検証する。
 シャッフル結果と実例窓は `scripts/recompute_gutenberg_metrics.py` による。
 名詞判定・原形化と50語窓は `work/utopian-local-mixing-analysis/` のStage 2処理に合わせた。
-論文の13事例との文字位置照合だけはInternet Archive版の補助分析として表示する。
 論文の正しいDOIは
 <https://doi.org/10.1080/14688417.2026.2733353>。
 

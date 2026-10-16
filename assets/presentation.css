@@ -1629,27 +1629,6 @@
         margin-bottom: 0;
       }
 
-      .audience-grid .positioning-example {
-        margin-top: 18px;
-        padding: 16px 20px;
-        background: var(--soft);
-        border-left: 5px solid var(--accent);
-      }
-
-      .audience-grid .positioning-example p {
-        margin: 0;
-      }
-
-      .audience-grid .positioning-example p + p {
-        margin-top: 9px;
-      }
-
-      .audience-grid .positioning-example small {
-        display: block;
-        margin-top: 8px;
-        font-size: 0.88rem;
-      }
-
       @media (max-width: 760px) {
         .vector-result > p {
           grid-template-columns: 1fr;

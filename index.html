@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Bennett (2026) のMorris読解を、自然・人工物の116語リストで同時代の4作品と照合する10分発表" />
     <title>自然物と人工物の語はどこで出会うか</title>
-    <script src="assets/bennett-cases.js?v=17"></script>
+    <script src="assets/bennett-cases.js?v=18"></script>
     <script>
       window.addEventListener("DOMContentLoaded", () => {
         const slides = Array.from(document.querySelectorAll("main > section, main > .screen, main > .flow"));
@@ -824,7 +824,7 @@ workshop
 </table>
 </div>
 <div class="note">
-<p>表はGutenberg版本文、固定した116語、章をまたがない50語窓による集計。括弧内は共存窓／全窓。Bennettの色は別途行った本文監査の判定（緑＝実質的、青＝要留保、橙＝弱い、赤＝形式的誤検出）。事例ポップアップの窓数は選定したInternet Archive版による。引用された章の率と引用箇所そのものの検出率は異なる。隣接窓は半分重なり、短い章の率は変動しやすい。</p>
+<p>表と事例ポップアップの窓数はGutenberg版本文、固定した116語、章をまたがない50語窓による集計。括弧内は共存窓／全窓。Bennettの色は別途行った本文監査の判定（緑＝実質的、青＝要留保、橙＝弱い、赤＝形式的誤検出）。引用された章の率と引用箇所そのものの検出率は異なる。隣接窓は半分重なり、短い章の率は変動しやすい。</p>
 </div>
 </section>
 </section>
@@ -881,7 +881,7 @@ workshop
 </div>
 </div>
 <div class="note warn">
-<p>「11/13」は選定したInternet Archive版で文字位置が重なる窓の件数で、Gutenberg版については未再計算。花の彫刻を指す<code>flower</code>も自然語として数えるため、解釈を11件検証した意味ではない。</p>
+<p>「11/13」はGutenberg版で引用範囲と重なる窓に両群の語があった事例数。花の彫刻を指す<code>flower</code>も自然語として数えるため、解釈を11件検証した意味ではない。</p>
 </div>
 </section>
 </section>
@@ -1053,11 +1053,6 @@ workshop
 <li>「頻出」にどんな意味があるかを掘り下げる。たとえば「私」も頻出しうるので、回数だけではその語の重要性は決まらない。</li>
 <li>その語が作品・時代の中でどう位置づくかを、比較と計量化で（準）客観的に確かめる。</li>
 </ul>
-<div class="positioning-example">
-<p><strong>歴史でも、名前だけでは位置づけが見えない。</strong></p>
-<p>「アブドゥル・ラザク」<span aria-hidden="true">→</span>「1969年の民族間衝突後、貧困削減と民族間の経済格差是正を掲げる新経済政策を進めたマレーシアの首相」</p>
-<p>固有名詞を役割と言い換えると、その人物をどう捉えているかが伝わる。頻出語も、回数から作品内での役割へ問いを進める。<small>史実：<a href="https://repositori.parlimen.gov.my/bitstream/123456789/3540/57/DR-23021971.pdf">マレーシア議会会議録（1971年）</a></small></p>
-</div>
 </section>
 </div>
 </section>
@@ -1074,7 +1069,7 @@ workshop
 <li><strong>数え方：</strong> 名詞の原形を照合し、章をまたがない50語窓を25語ずつ動かして、自然語と人工語が両方あれば共存と数える。</li>
 <li><strong>集計結果：</strong> <code>data/expanded_gutenberg_work_summary.csv</code>、<code>data/expanded_gutenberg_chapter_summary.csv</code>、<code>data/expanded_gutenberg_permutation_summary.csv</code>。</li>
 <li><strong>検証資料：</strong> <code>data/expanded_gutenberg_example_window.json</code> に本文例、<code>data/expanded_run_metadata.json</code> に入力ハッシュと計算条件を記録。</li>
-<li><strong>補助分析：</strong> Bennett論文の13事例との位置照合は、別に記録したInternet Archive版による（<code>data/expanded_bennett_alignment.csv</code>）。</li>
+<li><strong>補助分析：</strong> Bennett論文の13事例をGutenberg版へ対応づけた位置照合は <code>data/expanded_gutenberg_bennett_alignment.csv</code>。<code>scripts/recompute_gutenberg_bennett_alignment.py</code> で再計算できる。</li>
 <li><strong>別条件の二軸分析：</strong> 9/13の人手判定は <code>data/bennett_2026_nfn_alignment.csv</code>、都市／田園の本文窓は <code>data/morris_literal_town_country.csv</code> に記録。</li>
 </ul>
 <div class="note">

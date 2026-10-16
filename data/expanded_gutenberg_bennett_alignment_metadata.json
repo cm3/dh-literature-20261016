@@ -1,0 +1,14 @@
+{
+  "source": "Project Gutenberg #3261",
+  "vocabulary": "lexical_116",
+  "width": 50,
+  "step": 25,
+  "passage_mapping": "IA and Gutenberg chapter word sequences aligned with difflib; mapped case boundaries checked by passage similarity",
+  "ia_sha256": "6dd3aaa5bd7394d046ac4912c257087334134dedbd2e9eefc52a248dafb4234a",
+  "pg_sha256": "b26f36b03135999202051056a14fb8076bc304525c999b91ad8b7f86a86b4179",
+  "lexicon_sha256": "6b61001c4e202f359d8a9b73175a107fd35605a89d99ed12855705dfb5d466e1",
+  "case_source_sha256": "f6e797430cc69ace1b5d3f56facebe14f9ef4173397d581dd3c53b9ff2f01e79",
+  "minimum_passage_similarity": 0.9784,
+  "exact_start_boundaries": 13,
+  "exact_end_boundaries": 13
+}

@@ -1,0 +1,14 @@
+case_id,label,article_page,chapter,pg_char_start,pg_char_end,alignment_similarity,start_boundary_exact,end_boundary_exact,prior_manual_classification,source,vocabulary,overlap_windows,mixed_windows,nature_terms,built_terms
+NFN-01,Runnymede river life,3,23,304027,304388,1.0,True,True,outside_or_spurious,PG,lexical_116,5,2,meadow,house
+NFN-02,River mediates transition,5,1,3165,3517,0.9784,True,True,substantive,PG,lexical_116,5,2,river|water,bridge|wall
+NFN-03,Summer Thames on waking,5,2,5959,6257,1.0,True,True,outside_or_spurious,PG,lexical_116,4,1,air,house|room
+NFN-04,Salmon bridge and deindustrialised banks,5,2,7406,11915,0.9988,True,True,substantive,PG,lexical_116,36,7,river|tide|water,booth|bridge|building|clothes|house|shop
+NFN-05,Town-country mutual influence,6,10,137366,138501,1.0,True,True,missed,PG,lexical_116,10,0,,
+NFN-06,Hammersmith highway through meadows,6,4,40576,43062,0.9934,True,True,substantive,PG,lexical_116,19,4,meadow|river|tide|water,brick|bridge|house
+NFN-07,Kensington wood as urban wild spot,6,5,47267,49139,0.9872,True,True,substantive_with_caveat,PG,lexical_116,16,1,wood,arcade
+NFN-08,Children learn among wild creatures,9,5,50030,51037,0.9922,True,True,substantive,PG,lexical_116,9,4,forest|wood,house
+NFN-09,Force-barges replace steam power,9,24,321221,322102,1.0,True,True,substantive_with_caveat,PG,lexical_116,9,4,land|river|water,brick|vehicle
+NFN-10,Ellen's earth-grown old house,9,31,400350,401185,0.985,True,True,substantive,PG,lexical_116,8,1,earth,house|wall
+NFN-11,Philippa's riverside house and flower carving,9,26,346379,347153,1.0,True,True,substantive,PG,lexical_116,8,2,flower,house
+NFN-12,Space for trees,10,29,378867,379442,1.0,True,True,weak_or_ambiguous,PG,lexical_116,6,0,,
+NFN-13,Thriving birds of prey,10,25,340218,340887,1.0,True,True,substantive_with_caveat,PG,lexical_116,5,2,bird|wood,brick
